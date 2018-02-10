@@ -1,0 +1,2852 @@
+Archive member included because of file (symbol)
+
+contiki-exp5438.a(msp430.o)   obj_exp5438/contiki-exp5438-main.o (w_memset)
+contiki-exp5438.a(leds.o)     obj_exp5438/contiki-exp5438-main.o (leds_init)
+contiki-exp5438.a(watchdog.o)
+                              obj_exp5438/contiki-exp5438-main.o (watchdog_start)
+contiki-exp5438.a(rtimer-arch.o)
+                              obj_exp5438/contiki-exp5438-main.o (rtimer_arch_now)
+contiki-exp5438.a(node-id.o)  obj_exp5438/contiki-exp5438-main.o (node_mac)
+contiki-exp5438.a(leds-arch.o)
+                              contiki-exp5438.a(leds.o) (leds_arch_init)
+contiki-exp5438.a(uart1x.o)   obj_exp5438/contiki-exp5438-main.o (uart1_active)
+contiki-exp5438.a(uart2x.o)   obj_exp5438/contiki-exp5438-main.o (uart2_active)
+contiki-exp5438.a(lcd.o)      obj_exp5438/contiki-exp5438-main.o (lcd_init)
+contiki-exp5438.a(duty-cycle-scro)
+                              obj_exp5438/contiki-exp5438-main.o (duty_cycle_scroller_start)
+contiki-exp5438.a(cc1200.o)   obj_exp5438/contiki-exp5438-main.o (cc1200_init)
+contiki-exp5438.a(cc1200-5438-arc)
+                              contiki-exp5438.a(cc1200.o) (cc1200_arch_spi_select)
+contiki-exp5438.a(cc1200-802154g-)
+                              contiki-exp5438.a(cc1200.o) (cc1200_802154g_863_870_fsk_50kbps)
+contiki-exp5438.a(uart1-putchar.o)
+                              obj_exp5438/contiki-exp5438-main.o (putchar)
+contiki-exp5438.a(uart2-putchar.o)
+                              example-broadcast.co (putchar2)
+contiki-exp5438.a(clock.o)    obj_exp5438/contiki-exp5438-main.o (clock_init)
+contiki-exp5438.a(autostart.o)
+                              obj_exp5438/contiki-exp5438-main.o (autostart_start)
+contiki-exp5438.a(ctimer.o)   obj_exp5438/contiki-exp5438-main.o (ctimer_init)
+contiki-exp5438.a(energest.o)
+                              obj_exp5438/contiki-exp5438-main.o (energest_init)
+contiki-exp5438.a(etimer.o)   contiki-exp5438.a(clock.o) (etimer_request_poll)
+contiki-exp5438.a(process.o)  contiki-exp5438.a(ctimer.o) (process_current)
+contiki-exp5438.a(rtimer.o)   obj_exp5438/contiki-exp5438-main.o (rtimer_init)
+contiki-exp5438.a(timer.o)    contiki-exp5438.a(etimer.o) (timer_set)
+contiki-exp5438.a(serial-line.o)
+                              example-broadcast.co (serial_line_event_message)
+contiki-exp5438.a(list.o)     contiki-exp5438.a(ctimer.o) (list_init)
+contiki-exp5438.a(ringbuf.o)  contiki-exp5438.a(serial-line.o) (ringbuf_init)
+contiki-exp5438.a(broadcast.o)
+                              example-broadcast.co (broadcast_open)
+contiki-exp5438.a(channel.o)  contiki-exp5438.a(broadcast.o) (channel_set_attributes)
+contiki-exp5438.a(rime.o)     obj_exp5438/contiki-exp5438-main.o (rime_driver)
+contiki-exp5438.a(linkaddr.o)
+                              obj_exp5438/contiki-exp5438-main.o (linkaddr_copy)
+contiki-exp5438.a(packetbuf.o)
+                              contiki-exp5438.a(rime.o) (packetbuf_compact)
+contiki-exp5438.a(queuebuf.o)
+                              contiki-exp5438.a(rime.o) (queuebuf_init)
+contiki-exp5438.a(frame802154.o)
+                              contiki-exp5438.a(cc1200.o) (frame802154_parse)
+contiki-exp5438.a(nullmac.o)  obj_exp5438/contiki-exp5438-main.o (nullmac_driver)
+contiki-exp5438.a(nullrdc.o)  obj_exp5438/contiki-exp5438-main.o (nullrdc_driver)
+contiki-exp5438.a(contikimac-fram)
+                              contiki-exp5438.a(nullrdc.o) (contikimac_framer)
+contiki-exp5438.a(nullsec.o)  contiki-exp5438.a(rime.o) (nullsec_driver)
+contiki-exp5438.a(spix.o)     contiki-exp5438.a(cc1200-5438-arc) (spi_init)
+contiki-exp5438.a(memb.o)     contiki-exp5438.a(queuebuf.o) (memb_init)
+contiki-exp5438.a(abc.o)      contiki-exp5438.a(broadcast.o) (abc_open)
+contiki-exp5438.a(announcement.o)
+                              contiki-exp5438.a(rime.o) (announcement_init)
+contiki-exp5438.a(broadcast-annou)
+                              contiki-exp5438.a(rime.o) (broadcast_announcement_init)
+contiki-exp5438.a(chameleon.o)
+                              contiki-exp5438.a(rime.o) (chameleon_init)
+contiki-exp5438.a(framer-802154.o)
+                              contiki-exp5438.a(contikimac-fram) (framer_802154)
+contiki-exp5438.a(framer.o)   contiki-exp5438.a(framer-802154.o) (framer_canonical_create_and_secure)
+contiki-exp5438.a(mac.o)      contiki-exp5438.a(nullrdc.o) (mac_call_sent_callback)
+contiki-exp5438.a(mac-sequence.o)
+                              contiki-exp5438.a(nullrdc.o) (mac_sequence_is_duplicate)
+contiki-exp5438.a(random.o)   contiki-exp5438.a(broadcast-annou) (random_rand)
+contiki-exp5438.a(chameleon-bitop)
+                              contiki-exp5438.a(chameleon.o) (chameleon_bitopt)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod32.o)
+                              obj_exp5438/contiki-exp5438-main.o (__udivsi3)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+                              example-broadcast.co (printf)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o) (vuprintf)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+                              example-broadcast.co (puts)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+                              contiki-exp5438.a(random.o) (rand)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+                              contiki-exp5438.a(linkaddr.o) (memcmp)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_mulsi3.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o) (__mulsi3)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod16.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o) (__udivhi3)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod64.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o) (__udivdi3)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o (_reset_vector__)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o) (__watchdog_support)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__init_stack.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o) (__init_stack)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__low_level_init.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o) (__low_level_init)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_copy_data.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o) (__do_copy_data)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_clear_bss.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o) (__do_clear_bss)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__stop_progExec__.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o) (__stop_progExec__)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_endless_loop__.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o) (_endless_loop__)
+/usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_unexpected_.o)
+                              /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o (_unexpected_)
+
+Allocating common symbols
+Common symbol       size              file
+
+energest_total_time
+                    0x30              contiki-exp5438.a(energest.o)
+energest_total_count
+                    0x2               contiki-exp5438.a(energest.o)
+energest_current_mode
+                    0xc               contiki-exp5438.a(energest.o)
+packetbuf_addrs     0x8               contiki-exp5438.a(packetbuf.o)
+process_maxevents   0x1               contiki-exp5438.a(process.o)
+linkaddr_node_addr  0x2               contiki-exp5438.a(linkaddr.o)
+packetbuf_attrs     0x34              contiki-exp5438.a(packetbuf.o)
+node_mac            0x8               contiki-exp5438.a(node-id.o)
+energest_current_time
+                    0x18              contiki-exp5438.a(energest.o)
+serial_line_event_message
+                    0x1               contiki-exp5438.a(serial-line.o)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+ .text.crt0     0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+ .text          0x00000000        0x0 example-broadcast.co
+ .data          0x00000000        0x0 example-broadcast.co
+ .bss           0x00000000        0x0 example-broadcast.co
+ .text          0x00000000        0x0 obj_exp5438/contiki-exp5438-main.o
+ .data          0x00000000        0x0 obj_exp5438/contiki-exp5438-main.o
+ .bss           0x00000000        0x0 obj_exp5438/contiki-exp5438-main.o
+ .text          0x00000000        0x0 contiki-exp5438.a(msp430.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(msp430.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(msp430.o)
+ .any.text.msp430_init_dco
+                0x00000000        0x2 contiki-exp5438.a(msp430.o)
+ .any.text.msp430_dco_speed
+                0x00000000        0xa contiki-exp5438.a(msp430.o)
+ .any.text.splx_
+                0x00000000        0x4 contiki-exp5438.a(msp430.o)
+ .any.text.msp430_sync_dco
+                0x00000000        0x2 contiki-exp5438.a(msp430.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(leds.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(leds.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(leds.o)
+ .any.text.leds_get
+                0x00000000        0x6 contiki-exp5438.a(leds.o)
+ .any.text.leds_set
+                0x00000000        0x6 contiki-exp5438.a(leds.o)
+ .any.text.leds_toggle
+                0x00000000        0xa contiki-exp5438.a(leds.o)
+ .any.text.leds_blink
+                0x00000000       0x20 contiki-exp5438.a(leds.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(watchdog.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(watchdog.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(watchdog.o)
+ .any.text.watchdog_reboot
+                0x00000000        0x6 contiki-exp5438.a(watchdog.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(rtimer-arch.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(rtimer-arch.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(rtimer-arch.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(node-id.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(node-id.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(node-id.o)
+ .any.text.node_id_restore
+                0x00000000       0x54 contiki-exp5438.a(node-id.o)
+ .any.text.node_id_burn
+                0x00000000        0x2 contiki-exp5438.a(node-id.o)
+ .data.id       0x00000000        0x2 contiki-exp5438.a(node-id.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(leds-arch.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(leds-arch.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(leds-arch.o)
+ .any.text.leds_arch_get
+                0x00000000       0x1c contiki-exp5438.a(leds-arch.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(uart1x.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(uart1x.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(uart1x.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(uart2x.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(uart2x.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(uart2x.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(lcd.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(lcd.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(lcd.o)
+ .any.text.lcd_clear
+                0x00000000        0x2 contiki-exp5438.a(lcd.o)
+ .any.text.lcd_set_pixel
+                0x00000000        0x2 contiki-exp5438.a(lcd.o)
+ .any.text.lcd_draw_line
+                0x00000000        0x2 contiki-exp5438.a(lcd.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(duty-cycle-scro)
+ .data          0x00000000        0x0 contiki-exp5438.a(duty-cycle-scro)
+ .bss           0x00000000        0x0 contiki-exp5438.a(duty-cycle-scro)
+ .any.text.duty_cycle_scroller_stop
+                0x00000000        0xa contiki-exp5438.a(duty-cycle-scro)
+ .text          0x00000000        0x0 contiki-exp5438.a(cc1200.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(cc1200.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(cc1200.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(cc1200-5438-arc)
+ .data          0x00000000        0x0 contiki-exp5438.a(cc1200-5438-arc)
+ .bss           0x00000000        0x0 contiki-exp5438.a(cc1200-5438-arc)
+ .any.text.cc1200_arch_interrupt_enable
+                0x00000000       0x16 contiki-exp5438.a(cc1200-5438-arc)
+ .any.text.clock_delay_usec
+                0x00000000       0x24 contiki-exp5438.a(cc1200-5438-arc)
+ .any.text.cc1200_arch_gpio3_read_pin
+                0x00000000        0x4 contiki-exp5438.a(cc1200-5438-arc)
+ .text          0x00000000        0x0 contiki-exp5438.a(cc1200-802154g-)
+ .data          0x00000000        0x0 contiki-exp5438.a(cc1200-802154g-)
+ .bss           0x00000000        0x0 contiki-exp5438.a(cc1200-802154g-)
+ .text          0x00000000        0x0 contiki-exp5438.a(uart1-putchar.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(uart1-putchar.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(uart1-putchar.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(uart2-putchar.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(uart2-putchar.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(uart2-putchar.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(clock.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(clock.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(clock.o)
+ .any.text.clock_set
+                0x00000000       0x16 contiki-exp5438.a(clock.o)
+ .any.text.clock_fine_max
+                0x00000000        0x6 contiki-exp5438.a(clock.o)
+ .any.text.clock_fine
+                0x00000000        0xa contiki-exp5438.a(clock.o)
+ .any.text.__delay_cycles
+                0x00000000        0x6 contiki-exp5438.a(clock.o)
+ .any.text.clock_wait
+                0x00000000       0x24 contiki-exp5438.a(clock.o)
+ .any.text.clock_set_seconds
+                0x00000000        0x2 contiki-exp5438.a(clock.o)
+ .any.text.clock_counter
+                0x00000000        0x6 contiki-exp5438.a(clock.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(autostart.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(autostart.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(autostart.o)
+ .any.text.autostart_exit
+                0x00000000       0x14 contiki-exp5438.a(autostart.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(ctimer.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(ctimer.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(ctimer.o)
+ .any.text.ctimer_reset
+                0x00000000       0x2c contiki-exp5438.a(ctimer.o)
+ .any.text.ctimer_restart
+                0x00000000       0x2c contiki-exp5438.a(ctimer.o)
+ .any.text.ctimer_stop
+                0x00000000       0x28 contiki-exp5438.a(ctimer.o)
+ .any.text.ctimer_expired
+                0x00000000       0x30 contiki-exp5438.a(ctimer.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(energest.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(energest.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(energest.o)
+ .any.text.energest_leveldevice_leveltime
+                0x00000000        0x6 contiki-exp5438.a(energest.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(etimer.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(etimer.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(etimer.o)
+ .any.text.etimer_reset
+                0x00000000       0x12 contiki-exp5438.a(etimer.o)
+ .any.text.etimer_restart
+                0x00000000       0x12 contiki-exp5438.a(etimer.o)
+ .any.text.etimer_adjust
+                0x00000000       0x1a contiki-exp5438.a(etimer.o)
+ .any.text.etimer_expiration_time
+                0x00000000       0x14 contiki-exp5438.a(etimer.o)
+ .any.text.etimer_start_time
+                0x00000000        0x8 contiki-exp5438.a(etimer.o)
+ .any.text.etimer_stop
+                0x00000000       0x3e contiki-exp5438.a(etimer.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(process.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(process.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(process.o)
+ .any.text.process_exit
+                0x00000000        0xa contiki-exp5438.a(process.o)
+ .any.text.process_is_running
+                0x00000000        0xe contiki-exp5438.a(process.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(rtimer.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(rtimer.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(rtimer.o)
+ .any.text.rtimer_set
+                0x00000000       0x24 contiki-exp5438.a(rtimer.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(timer.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(timer.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(timer.o)
+ .any.text.timer_reset
+                0x00000000        0xe contiki-exp5438.a(timer.o)
+ .any.text.timer_restart
+                0x00000000       0x14 contiki-exp5438.a(timer.o)
+ .any.text.timer_remaining
+                0x00000000       0x24 contiki-exp5438.a(timer.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(serial-line.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(serial-line.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(serial-line.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(list.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(list.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(list.o)
+ .any.text.list_copy
+                0x00000000        0x6 contiki-exp5438.a(list.o)
+ .any.text.list_chop
+                0x00000000       0x1a contiki-exp5438.a(list.o)
+ .any.text.list_pop
+                0x00000000        0xe contiki-exp5438.a(list.o)
+ .any.text.list_push
+                0x00000000       0x16 contiki-exp5438.a(list.o)
+ .any.text.list_length
+                0x00000000       0x10 contiki-exp5438.a(list.o)
+ .any.text.list_insert
+                0x00000000       0x16 contiki-exp5438.a(list.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(ringbuf.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(ringbuf.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(ringbuf.o)
+ .any.text.ringbuf_size
+                0x00000000        0x8 contiki-exp5438.a(ringbuf.o)
+ .any.text.ringbuf_elements
+                0x00000000       0x12 contiki-exp5438.a(ringbuf.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(broadcast.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(broadcast.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(broadcast.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(channel.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(channel.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(channel.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(rime.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(rime.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(rime.o)
+ .any.text.rime_sniffer_add
+                0x00000000        0xc contiki-exp5438.a(rime.o)
+ .any.text.rime_sniffer_remove
+                0x00000000        0xc contiki-exp5438.a(rime.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(linkaddr.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(linkaddr.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(linkaddr.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(packetbuf.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(packetbuf.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(packetbuf.o)
+ .any.text.packetbuf_clear_hdr
+                0x00000000        0x8 contiki-exp5438.a(packetbuf.o)
+ .any.text.packetbuf_copyto_hdr
+                0x00000000       0x22 contiki-exp5438.a(packetbuf.o)
+ .any.text.packetbuf_copyto
+                0x00000000       0x58 contiki-exp5438.a(packetbuf.o)
+ .any.text.packetbuf_hdr_remove
+                0x00000000        0x6 contiki-exp5438.a(packetbuf.o)
+ .any.text.packetbuf_attr_copyto
+                0x00000000       0x20 contiki-exp5438.a(packetbuf.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(queuebuf.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(queuebuf.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(queuebuf.o)
+ .any.text.queuebuf_numfree
+                0x00000000        0xa contiki-exp5438.a(queuebuf.o)
+ .any.text.queuebuf_new_from_packetbuf
+                0x00000000       0x4e contiki-exp5438.a(queuebuf.o)
+ .any.text.queuebuf_update_attr_from_packetbuf
+                0x00000000       0x12 contiki-exp5438.a(queuebuf.o)
+ .any.text.queuebuf_update_from_packetbuf
+                0x00000000       0x22 contiki-exp5438.a(queuebuf.o)
+ .any.text.queuebuf_free
+                0x00000000       0x2a contiki-exp5438.a(queuebuf.o)
+ .any.text.queuebuf_dataptr
+                0x00000000       0x1c contiki-exp5438.a(queuebuf.o)
+ .any.text.queuebuf_datalen
+                0x00000000        0x8 contiki-exp5438.a(queuebuf.o)
+ .any.text.queuebuf_addr
+                0x00000000        0xe contiki-exp5438.a(queuebuf.o)
+ .any.text.queuebuf_attr
+                0x00000000        0xe contiki-exp5438.a(queuebuf.o)
+ .any.text.queuebuf_debug_print
+                0x00000000        0x2 contiki-exp5438.a(queuebuf.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(frame802154.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(frame802154.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(frame802154.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(nullmac.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(nullmac.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(nullmac.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(nullrdc.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(nullrdc.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(nullrdc.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(contikimac-fram)
+ .data          0x00000000        0x0 contiki-exp5438.a(contikimac-fram)
+ .bss           0x00000000        0x0 contiki-exp5438.a(contikimac-fram)
+ .text          0x00000000        0x0 contiki-exp5438.a(nullsec.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(nullsec.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(nullsec.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(spix.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(spix.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(spix.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(memb.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(memb.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(memb.o)
+ .any.text.memb_alloc
+                0x00000000       0x3e contiki-exp5438.a(memb.o)
+ .any.text.memb_free
+                0x00000000       0x3a contiki-exp5438.a(memb.o)
+ .any.text.memb_numfree
+                0x00000000       0x26 contiki-exp5438.a(memb.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(abc.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(abc.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(abc.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(announcement.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(announcement.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(announcement.o)
+ .any.text.announcement_register
+                0x00000000       0x3a contiki-exp5438.a(announcement.o)
+ .any.text.announcement_remove
+                0x00000000        0xc contiki-exp5438.a(announcement.o)
+ .any.text.announcement_remove_value
+                0x00000000       0x22 contiki-exp5438.a(announcement.o)
+ .any.text.announcement_set_value
+                0x00000000       0x28 contiki-exp5438.a(announcement.o)
+ .any.text.announcement_bump
+                0x00000000       0x22 contiki-exp5438.a(announcement.o)
+ .any.text.announcement_listen
+                0x00000000        0xc contiki-exp5438.a(announcement.o)
+ .any.text.announcement_register_listen_callback
+                0x00000000        0x6 contiki-exp5438.a(announcement.o)
+ .bss.listen_callback
+                0x00000000        0x4 contiki-exp5438.a(announcement.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(broadcast-annou)
+ .data          0x00000000        0x0 contiki-exp5438.a(broadcast-annou)
+ .bss           0x00000000        0x0 contiki-exp5438.a(broadcast-annou)
+ .any.text.broadcast_announcement_stop
+                0x00000000       0x22 contiki-exp5438.a(broadcast-annou)
+ .any.text.broadcast_announcement_beacon_interval
+                0x00000000        0xa contiki-exp5438.a(broadcast-annou)
+ .text          0x00000000        0x0 contiki-exp5438.a(chameleon.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(chameleon.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(chameleon.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(framer-802154.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(framer-802154.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(framer-802154.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(framer.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(framer.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(framer.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(mac.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(mac.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(mac.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(mac-sequence.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(mac-sequence.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(mac-sequence.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(random.o)
+ .data          0x00000000        0x0 contiki-exp5438.a(random.o)
+ .bss           0x00000000        0x0 contiki-exp5438.a(random.o)
+ .any.text.random_init
+                0x00000000        0x6 contiki-exp5438.a(random.o)
+ .text          0x00000000        0x0 contiki-exp5438.a(chameleon-bitop)
+ .data          0x00000000        0x0 contiki-exp5438.a(chameleon-bitop)
+ .bss           0x00000000        0x0 contiki-exp5438.a(chameleon-bitop)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod32.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod32.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod32.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .text.vprintf  0x00000000        0xe /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .text.rand_r   0x00000000       0x24 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .text.srand    0x00000000        0xa /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_mulsi3.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_mulsi3.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_mulsi3.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod16.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod16.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod16.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod64.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod64.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod64.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__init_stack.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__init_stack.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__init_stack.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__low_level_init.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__low_level_init.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__low_level_init.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_copy_data.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_copy_data.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_copy_data.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_clear_bss.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_clear_bss.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_clear_bss.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__stop_progExec__.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__stop_progExec__.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__stop_progExec__.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_endless_loop__.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_endless_loop__.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_endless_loop__.o)
+ .text          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_unexpected_.o)
+ .data          0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_unexpected_.o)
+ .bss           0x00000000        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_unexpected_.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sfr              0x00000000         0x00000010
+peripheral_8bit  0x00000010         0x000000f0
+peripheral_16bit 0x00000100         0x00000100
+bsl              0x00001000         0x00000800
+infomem          0x00001800         0x00000200
+infod            0x00001800         0x00000080
+infoc            0x00001880         0x00000080
+infob            0x00001900         0x00000080
+infoa            0x00001980         0x00000080
+ram              0x00001c00         0x00004000         xw
+rom              0x00005c00         0x0000a380         xr
+vectors          0x0000ff80         0x00000080
+far_rom          0x00010000         0x00035c00
+ram2             0x00000000         0x00000000         xw
+ram_mirror       0x00000000         0x00000000         xw
+usbram           0x00000000         0x00000000         xw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+LOAD example-broadcast.co
+LOAD obj_exp5438/contiki-exp5438-main.o
+LOAD contiki-exp5438.a
+LOAD /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a
+LOAD /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a
+LOAD /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a
+LOAD /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a
+                0x00000080                PROVIDE (__info_segment_size, 0x80)
+                0x00001800                PROVIDE (__infod, 0x1800)
+                0x00001880                PROVIDE (__infoc, 0x1880)
+                0x00001900                PROVIDE (__infob, 0x1900)
+                0x00001980                PROVIDE (__infoa, 0x1980)
+                0x00000700                __ADC12CTL0_L = 0x700
+                0x00000701                __ADC12CTL0_H = 0x701
+                0x00000700                __ADC12CTL0 = 0x700
+                0x00000702                __ADC12CTL1_L = 0x702
+                0x00000703                __ADC12CTL1_H = 0x703
+                0x00000702                __ADC12CTL1 = 0x702
+                0x00000704                __ADC12CTL2_L = 0x704
+                0x00000705                __ADC12CTL2_H = 0x705
+                0x00000704                __ADC12CTL2 = 0x704
+                0x0000070a                __ADC12IFG_L = 0x70a
+                0x0000070b                __ADC12IFG_H = 0x70b
+                0x0000070a                __ADC12IFG = 0x70a
+                0x0000070c                __ADC12IE_L = 0x70c
+                0x0000070d                __ADC12IE_H = 0x70d
+                0x0000070c                __ADC12IE = 0x70c
+                0x0000070e                __ADC12IV_L = 0x70e
+                0x0000070f                __ADC12IV_H = 0x70f
+                0x0000070e                __ADC12IV = 0x70e
+                0x00000720                __ADC12MEM0_L = 0x720
+                0x00000721                __ADC12MEM0_H = 0x721
+                0x00000720                __ADC12MEM0 = 0x720
+                0x00000722                __ADC12MEM1_L = 0x722
+                0x00000723                __ADC12MEM1_H = 0x723
+                0x00000722                __ADC12MEM1 = 0x722
+                0x00000724                __ADC12MEM2_L = 0x724
+                0x00000725                __ADC12MEM2_H = 0x725
+                0x00000724                __ADC12MEM2 = 0x724
+                0x00000726                __ADC12MEM3_L = 0x726
+                0x00000727                __ADC12MEM3_H = 0x727
+                0x00000726                __ADC12MEM3 = 0x726
+                0x00000728                __ADC12MEM4_L = 0x728
+                0x00000729                __ADC12MEM4_H = 0x729
+                0x00000728                __ADC12MEM4 = 0x728
+                0x0000072a                __ADC12MEM5_L = 0x72a
+                0x0000072b                __ADC12MEM5_H = 0x72b
+                0x0000072a                __ADC12MEM5 = 0x72a
+                0x0000072c                __ADC12MEM6_L = 0x72c
+                0x0000072d                __ADC12MEM6_H = 0x72d
+                0x0000072c                __ADC12MEM6 = 0x72c
+                0x0000072e                __ADC12MEM7_L = 0x72e
+                0x0000072f                __ADC12MEM7_H = 0x72f
+                0x0000072e                __ADC12MEM7 = 0x72e
+                0x00000730                __ADC12MEM8_L = 0x730
+                0x00000731                __ADC12MEM8_H = 0x731
+                0x00000730                __ADC12MEM8 = 0x730
+                0x00000732                __ADC12MEM9_L = 0x732
+                0x00000733                __ADC12MEM9_H = 0x733
+                0x00000732                __ADC12MEM9 = 0x732
+                0x00000734                __ADC12MEM10_L = 0x734
+                0x00000735                __ADC12MEM10_H = 0x735
+                0x00000734                __ADC12MEM10 = 0x734
+                0x00000736                __ADC12MEM11_L = 0x736
+                0x00000737                __ADC12MEM11_H = 0x737
+                0x00000736                __ADC12MEM11 = 0x736
+                0x00000738                __ADC12MEM12_L = 0x738
+                0x00000739                __ADC12MEM12_H = 0x739
+                0x00000738                __ADC12MEM12 = 0x738
+                0x0000073a                __ADC12MEM13_L = 0x73a
+                0x0000073b                __ADC12MEM13_H = 0x73b
+                0x0000073a                __ADC12MEM13 = 0x73a
+                0x0000073c                __ADC12MEM14_L = 0x73c
+                0x0000073d                __ADC12MEM14_H = 0x73d
+                0x0000073c                __ADC12MEM14 = 0x73c
+                0x0000073e                __ADC12MEM15_L = 0x73e
+                0x0000073f                __ADC12MEM15_H = 0x73f
+                0x0000073e                __ADC12MEM15 = 0x73e
+                0x00000710                __ADC12MCTL0 = 0x710
+                0x00000711                __ADC12MCTL1 = 0x711
+                0x00000712                __ADC12MCTL2 = 0x712
+                0x00000713                __ADC12MCTL3 = 0x713
+                0x00000714                __ADC12MCTL4 = 0x714
+                0x00000715                __ADC12MCTL5 = 0x715
+                0x00000716                __ADC12MCTL6 = 0x716
+                0x00000717                __ADC12MCTL7 = 0x717
+                0x00000718                __ADC12MCTL8 = 0x718
+                0x00000719                __ADC12MCTL9 = 0x719
+                0x0000071a                __ADC12MCTL10 = 0x71a
+                0x0000071b                __ADC12MCTL11 = 0x71b
+                0x0000071c                __ADC12MCTL12 = 0x71c
+                0x0000071d                __ADC12MCTL13 = 0x71d
+                0x0000071e                __ADC12MCTL14 = 0x71e
+                0x0000071f                __ADC12MCTL15 = 0x71f
+                0x00000150                __CRCDI_L = 0x150
+                0x00000151                __CRCDI_H = 0x151
+                0x00000150                __CRCDI = 0x150
+                0x00000154                __CRCINIRES_L = 0x154
+                0x00000155                __CRCINIRES_H = 0x155
+                0x00000154                __CRCINIRES = 0x154
+                0x00000500                __DMACTL0_L = 0x500
+                0x00000501                __DMACTL0_H = 0x501
+                0x00000500                __DMACTL0 = 0x500
+                0x00000502                __DMACTL1_L = 0x502
+                0x00000503                __DMACTL1_H = 0x503
+                0x00000502                __DMACTL1 = 0x502
+                0x00000504                __DMACTL2_L = 0x504
+                0x00000505                __DMACTL2_H = 0x505
+                0x00000504                __DMACTL2 = 0x504
+                0x00000506                __DMACTL3_L = 0x506
+                0x00000507                __DMACTL3_H = 0x507
+                0x00000506                __DMACTL3 = 0x506
+                0x00000508                __DMACTL4_L = 0x508
+                0x00000509                __DMACTL4_H = 0x509
+                0x00000508                __DMACTL4 = 0x508
+                0x0000050e                __DMAIV_L = 0x50e
+                0x0000050f                __DMAIV_H = 0x50f
+                0x0000050e                __DMAIV = 0x50e
+                0x00000510                __DMA0CTL_L = 0x510
+                0x00000511                __DMA0CTL_H = 0x511
+                0x00000510                __DMA0CTL = 0x510
+                0x00000512                __DMA0SA = 0x512
+                0x00000516                __DMA0DA = 0x516
+                0x0000051a                __DMA0SZ = 0x51a
+                0x00000520                __DMA1CTL_L = 0x520
+                0x00000521                __DMA1CTL_H = 0x521
+                0x00000520                __DMA1CTL = 0x520
+                0x00000522                __DMA1SA = 0x522
+                0x00000526                __DMA1DA = 0x526
+                0x0000052a                __DMA1SZ = 0x52a
+                0x00000530                __DMA2CTL_L = 0x530
+                0x00000531                __DMA2CTL_H = 0x531
+                0x00000530                __DMA2CTL = 0x530
+                0x00000532                __DMA2SA = 0x532
+                0x00000536                __DMA2DA = 0x536
+                0x0000053a                __DMA2SZ = 0x53a
+                0x00000140                __FCTL1_L = 0x140
+                0x00000141                __FCTL1_H = 0x141
+                0x00000140                __FCTL1 = 0x140
+                0x00000144                __FCTL3_L = 0x144
+                0x00000145                __FCTL3_H = 0x145
+                0x00000144                __FCTL3 = 0x144
+                0x00000146                __FCTL4_L = 0x146
+                0x00000147                __FCTL4_H = 0x147
+                0x00000146                __FCTL4 = 0x146
+                0x000004c0                __MPY_L = 0x4c0
+                0x000004c1                __MPY_H = 0x4c1
+                0x000004c0                __MPY = 0x4c0
+                0x000004c2                __MPYS_L = 0x4c2
+                0x000004c3                __MPYS_H = 0x4c3
+                0x000004c2                __MPYS = 0x4c2
+                0x000004c4                __MAC_L = 0x4c4
+                0x000004c5                __MAC_H = 0x4c5
+                0x000004c4                __MAC = 0x4c4
+                0x000004c6                __MACS_L = 0x4c6
+                0x000004c7                __MACS_H = 0x4c7
+                0x000004c6                __MACS = 0x4c6
+                0x000004c8                __OP2_L = 0x4c8
+                0x000004c9                __OP2_H = 0x4c9
+                0x000004c8                __OP2 = 0x4c8
+                0x000004ca                __RESLO_L = 0x4ca
+                0x000004cb                __RESLO_H = 0x4cb
+                0x000004ca                __RESLO = 0x4ca
+                0x000004cc                __RESHI_L = 0x4cc
+                0x000004cd                __RESHI_H = 0x4cd
+                0x000004cc                __RESHI = 0x4cc
+                0x000004ce                __SUMEXT_L = 0x4ce
+                0x000004cf                __SUMEXT_H = 0x4cf
+                0x000004ce                __SUMEXT = 0x4ce
+                0x000004d0                __MPY32L_L = 0x4d0
+                0x000004d1                __MPY32L_H = 0x4d1
+                0x000004d0                __MPY32L = 0x4d0
+                0x000004d2                __MPY32H_L = 0x4d2
+                0x000004d3                __MPY32H_H = 0x4d3
+                0x000004d2                __MPY32H = 0x4d2
+                0x000004d4                __MPYS32L_L = 0x4d4
+                0x000004d5                __MPYS32L_H = 0x4d5
+                0x000004d4                __MPYS32L = 0x4d4
+                0x000004d6                __MPYS32H_L = 0x4d6
+                0x000004d7                __MPYS32H_H = 0x4d7
+                0x000004d6                __MPYS32H = 0x4d6
+                0x000004d8                __MAC32L_L = 0x4d8
+                0x000004d9                __MAC32L_H = 0x4d9
+                0x000004d8                __MAC32L = 0x4d8
+                0x000004da                __MAC32H_L = 0x4da
+                0x000004db                __MAC32H_H = 0x4db
+                0x000004da                __MAC32H = 0x4da
+                0x000004dc                __MACS32L_L = 0x4dc
+                0x000004dd                __MACS32L_H = 0x4dd
+                0x000004dc                __MACS32L = 0x4dc
+                0x000004de                __MACS32H_L = 0x4de
+                0x000004df                __MACS32H_H = 0x4df
+                0x000004de                __MACS32H = 0x4de
+                0x000004e0                __OP2L_L = 0x4e0
+                0x000004e1                __OP2L_H = 0x4e1
+                0x000004e0                __OP2L = 0x4e0
+                0x000004e2                __OP2H_L = 0x4e2
+                0x000004e3                __OP2H_H = 0x4e3
+                0x000004e2                __OP2H = 0x4e2
+                0x000004e4                __RES0_L = 0x4e4
+                0x000004e5                __RES0_H = 0x4e5
+                0x000004e4                __RES0 = 0x4e4
+                0x000004e6                __RES1_L = 0x4e6
+                0x000004e7                __RES1_H = 0x4e7
+                0x000004e6                __RES1 = 0x4e6
+                0x000004e8                __RES2_L = 0x4e8
+                0x000004e9                __RES2_H = 0x4e9
+                0x000004e8                __RES2 = 0x4e8
+                0x000004ea                __RES3_L = 0x4ea
+                0x000004eb                __RES3_H = 0x4eb
+                0x000004ea                __RES3 = 0x4ea
+                0x000004ec                __MPY32CTL0_L = 0x4ec
+                0x000004ed                __MPY32CTL0_H = 0x4ed
+                0x000004ec                __MPY32CTL0 = 0x4ec
+                0x00000200                __PAIN_L = 0x200
+                0x00000201                __PAIN_H = 0x201
+                0x00000200                __PAIN = 0x200
+                0x00000202                __PAOUT_L = 0x202
+                0x00000203                __PAOUT_H = 0x203
+                0x00000202                __PAOUT = 0x202
+                0x00000204                __PADIR_L = 0x204
+                0x00000205                __PADIR_H = 0x205
+                0x00000204                __PADIR = 0x204
+                0x00000206                __PAREN_L = 0x206
+                0x00000207                __PAREN_H = 0x207
+                0x00000206                __PAREN = 0x206
+                0x00000208                __PADS_L = 0x208
+                0x00000209                __PADS_H = 0x209
+                0x00000208                __PADS = 0x208
+                0x0000020a                __PASEL_L = 0x20a
+                0x0000020b                __PASEL_H = 0x20b
+                0x0000020a                __PASEL = 0x20a
+                0x00000218                __PAIES_L = 0x218
+                0x00000219                __PAIES_H = 0x219
+                0x00000218                __PAIES = 0x218
+                0x0000021a                __PAIE_L = 0x21a
+                0x0000021b                __PAIE_H = 0x21b
+                0x0000021a                __PAIE = 0x21a
+                0x0000021c                __PAIFG_L = 0x21c
+                0x0000021d                __PAIFG_H = 0x21d
+                0x0000021c                __PAIFG = 0x21c
+                0x0000020e                __P1IV = 0x20e
+                0x0000021e                __P2IV = 0x21e
+                0x00000220                __PBIN_L = 0x220
+                0x00000221                __PBIN_H = 0x221
+                0x00000220                __PBIN = 0x220
+                0x00000222                __PBOUT_L = 0x222
+                0x00000223                __PBOUT_H = 0x223
+                0x00000222                __PBOUT = 0x222
+                0x00000224                __PBDIR_L = 0x224
+                0x00000225                __PBDIR_H = 0x225
+                0x00000224                __PBDIR = 0x224
+                0x00000226                __PBREN_L = 0x226
+                0x00000227                __PBREN_H = 0x227
+                0x00000226                __PBREN = 0x226
+                0x00000228                __PBDS_L = 0x228
+                0x00000229                __PBDS_H = 0x229
+                0x00000228                __PBDS = 0x228
+                0x0000022a                __PBSEL_L = 0x22a
+                0x0000022b                __PBSEL_H = 0x22b
+                0x0000022a                __PBSEL = 0x22a
+                0x00000240                __PCIN_L = 0x240
+                0x00000241                __PCIN_H = 0x241
+                0x00000240                __PCIN = 0x240
+                0x00000242                __PCOUT_L = 0x242
+                0x00000243                __PCOUT_H = 0x243
+                0x00000242                __PCOUT = 0x242
+                0x00000244                __PCDIR_L = 0x244
+                0x00000245                __PCDIR_H = 0x245
+                0x00000244                __PCDIR = 0x244
+                0x00000246                __PCREN_L = 0x246
+                0x00000247                __PCREN_H = 0x247
+                0x00000246                __PCREN = 0x246
+                0x00000248                __PCDS_L = 0x248
+                0x00000249                __PCDS_H = 0x249
+                0x00000248                __PCDS = 0x248
+                0x0000024a                __PCSEL_L = 0x24a
+                0x0000024b                __PCSEL_H = 0x24b
+                0x0000024a                __PCSEL = 0x24a
+                0x00000260                __PDIN_L = 0x260
+                0x00000261                __PDIN_H = 0x261
+                0x00000260                __PDIN = 0x260
+                0x00000262                __PDOUT_L = 0x262
+                0x00000263                __PDOUT_H = 0x263
+                0x00000262                __PDOUT = 0x262
+                0x00000264                __PDDIR_L = 0x264
+                0x00000265                __PDDIR_H = 0x265
+                0x00000264                __PDDIR = 0x264
+                0x00000266                __PDREN_L = 0x266
+                0x00000267                __PDREN_H = 0x267
+                0x00000266                __PDREN = 0x266
+                0x00000268                __PDDS_L = 0x268
+                0x00000269                __PDDS_H = 0x269
+                0x00000268                __PDDS = 0x268
+                0x0000026a                __PDSEL_L = 0x26a
+                0x0000026b                __PDSEL_H = 0x26b
+                0x0000026a                __PDSEL = 0x26a
+                0x00000280                __PEIN_L = 0x280
+                0x00000281                __PEIN_H = 0x281
+                0x00000280                __PEIN = 0x280
+                0x00000282                __PEOUT_L = 0x282
+                0x00000283                __PEOUT_H = 0x283
+                0x00000282                __PEOUT = 0x282
+                0x00000284                __PEDIR_L = 0x284
+                0x00000285                __PEDIR_H = 0x285
+                0x00000284                __PEDIR = 0x284
+                0x00000286                __PEREN_L = 0x286
+                0x00000287                __PEREN_H = 0x287
+                0x00000286                __PEREN = 0x286
+                0x00000288                __PEDS_L = 0x288
+                0x00000289                __PEDS_H = 0x289
+                0x00000288                __PEDS = 0x288
+                0x0000028a                __PESEL_L = 0x28a
+                0x0000028b                __PESEL_H = 0x28b
+                0x0000028a                __PESEL = 0x28a
+                0x000002a0                __PFIN_L = 0x2a0
+                0x000002a1                __PFIN_H = 0x2a1
+                0x000002a0                __PFIN = 0x2a0
+                0x000002a2                __PFOUT_L = 0x2a2
+                0x000002a3                __PFOUT_H = 0x2a3
+                0x000002a2                __PFOUT = 0x2a2
+                0x000002a4                __PFDIR_L = 0x2a4
+                0x000002a5                __PFDIR_H = 0x2a5
+                0x000002a4                __PFDIR = 0x2a4
+                0x000002a6                __PFREN_L = 0x2a6
+                0x000002a7                __PFREN_H = 0x2a7
+                0x000002a6                __PFREN = 0x2a6
+                0x000002a8                __PFDS_L = 0x2a8
+                0x000002a9                __PFDS_H = 0x2a9
+                0x000002a8                __PFDS = 0x2a8
+                0x000002aa                __PFSEL_L = 0x2aa
+                0x000002ab                __PFSEL_H = 0x2ab
+                0x000002aa                __PFSEL = 0x2aa
+                0x00000320                __PJIN_L = 0x320
+                0x00000321                __PJIN_H = 0x321
+                0x00000320                __PJIN = 0x320
+                0x00000322                __PJOUT_L = 0x322
+                0x00000323                __PJOUT_H = 0x323
+                0x00000322                __PJOUT = 0x322
+                0x00000324                __PJDIR_L = 0x324
+                0x00000325                __PJDIR_H = 0x325
+                0x00000324                __PJDIR = 0x324
+                0x00000326                __PJREN_L = 0x326
+                0x00000327                __PJREN_H = 0x327
+                0x00000326                __PJREN = 0x326
+                0x00000328                __PJDS_L = 0x328
+                0x00000329                __PJDS_H = 0x329
+                0x00000328                __PJDS = 0x328
+                0x00000120                __PMMCTL0_L = 0x120
+                0x00000121                __PMMCTL0_H = 0x121
+                0x00000120                __PMMCTL0 = 0x120
+                0x00000122                __PMMCTL1_L = 0x122
+                0x00000123                __PMMCTL1_H = 0x123
+                0x00000122                __PMMCTL1 = 0x122
+                0x00000124                __SVSMHCTL_L = 0x124
+                0x00000125                __SVSMHCTL_H = 0x125
+                0x00000124                __SVSMHCTL = 0x124
+                0x00000126                __SVSMLCTL_L = 0x126
+                0x00000127                __SVSMLCTL_H = 0x127
+                0x00000126                __SVSMLCTL = 0x126
+                0x00000128                __SVSMIO_L = 0x128
+                0x00000129                __SVSMIO_H = 0x129
+                0x00000128                __SVSMIO = 0x128
+                0x0000012c                __PMMIFG_L = 0x12c
+                0x0000012d                __PMMIFG_H = 0x12d
+                0x0000012c                __PMMIFG = 0x12c
+                0x0000012e                __PMMRIE_L = 0x12e
+                0x0000012f                __PMMRIE_H = 0x12f
+                0x0000012e                __PMMRIE = 0x12e
+                0x00000158                __RCCTL0_L = 0x158
+                0x00000159                __RCCTL0_H = 0x159
+                0x00000158                __RCCTL0 = 0x158
+                0x000004a0                __RTCCTL01_L = 0x4a0
+                0x000004a1                __RTCCTL01_H = 0x4a1
+                0x000004a0                __RTCCTL01 = 0x4a0
+                0x000004a2                __RTCCTL23_L = 0x4a2
+                0x000004a3                __RTCCTL23_H = 0x4a3
+                0x000004a2                __RTCCTL23 = 0x4a2
+                0x000004a8                __RTCPS0CTL_L = 0x4a8
+                0x000004a9                __RTCPS0CTL_H = 0x4a9
+                0x000004a8                __RTCPS0CTL = 0x4a8
+                0x000004aa                __RTCPS1CTL_L = 0x4aa
+                0x000004ab                __RTCPS1CTL_H = 0x4ab
+                0x000004aa                __RTCPS1CTL = 0x4aa
+                0x000004ac                __RTCPS_L = 0x4ac
+                0x000004ad                __RTCPS_H = 0x4ad
+                0x000004ac                __RTCPS = 0x4ac
+                0x000004ae                __RTCIV = 0x4ae
+                0x000004b0                __RTCTIM0_L = 0x4b0
+                0x000004b1                __RTCTIM0_H = 0x4b1
+                0x000004b0                __RTCTIM0 = 0x4b0
+                0x000004b2                __RTCTIM1_L = 0x4b2
+                0x000004b3                __RTCTIM1_H = 0x4b3
+                0x000004b2                __RTCTIM1 = 0x4b2
+                0x000004b4                __RTCDATE_L = 0x4b4
+                0x000004b5                __RTCDATE_H = 0x4b5
+                0x000004b4                __RTCDATE = 0x4b4
+                0x000004b6                __RTCYEAR_L = 0x4b6
+                0x000004b7                __RTCYEAR_H = 0x4b7
+                0x000004b6                __RTCYEAR = 0x4b6
+                0x000004b8                __RTCAMINHR_L = 0x4b8
+                0x000004b9                __RTCAMINHR_H = 0x4b9
+                0x000004b8                __RTCAMINHR = 0x4b8
+                0x000004ba                __RTCADOWDAY_L = 0x4ba
+                0x000004bb                __RTCADOWDAY_H = 0x4bb
+                0x000004ba                __RTCADOWDAY = 0x4ba
+                0x00000100                __SFRIE1_L = 0x100
+                0x00000101                __SFRIE1_H = 0x101
+                0x00000100                __SFRIE1 = 0x100
+                0x00000102                __SFRIFG1_L = 0x102
+                0x00000103                __SFRIFG1_H = 0x103
+                0x00000102                __SFRIFG1 = 0x102
+                0x00000104                __SFRRPCR_L = 0x104
+                0x00000105                __SFRRPCR_H = 0x105
+                0x00000104                __SFRRPCR = 0x104
+                0x00000180                __SYSCTL_L = 0x180
+                0x00000181                __SYSCTL_H = 0x181
+                0x00000180                __SYSCTL = 0x180
+                0x00000182                __SYSBSLC_L = 0x182
+                0x00000183                __SYSBSLC_H = 0x183
+                0x00000182                __SYSBSLC = 0x182
+                0x00000186                __SYSJMBC_L = 0x186
+                0x00000187                __SYSJMBC_H = 0x187
+                0x00000186                __SYSJMBC = 0x186
+                0x00000188                __SYSJMBI0_L = 0x188
+                0x00000189                __SYSJMBI0_H = 0x189
+                0x00000188                __SYSJMBI0 = 0x188
+                0x0000018a                __SYSJMBI1_L = 0x18a
+                0x0000018b                __SYSJMBI1_H = 0x18b
+                0x0000018a                __SYSJMBI1 = 0x18a
+                0x0000018c                __SYSJMBO0_L = 0x18c
+                0x0000018d                __SYSJMBO0_H = 0x18d
+                0x0000018c                __SYSJMBO0 = 0x18c
+                0x0000018e                __SYSJMBO1_L = 0x18e
+                0x0000018f                __SYSJMBO1_H = 0x18f
+                0x0000018e                __SYSJMBO1 = 0x18e
+                0x0000019a                __SYSUNIV_L = 0x19a
+                0x0000019b                __SYSUNIV_H = 0x19b
+                0x0000019a                __SYSUNIV = 0x19a
+                0x0000019c                __SYSSNIV_L = 0x19c
+                0x0000019d                __SYSSNIV_H = 0x19d
+                0x0000019c                __SYSSNIV = 0x19c
+                0x0000019e                __SYSRSTIV_L = 0x19e
+                0x0000019f                __SYSRSTIV_H = 0x19f
+                0x0000019e                __SYSRSTIV = 0x19e
+                0x00000340                __TA0CTL = 0x340
+                0x00000342                __TA0CCTL0 = 0x342
+                0x00000344                __TA0CCTL1 = 0x344
+                0x00000346                __TA0CCTL2 = 0x346
+                0x00000348                __TA0CCTL3 = 0x348
+                0x0000034a                __TA0CCTL4 = 0x34a
+                0x00000350                __TA0R = 0x350
+                0x00000352                __TA0CCR0 = 0x352
+                0x00000354                __TA0CCR1 = 0x354
+                0x00000356                __TA0CCR2 = 0x356
+                0x00000358                __TA0CCR3 = 0x358
+                0x0000035a                __TA0CCR4 = 0x35a
+                0x0000036e                __TA0IV = 0x36e
+                0x00000360                __TA0EX0 = 0x360
+                0x00000380                __TA1CTL = 0x380
+                0x00000382                __TA1CCTL0 = 0x382
+                0x00000384                __TA1CCTL1 = 0x384
+                0x00000386                __TA1CCTL2 = 0x386
+                0x00000390                __TA1R = 0x390
+                0x00000392                __TA1CCR0 = 0x392
+                0x00000394                __TA1CCR1 = 0x394
+                0x00000396                __TA1CCR2 = 0x396
+                0x000003ae                __TA1IV = 0x3ae
+                0x000003a0                __TA1EX0 = 0x3a0
+                0x000003c0                __TB0CTL = 0x3c0
+                0x000003c2                __TB0CCTL0 = 0x3c2
+                0x000003c4                __TB0CCTL1 = 0x3c4
+                0x000003c6                __TB0CCTL2 = 0x3c6
+                0x000003c8                __TB0CCTL3 = 0x3c8
+                0x000003ca                __TB0CCTL4 = 0x3ca
+                0x000003cc                __TB0CCTL5 = 0x3cc
+                0x000003ce                __TB0CCTL6 = 0x3ce
+                0x000003d0                __TB0R = 0x3d0
+                0x000003d2                __TB0CCR0 = 0x3d2
+                0x000003d4                __TB0CCR1 = 0x3d4
+                0x000003d6                __TB0CCR2 = 0x3d6
+                0x000003d8                __TB0CCR3 = 0x3d8
+                0x000003da                __TB0CCR4 = 0x3da
+                0x000003dc                __TB0CCR5 = 0x3dc
+                0x000003de                __TB0CCR6 = 0x3de
+                0x000003e0                __TB0EX0 = 0x3e0
+                0x000003ee                __TB0IV = 0x3ee
+                0x00000160                __UCSCTL0_L = 0x160
+                0x00000161                __UCSCTL0_H = 0x161
+                0x00000160                __UCSCTL0 = 0x160
+                0x00000162                __UCSCTL1_L = 0x162
+                0x00000163                __UCSCTL1_H = 0x163
+                0x00000162                __UCSCTL1 = 0x162
+                0x00000164                __UCSCTL2_L = 0x164
+                0x00000165                __UCSCTL2_H = 0x165
+                0x00000164                __UCSCTL2 = 0x164
+                0x00000166                __UCSCTL3_L = 0x166
+                0x00000167                __UCSCTL3_H = 0x167
+                0x00000166                __UCSCTL3 = 0x166
+                0x00000168                __UCSCTL4_L = 0x168
+                0x00000169                __UCSCTL4_H = 0x169
+                0x00000168                __UCSCTL4 = 0x168
+                0x0000016a                __UCSCTL5_L = 0x16a
+                0x0000016b                __UCSCTL5_H = 0x16b
+                0x0000016a                __UCSCTL5 = 0x16a
+                0x0000016c                __UCSCTL6_L = 0x16c
+                0x0000016d                __UCSCTL6_H = 0x16d
+                0x0000016c                __UCSCTL6 = 0x16c
+                0x0000016e                __UCSCTL7_L = 0x16e
+                0x0000016f                __UCSCTL7_H = 0x16f
+                0x0000016e                __UCSCTL7 = 0x16e
+                0x00000170                __UCSCTL8_L = 0x170
+                0x00000171                __UCSCTL8_H = 0x171
+                0x00000170                __UCSCTL8 = 0x170
+                0x000005c0                __UCA0CTLW0_L = 0x5c0
+                0x000005c1                __UCA0CTLW0_H = 0x5c1
+                0x000005c0                __UCA0CTLW0 = 0x5c0
+                0x000005c6                __UCA0BRW_L = 0x5c6
+                0x000005c7                __UCA0BRW_H = 0x5c7
+                0x000005c6                __UCA0BRW = 0x5c6
+                0x000005c8                __UCA0MCTL = 0x5c8
+                0x000005ca                __UCA0STAT = 0x5ca
+                0x000005cc                __UCA0RXBUF = 0x5cc
+                0x000005ce                __UCA0TXBUF = 0x5ce
+                0x000005d0                __UCA0ABCTL = 0x5d0
+                0x000005d2                __UCA0IRCTL_L = 0x5d2
+                0x000005d3                __UCA0IRCTL_H = 0x5d3
+                0x000005d2                __UCA0IRCTL = 0x5d2
+                0x000005dc                __UCA0ICTL_L = 0x5dc
+                0x000005dd                __UCA0ICTL_H = 0x5dd
+                0x000005dc                __UCA0ICTL = 0x5dc
+                0x000005de                __UCA0IV = 0x5de
+                0x000005e0                __UCB0CTLW0_L = 0x5e0
+                0x000005e1                __UCB0CTLW0_H = 0x5e1
+                0x000005e0                __UCB0CTLW0 = 0x5e0
+                0x000005e6                __UCB0BRW_L = 0x5e6
+                0x000005e7                __UCB0BRW_H = 0x5e7
+                0x000005e6                __UCB0BRW = 0x5e6
+                0x000005ea                __UCB0STAT = 0x5ea
+                0x000005ec                __UCB0RXBUF = 0x5ec
+                0x000005ee                __UCB0TXBUF = 0x5ee
+                0x000005f0                __UCB0I2COA_L = 0x5f0
+                0x000005f1                __UCB0I2COA_H = 0x5f1
+                0x000005f0                __UCB0I2COA = 0x5f0
+                0x000005f2                __UCB0I2CSA_L = 0x5f2
+                0x000005f3                __UCB0I2CSA_H = 0x5f3
+                0x000005f2                __UCB0I2CSA = 0x5f2
+                0x000005fc                __UCB0ICTL_L = 0x5fc
+                0x000005fd                __UCB0ICTL_H = 0x5fd
+                0x000005fc                __UCB0ICTL = 0x5fc
+                0x000005fe                __UCB0IV = 0x5fe
+                0x00000600                __UCA1CTLW0_L = 0x600
+                0x00000601                __UCA1CTLW0_H = 0x601
+                0x00000600                __UCA1CTLW0 = 0x600
+                0x00000606                __UCA1BRW_L = 0x606
+                0x00000607                __UCA1BRW_H = 0x607
+                0x00000606                __UCA1BRW = 0x606
+                0x00000608                __UCA1MCTL = 0x608
+                0x0000060a                __UCA1STAT = 0x60a
+                0x0000060c                __UCA1RXBUF = 0x60c
+                0x0000060e                __UCA1TXBUF = 0x60e
+                0x00000610                __UCA1ABCTL = 0x610
+                0x00000612                __UCA1IRCTL_L = 0x612
+                0x00000613                __UCA1IRCTL_H = 0x613
+                0x00000612                __UCA1IRCTL = 0x612
+                0x0000061c                __UCA1ICTL_L = 0x61c
+                0x0000061d                __UCA1ICTL_H = 0x61d
+                0x0000061c                __UCA1ICTL = 0x61c
+                0x0000061e                __UCA1IV = 0x61e
+                0x00000620                __UCB1CTLW0_L = 0x620
+                0x00000621                __UCB1CTLW0_H = 0x621
+                0x00000620                __UCB1CTLW0 = 0x620
+                0x00000626                __UCB1BRW_L = 0x626
+                0x00000627                __UCB1BRW_H = 0x627
+                0x00000626                __UCB1BRW = 0x626
+                0x0000062a                __UCB1STAT = 0x62a
+                0x0000062c                __UCB1RXBUF = 0x62c
+                0x0000062e                __UCB1TXBUF = 0x62e
+                0x00000630                __UCB1I2COA_L = 0x630
+                0x00000631                __UCB1I2COA_H = 0x631
+                0x00000630                __UCB1I2COA = 0x630
+                0x00000632                __UCB1I2CSA_L = 0x632
+                0x00000633                __UCB1I2CSA_H = 0x633
+                0x00000632                __UCB1I2CSA = 0x632
+                0x0000063c                __UCB1ICTL_L = 0x63c
+                0x0000063d                __UCB1ICTL_H = 0x63d
+                0x0000063c                __UCB1ICTL = 0x63c
+                0x0000063e                __UCB1IV = 0x63e
+                0x00000640                __UCA2CTLW0_L = 0x640
+                0x00000641                __UCA2CTLW0_H = 0x641
+                0x00000640                __UCA2CTLW0 = 0x640
+                0x00000646                __UCA2BRW_L = 0x646
+                0x00000647                __UCA2BRW_H = 0x647
+                0x00000646                __UCA2BRW = 0x646
+                0x00000648                __UCA2MCTL = 0x648
+                0x0000064a                __UCA2STAT = 0x64a
+                0x0000064c                __UCA2RXBUF = 0x64c
+                0x0000064e                __UCA2TXBUF = 0x64e
+                0x00000650                __UCA2ABCTL = 0x650
+                0x00000652                __UCA2IRCTL_L = 0x652
+                0x00000653                __UCA2IRCTL_H = 0x653
+                0x00000652                __UCA2IRCTL = 0x652
+                0x0000065c                __UCA2ICTL_L = 0x65c
+                0x0000065d                __UCA2ICTL_H = 0x65d
+                0x0000065c                __UCA2ICTL = 0x65c
+                0x0000065e                __UCA2IV = 0x65e
+                0x00000660                __UCB2CTLW0_L = 0x660
+                0x00000661                __UCB2CTLW0_H = 0x661
+                0x00000660                __UCB2CTLW0 = 0x660
+                0x00000666                __UCB2BRW_L = 0x666
+                0x00000667                __UCB2BRW_H = 0x667
+                0x00000666                __UCB2BRW = 0x666
+                0x0000066a                __UCB2STAT = 0x66a
+                0x0000066c                __UCB2RXBUF = 0x66c
+                0x0000066e                __UCB2TXBUF = 0x66e
+                0x00000670                __UCB2I2COA_L = 0x670
+                0x00000671                __UCB2I2COA_H = 0x671
+                0x00000670                __UCB2I2COA = 0x670
+                0x00000672                __UCB2I2CSA_L = 0x672
+                0x00000673                __UCB2I2CSA_H = 0x673
+                0x00000672                __UCB2I2CSA = 0x672
+                0x0000067c                __UCB2ICTL_L = 0x67c
+                0x0000067d                __UCB2ICTL_H = 0x67d
+                0x0000067c                __UCB2ICTL = 0x67c
+                0x0000067e                __UCB2IV = 0x67e
+                0x00000680                __UCA3CTLW0_L = 0x680
+                0x00000681                __UCA3CTLW0_H = 0x681
+                0x00000680                __UCA3CTLW0 = 0x680
+                0x00000686                __UCA3BRW_L = 0x686
+                0x00000687                __UCA3BRW_H = 0x687
+                0x00000686                __UCA3BRW = 0x686
+                0x00000688                __UCA3MCTL = 0x688
+                0x0000068a                __UCA3STAT = 0x68a
+                0x0000068c                __UCA3RXBUF = 0x68c
+                0x0000068e                __UCA3TXBUF = 0x68e
+                0x00000690                __UCA3ABCTL = 0x690
+                0x00000692                __UCA3IRCTL_L = 0x692
+                0x00000693                __UCA3IRCTL_H = 0x693
+                0x00000692                __UCA3IRCTL = 0x692
+                0x0000069c                __UCA3ICTL_L = 0x69c
+                0x0000069d                __UCA3ICTL_H = 0x69d
+                0x0000069c                __UCA3ICTL = 0x69c
+                0x0000069e                __UCA3IV = 0x69e
+                0x000006a0                __UCB3CTLW0_L = 0x6a0
+                0x000006a1                __UCB3CTLW0_H = 0x6a1
+                0x000006a0                __UCB3CTLW0 = 0x6a0
+                0x000006a6                __UCB3BRW_L = 0x6a6
+                0x000006a7                __UCB3BRW_H = 0x6a7
+                0x000006a6                __UCB3BRW = 0x6a6
+                0x000006aa                __UCB3STAT = 0x6aa
+                0x000006ac                __UCB3RXBUF = 0x6ac
+                0x000006ae                __UCB3TXBUF = 0x6ae
+                0x000006b0                __UCB3I2COA_L = 0x6b0
+                0x000006b1                __UCB3I2COA_H = 0x6b1
+                0x000006b0                __UCB3I2COA = 0x6b0
+                0x000006b2                __UCB3I2CSA_L = 0x6b2
+                0x000006b3                __UCB3I2CSA_H = 0x6b3
+                0x000006b2                __UCB3I2CSA = 0x6b2
+                0x000006bc                __UCB3ICTL_L = 0x6bc
+                0x000006bd                __UCB3ICTL_H = 0x6bd
+                0x000006bc                __UCB3ICTL = 0x6bc
+                0x000006be                __UCB3IV = 0x6be
+                0x0000015c                __WDTCTL_L = 0x15c
+                0x0000015d                __WDTCTL_H = 0x15d
+                0x0000015c                __WDTCTL = 0x15c
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.text
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+
+.rela.text
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+
+.rel.rodata
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+
+.rela.rodata
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+
+.rel.data
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+
+.rela.data
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+
+.rel.bss
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.bss
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00005c00     0x40aa
+                0x00005c00                . = ALIGN (0x2)
+ *(.init .init.*)
+ *(.init0)
+ .init0         0x00005c00        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o)
+                0x00005c00                _reset_vector__
+ *(.init1)
+ .init1         0x00005c00        0xc /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+                0x00005c00                __watchdog_support
+ *(.init2)
+ .init2         0x00005c0c        0x4 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__init_stack.o)
+                0x00005c0c                __init_stack
+ *(.init3)
+ .init3         0x00005c10        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__low_level_init.o)
+                0x00005c10                __low_level_init
+ *(.init4)
+ .init4         0x00005c10       0x18 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_copy_data.o)
+                0x00005c10                __do_copy_data
+ .init4         0x00005c28       0x16 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_clear_bss.o)
+                0x00005c28                __do_clear_bss
+ *(.init5)
+ *(.init6)
+ *(.init7)
+ *(.init8)
+ *(.init9)
+ .init9         0x00005c3e      0x2d6 obj_exp5438/contiki-exp5438-main.o
+                0x00005c3e                main
+ *(.fini9)
+ .fini9         0x00005f14        0x0 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__stop_progExec__.o)
+                0x00005f14                __stop_progExec__
+ *(.fini8)
+ *(.fini7)
+ *(.fini6)
+ *(.fini5)
+ *(.fini4)
+ *(.fini3)
+ *(.fini2)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00005f14        0x6 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_endless_loop__.o)
+                0x00005f14                _endless_loop__
+ *(.fini .fini.*)
+                0x00005f1a                . = ALIGN (0x2)
+                0x00005f1a                __ctors_start = .
+ *(.ctors)
+                0x00005f1a                __ctors_end = .
+                0x00005f1a                __dtors_start = .
+ *(.dtors)
+                0x00005f1a                __dtors_end = .
+                0x00005f1a                . = ALIGN (0x2)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00005f1a        0x4 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+                0x00005f1a                __isr_37
+                0x00005f1a                __isr_51
+                0x00005f1a                __isr_57
+                0x00005f1a                __isr_33
+                0x00005f1a                __isr_32
+                0x00005f1a                __isr_54
+                0x00005f1a                __isr_42
+                0x00005f1a                __isr_59
+                0x00005f1a                __isr_39
+                0x00005f1a                __isr_53
+                0x00005f1a                __isr_41
+                0x00005f1a                __isr_60
+                0x00005f1a                __isr_36
+                0x00005f1a                __isr_34
+                0x00005f1a                __isr_44
+                0x00005f1a                __isr_61
+                0x00005f1a                __isr_55
+                0x00005f1a                __isr_43
+                0x00005f1a                __isr_50
+                0x00005f1a                __isr_56
+                0x00005f1a                __isr_38
+                0x00005f1a                __isr_35
+                0x00005f1a                __isr_45
+                0x00005f1a                __isr_62
+                0x00005f1a                __isr_40
+ .text.libgcc   0x00005f1e       0x38 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod32.o)
+                0x00005f1e                __udivsi3
+                0x00005f1e                __ext_udivmod32
+                0x00005f4c                __umodsi3
+ .text.printf   0x00005f56       0x10 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+                0x00005f56                printf
+ .text.print_field
+                0x00005f66      0x176 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .text.vuprintf
+                0x000060dc      0x74c /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+                0x000060dc                vuprintf
+ .text.puts     0x00006828       0x2c /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+                0x00006828                puts
+ .text.rand     0x00006854       0x26 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+                0x00006854                rand
+ .text.memcmp   0x0000687a       0x2c /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+                0x0000687a                memcmp
+ .text.libgcc   0x000068a6       0x26 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_mulsi3.o)
+                0x000068a6                __mulsi3
+ .text.libgcc   0x000068cc       0x22 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod16.o)
+                0x000068cc                __udivhi3
+                0x000068cc                __ext_udivmod16
+                0x000068e6                __umodhi3
+ .text.libgcc   0x000068ee       0xbc /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod64.o)
+                0x000068ee                __xabi_udivmod64
+                0x00006940                __udivdi3
+                0x0000695a                __umoddi3
+                0x0000697c                __udivmoddi4
+ .text.crt0     0x000069aa        0x2 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_unexpected_.o)
+                0x000069aa                _unexpected_
+ *(.near.text .near.text.*)
+ .near.text.watchdog_interrupt
+                0x000069ac        0x6 contiki-exp5438.a(watchdog.o)
+                0x000069ac                watchdog_interrupt
+                0x000069ac                __isr_58
+ .near.text.timera0
+                0x000069b2       0x5c contiki-exp5438.a(rtimer-arch.o)
+                0x000069b2                __isr_49
+                0x000069b2                timera0
+ .near.text.uart1_rx_interrupt
+                0x00006a0e       0x74 contiki-exp5438.a(uart1x.o)
+                0x00006a0e                __isr_46
+                0x00006a0e                uart1_rx_interrupt
+ .near.text.uart2_rx_interrupt
+                0x00006a82       0x74 contiki-exp5438.a(uart2x.o)
+                0x00006a82                uart2_rx_interrupt
+                0x00006a82                __isr_52
+ .near.text.cc1200_port1_interrupt
+                0x00006af6       0x64 contiki-exp5438.a(cc1200-5438-arc)
+                0x00006af6                __isr_47
+                0x00006af6                cc1200_port1_interrupt
+ .near.text.timera1
+                0x00006b5a       0xfc contiki-exp5438.a(clock.o)
+                0x00006b5a                __isr_48
+                0x00006b5a                timera1
+ .any.text.process_thread_example_broadcast_process
+                0x00006c56       0xea example-broadcast.co
+ .any.text.broadcast_recv
+                0x00006d40       0x22 example-broadcast.co
+ .any.text.w_memcpy
+                0x00006d62       0x1c contiki-exp5438.a(msp430.o)
+                0x00006d62                w_memcpy
+ .any.text.w_memset
+                0x00006d7e       0x12 contiki-exp5438.a(msp430.o)
+                0x00006d7e                w_memset
+ .any.text.msp430_set_dco_speed
+                0x00006d90       0x6a contiki-exp5438.a(msp430.o)
+                0x00006d90                msp430_set_dco_speed
+ .any.text.msp430_quick_synch_dco
+                0x00006dfa        0xe contiki-exp5438.a(msp430.o)
+                0x00006dfa                msp430_quick_synch_dco
+ .any.text.msp430_cpu_init
+                0x00006e08       0x96 contiki-exp5438.a(msp430.o)
+                0x00006e08                msp430_cpu_init
+ .any.text.splhigh_
+                0x00006e9e        0x8 contiki-exp5438.a(msp430.o)
+                0x00006e9e                splhigh_
+ .any.text.show_leds
+                0x00006ea6       0xe8 contiki-exp5438.a(leds.o)
+ .any.text.leds_init
+                0x00006f8e        0xa contiki-exp5438.a(leds.o)
+                0x00006f8e                leds_init
+ .any.text.leds_on
+                0x00006f98        0xa contiki-exp5438.a(leds.o)
+                0x00006f98                leds_on
+ .any.text.leds_off
+                0x00006fa2        0xe contiki-exp5438.a(leds.o)
+                0x00006fa2                leds_off
+ .any.text.watchdog_start
+                0x00006fb0       0x14 contiki-exp5438.a(watchdog.o)
+                0x00006fb0                watchdog_start
+ .any.text.watchdog_periodic
+                0x00006fc4       0x12 contiki-exp5438.a(watchdog.o)
+                0x00006fc4                watchdog_periodic
+ .any.text.watchdog_stop
+                0x00006fd6       0x16 contiki-exp5438.a(watchdog.o)
+                0x00006fd6                watchdog_stop
+ .any.text.watchdog_init
+                0x00006fec       0x12 contiki-exp5438.a(watchdog.o)
+                0x00006fec                watchdog_init
+ .any.text.rtimer_arch_init
+                0x00006ffe        0xe contiki-exp5438.a(rtimer-arch.o)
+                0x00006ffe                rtimer_arch_init
+ .any.text.rtimer_arch_now
+                0x0000700c        0xe contiki-exp5438.a(rtimer-arch.o)
+                0x0000700c                rtimer_arch_now
+ .any.text.rtimer_arch_schedule
+                0x0000701a        0x6 contiki-exp5438.a(rtimer-arch.o)
+                0x0000701a                rtimer_arch_schedule
+ .any.text.leds_arch_init
+                0x00007020        0xa contiki-exp5438.a(leds-arch.o)
+                0x00007020                leds_arch_init
+ .any.text.leds_arch_set
+                0x0000702a       0x2a contiki-exp5438.a(leds-arch.o)
+                0x0000702a                leds_arch_set
+ .any.text.uart1_active
+                0x00007054        0xe contiki-exp5438.a(uart1x.o)
+                0x00007054                uart1_active
+ .any.text.uart1_set_input
+                0x00007062        0x6 contiki-exp5438.a(uart1x.o)
+                0x00007062                uart1_set_input
+ .any.text.uart1_writeb
+                0x00007068       0x16 contiki-exp5438.a(uart1x.o)
+                0x00007068                uart1_writeb
+ .any.text.uart1_init
+                0x0000707e       0x48 contiki-exp5438.a(uart1x.o)
+                0x0000707e                uart1_init
+ .any.text.uart2_active
+                0x000070c6        0xe contiki-exp5438.a(uart2x.o)
+                0x000070c6                uart2_active
+ .any.text.uart2_set_input
+                0x000070d4        0x6 contiki-exp5438.a(uart2x.o)
+                0x000070d4                uart2_set_input
+ .any.text.uart2_writeb
+                0x000070da       0x16 contiki-exp5438.a(uart2x.o)
+                0x000070da                uart2_writeb
+ .any.text.uart2_init
+                0x000070f0       0x48 contiki-exp5438.a(uart2x.o)
+                0x000070f0                uart2_init
+ .any.text.lcd_init
+                0x00007138        0x2 contiki-exp5438.a(lcd.o)
+                0x00007138                lcd_init
+ .any.text.lcd_write_char
+                0x0000713a        0x2 contiki-exp5438.a(lcd.o)
+                0x0000713a                lcd_write_char
+ .any.text.lcd_draw_vertical_line
+                0x0000713c        0x2 contiki-exp5438.a(lcd.o)
+                0x0000713c                lcd_draw_vertical_line
+ .any.text.lcd_scroll_x
+                0x0000713e        0x2 contiki-exp5438.a(lcd.o)
+                0x0000713e                lcd_scroll_x
+ .any.text.process_thread_duty_cycle_scroller_process
+                0x00007140      0x138 contiki-exp5438.a(duty-cycle-scro)
+ .any.text.duty_cycle_scroller_start
+                0x00007278       0x14 contiki-exp5438.a(duty-cycle-scro)
+                0x00007278                duty_cycle_scroller_start
+ .any.text.pending_packet
+                0x0000728c        0xe contiki-exp5438.a(cc1200.o)
+ .any.text.get_value
+                0x0000729a       0x7e contiki-exp5438.a(cc1200.o)
+ .any.text.get_object
+                0x00007318        0x4 contiki-exp5438.a(cc1200.o)
+ .any.text.set_object
+                0x0000731c        0x4 contiki-exp5438.a(cc1200.o)
+ .any.text.strobe
+                0x00007320       0x20 contiki-exp5438.a(cc1200.o)
+ .any.text.state
+                0x00007340        0xe contiki-exp5438.a(cc1200.o)
+ .any.text.idle
+                0x0000734e       0xb0 contiki-exp5438.a(cc1200.o)
+ .any.text.single_write
+                0x000073fe       0x30 contiki-exp5438.a(cc1200.o)
+ .any.text.single_read
+                0x0000742e       0x36 contiki-exp5438.a(cc1200.o)
+ .any.text.update_txpower
+                0x00007464       0x32 contiki-exp5438.a(cc1200.o)
+ .any.text.rx_rx
+                0x00007496       0x88 contiki-exp5438.a(cc1200.o)
+ .any.text.calibrate
+                0x0000751e       0x84 contiki-exp5438.a(cc1200.o)
+ .any.text.idle_calibrate_rx
+                0x000075a2       0x54 contiki-exp5438.a(cc1200.o)
+ .any.text.off  0x000075f6       0x3a contiki-exp5438.a(cc1200.o)
+ .any.text.on   0x00007630       0x5e contiki-exp5438.a(cc1200.o)
+ .any.text.receiving_packet
+                0x0000768e       0x28 contiki-exp5438.a(cc1200.o)
+ .any.text.set_channel
+                0x000076b6      0x102 contiki-exp5438.a(cc1200.o)
+ .any.text.set_value
+                0x000077b8       0x80 contiki-exp5438.a(cc1200.o)
+ .any.text.channel_clear
+                0x00007838       0x82 contiki-exp5438.a(cc1200.o)
+ .any.text.read
+                0x000078ba       0x58 contiki-exp5438.a(cc1200.o)
+ .any.text.prepare
+                0x00007912       0x22 contiki-exp5438.a(cc1200.o)
+ .any.text.burst_read.constprop.9
+                0x00007934       0x22 contiki-exp5438.a(cc1200.o)
+ .any.text.burst_write.constprop.11
+                0x00007956       0x24 contiki-exp5438.a(cc1200.o)
+ .any.text.idle_tx_rx
+                0x0000797a      0x1f4 contiki-exp5438.a(cc1200.o)
+ .any.text.transmit
+                0x00007b6e       0xc4 contiki-exp5438.a(cc1200.o)
+ .any.text.send
+                0x00007c32       0x16 contiki-exp5438.a(cc1200.o)
+ .any.text.cc1200_init
+                0x00007c48      0x186 contiki-exp5438.a(cc1200.o)
+                0x00007c48                cc1200_init
+ .any.text.cc1200_rx_interrupt
+                0x00007dce      0x1d4 contiki-exp5438.a(cc1200.o)
+                0x00007dce                cc1200_rx_interrupt
+ .any.text.process_thread_cc1200_process
+                0x00007fa2       0x84 contiki-exp5438.a(cc1200.o)
+ .any.text.cc1200_arch_spi_select
+                0x00008026        0xc contiki-exp5438.a(cc1200-5438-arc)
+                0x00008026                cc1200_arch_spi_select
+ .any.text.cc1200_arch_spi_deselect
+                0x00008032        0x6 contiki-exp5438.a(cc1200-5438-arc)
+                0x00008032                cc1200_arch_spi_deselect
+ .any.text.cc1200_arch_spi_rw_byte
+                0x00008038       0x1e contiki-exp5438.a(cc1200-5438-arc)
+                0x00008038                cc1200_arch_spi_rw_byte
+ .any.text.cc1200_arch_spi_rw
+                0x00008056       0x96 contiki-exp5438.a(cc1200-5438-arc)
+                0x00008056                cc1200_arch_spi_rw
+ .any.text.cc1200_arch_init
+                0x000080ec       0x4e contiki-exp5438.a(cc1200-5438-arc)
+                0x000080ec                cc1200_arch_init
+ .any.text.cc1200_arch_gpio0_setup_irq
+                0x0000813a       0x40 contiki-exp5438.a(cc1200-5438-arc)
+                0x0000813a                cc1200_arch_gpio0_setup_irq
+ .any.text.cc1200_arch_gpio2_setup_irq
+                0x0000817a       0x4a contiki-exp5438.a(cc1200-5438-arc)
+                0x0000817a                cc1200_arch_gpio2_setup_irq
+ .any.text.cc1200_arch_gpio0_enable_irq
+                0x000081c4        0xe contiki-exp5438.a(cc1200-5438-arc)
+                0x000081c4                cc1200_arch_gpio0_enable_irq
+ .any.text.cc1200_arch_gpio0_disable_irq
+                0x000081d2        0x8 contiki-exp5438.a(cc1200-5438-arc)
+                0x000081d2                cc1200_arch_gpio0_disable_irq
+ .any.text.cc1200_arch_gpio2_enable_irq
+                0x000081da        0xa contiki-exp5438.a(cc1200-5438-arc)
+                0x000081da                cc1200_arch_gpio2_enable_irq
+ .any.text.cc1200_arch_gpio2_disable_irq
+                0x000081e4        0x6 contiki-exp5438.a(cc1200-5438-arc)
+                0x000081e4                cc1200_arch_gpio2_disable_irq
+ .any.text.cc1200_arch_gpio0_read_pin
+                0x000081ea        0xa contiki-exp5438.a(cc1200-5438-arc)
+                0x000081ea                cc1200_arch_gpio0_read_pin
+ .any.text.cc1200_arch_gpio2_read_pin
+                0x000081f4        0x8 contiki-exp5438.a(cc1200-5438-arc)
+                0x000081f4                cc1200_arch_gpio2_read_pin
+ .any.text.putchar
+                0x000081fc       0x16 contiki-exp5438.a(uart1-putchar.o)
+                0x000081fc                putchar
+ .any.text.putchar2
+                0x00008212       0x16 contiki-exp5438.a(uart2-putchar.o)
+                0x00008212                putchar2
+ .any.text.clock_time
+                0x00008228       0x1a contiki-exp5438.a(clock.o)
+                0x00008228                clock_time
+ .any.text.clock_init
+                0x00008242       0x28 contiki-exp5438.a(clock.o)
+                0x00008242                clock_init
+ .any.text.clock_delay
+                0x0000826a        0x6 contiki-exp5438.a(clock.o)
+                0x0000826a                clock_delay
+ .any.text.clock_seconds
+                0x00008270       0x1a contiki-exp5438.a(clock.o)
+                0x00008270                clock_seconds
+ .any.text.autostart_start
+                0x0000828a       0x16 contiki-exp5438.a(autostart.o)
+                0x0000828a                autostart_start
+ .any.text.process_thread_ctimer_process
+                0x000082a0       0xa0 contiki-exp5438.a(ctimer.o)
+ .any.text.ctimer_init
+                0x00008340       0x18 contiki-exp5438.a(ctimer.o)
+                0x00008340                ctimer_init
+ .any.text.ctimer_set
+                0x00008358       0x48 contiki-exp5438.a(ctimer.o)
+                0x00008358                ctimer_set
+ .any.text.energest_init
+                0x000083a0       0x24 contiki-exp5438.a(energest.o)
+                0x000083a0                energest_init
+ .any.text.energest_type_time
+                0x000083c4       0x3c contiki-exp5438.a(energest.o)
+                0x000083c4                energest_type_time
+ .any.text.energest_type_set
+                0x00008400        0xc contiki-exp5438.a(energest.o)
+                0x00008400                energest_type_set
+ .any.text.energest_flush
+                0x0000840c       0x38 contiki-exp5438.a(energest.o)
+                0x0000840c                energest_flush
+ .any.text.update_time
+                0x00008444       0x70 contiki-exp5438.a(etimer.o)
+ .any.text.etimer_request_poll
+                0x000084b4        0xa contiki-exp5438.a(etimer.o)
+                0x000084b4                etimer_request_poll
+ .any.text.process_thread_etimer_process
+                0x000084be       0xc4 contiki-exp5438.a(etimer.o)
+ .any.text.add_timer
+                0x00008582       0x40 contiki-exp5438.a(etimer.o)
+ .any.text.etimer_set
+                0x000085c2       0x12 contiki-exp5438.a(etimer.o)
+                0x000085c2                etimer_set
+ .any.text.etimer_expired
+                0x000085d4        0xe contiki-exp5438.a(etimer.o)
+                0x000085d4                etimer_expired
+ .any.text.etimer_pending
+                0x000085e2        0xc contiki-exp5438.a(etimer.o)
+                0x000085e2                etimer_pending
+ .any.text.etimer_next_expiration_time
+                0x000085ee       0x16 contiki-exp5438.a(etimer.o)
+                0x000085ee                etimer_next_expiration_time
+ .any.text.call_process
+                0x00008604       0x40 contiki-exp5438.a(process.o)
+ .any.text.exit_process
+                0x00008644       0x88 contiki-exp5438.a(process.o)
+ .any.text.do_poll
+                0x000086cc       0x30 contiki-exp5438.a(process.o)
+ .any.text.process_alloc_event
+                0x000086fc        0xe contiki-exp5438.a(process.o)
+                0x000086fc                process_alloc_event
+ .any.text.process_init
+                0x0000870a       0x1c contiki-exp5438.a(process.o)
+                0x0000870a                process_init
+ .any.text.process_run
+                0x00008726       0xa4 contiki-exp5438.a(process.o)
+                0x00008726                process_run
+ .any.text.process_nevents
+                0x000087ca        0xe contiki-exp5438.a(process.o)
+                0x000087ca                process_nevents
+ .any.text.process_post
+                0x000087d8       0x50 contiki-exp5438.a(process.o)
+                0x000087d8                process_post
+ .any.text.process_post_synch
+                0x00008828       0x12 contiki-exp5438.a(process.o)
+                0x00008828                process_post_synch
+ .any.text.process_start
+                0x0000883a       0x36 contiki-exp5438.a(process.o)
+                0x0000883a                process_start
+ .any.text.process_poll
+                0x00008870       0x18 contiki-exp5438.a(process.o)
+                0x00008870                process_poll
+ .any.text.rtimer_init
+                0x00008888        0x6 contiki-exp5438.a(rtimer.o)
+                0x00008888                rtimer_init
+ .any.text.rtimer_run_next
+                0x0000888e       0x26 contiki-exp5438.a(rtimer.o)
+                0x0000888e                rtimer_run_next
+ .any.text.timer_set
+                0x000088b4       0x1c contiki-exp5438.a(timer.o)
+                0x000088b4                timer_set
+ .any.text.timer_expired
+                0x000088d0       0x2a contiki-exp5438.a(timer.o)
+                0x000088d0                timer_expired
+ .any.text.process_thread_serial_line_process
+                0x000088fa       0x9e contiki-exp5438.a(serial-line.o)
+ .any.text.serial_line_input_byte
+                0x00008998       0x4a contiki-exp5438.a(serial-line.o)
+                0x00008998                serial_line_input_byte
+ .any.text.serial_line_init
+                0x000089e2       0x1c contiki-exp5438.a(serial-line.o)
+                0x000089e2                serial_line_init
+ .any.text.list_init
+                0x000089fe        0x6 contiki-exp5438.a(list.o)
+                0x000089fe                list_init
+ .any.text.list_head
+                0x00008a04        0x4 contiki-exp5438.a(list.o)
+                0x00008a04                list_head
+ .any.text.list_tail
+                0x00008a08       0x12 contiki-exp5438.a(list.o)
+                0x00008a08                list_tail
+ .any.text.list_remove
+                0x00008a1a       0x34 contiki-exp5438.a(list.o)
+                0x00008a1a                list_remove
+ .any.text.list_add
+                0x00008a4e       0x26 contiki-exp5438.a(list.o)
+                0x00008a4e                list_add
+ .any.text.list_item_next
+                0x00008a74        0xc contiki-exp5438.a(list.o)
+                0x00008a74                list_item_next
+ .any.text.ringbuf_init
+                0x00008a80       0x14 contiki-exp5438.a(ringbuf.o)
+                0x00008a80                ringbuf_init
+ .any.text.ringbuf_put
+                0x00008a94       0x38 contiki-exp5438.a(ringbuf.o)
+                0x00008a94                ringbuf_put
+ .any.text.ringbuf_get
+                0x00008acc       0x2e contiki-exp5438.a(ringbuf.o)
+                0x00008acc                ringbuf_get
+ .any.text.sent_by_abc
+                0x00008afa       0x10 contiki-exp5438.a(broadcast.o)
+ .any.text.recv_from_abc
+                0x00008b0a       0x26 contiki-exp5438.a(broadcast.o)
+ .any.text.broadcast_open
+                0x00008b30       0x22 contiki-exp5438.a(broadcast.o)
+                0x00008b30                broadcast_open
+ .any.text.broadcast_close
+                0x00008b52        0x6 contiki-exp5438.a(broadcast.o)
+                0x00008b52                broadcast_close
+ .any.text.broadcast_send
+                0x00008b58       0x1a contiki-exp5438.a(broadcast.o)
+                0x00008b58                broadcast_send
+ .any.text.channel_init
+                0x00008b72        0xa contiki-exp5438.a(channel.o)
+                0x00008b72                channel_init
+ .any.text.channel_open
+                0x00008b7c       0x10 contiki-exp5438.a(channel.o)
+                0x00008b7c                channel_open
+ .any.text.channel_close
+                0x00008b8c        0xc contiki-exp5438.a(channel.o)
+                0x00008b8c                channel_close
+ .any.text.channel_lookup
+                0x00008b98       0x20 contiki-exp5438.a(channel.o)
+                0x00008b98                channel_lookup
+ .any.text.channel_set_attributes
+                0x00008bb8       0x20 contiki-exp5438.a(channel.o)
+                0x00008bb8                channel_set_attributes
+ .any.text.input
+                0x00008bd8       0x36 contiki-exp5438.a(rime.o)
+ .any.text.init
+                0x00008c0e       0x2e contiki-exp5438.a(rime.o)
+ .any.text.packet_sent
+                0x00008c3c       0x38 contiki-exp5438.a(rime.o)
+ .any.text.rime_output
+                0x00008c74       0x24 contiki-exp5438.a(rime.o)
+                0x00008c74                rime_output
+ .any.text.linkaddr_copy
+                0x00008c98        0x8 contiki-exp5438.a(linkaddr.o)
+                0x00008c98                linkaddr_copy
+ .any.text.linkaddr_cmp
+                0x00008ca0       0x12 contiki-exp5438.a(linkaddr.o)
+                0x00008ca0                linkaddr_cmp
+ .any.text.linkaddr_set_node_addr
+                0x00008cb2        0xc contiki-exp5438.a(linkaddr.o)
+                0x00008cb2                linkaddr_set_node_addr
+ .any.text.packetbuf_compact
+                0x00008cbe       0x2e contiki-exp5438.a(packetbuf.o)
+                0x00008cbe                packetbuf_compact
+ .any.text.packetbuf_hdrreduce
+                0x00008cec       0x1a contiki-exp5438.a(packetbuf.o)
+                0x00008cec                packetbuf_hdrreduce
+ .any.text.packetbuf_set_datalen
+                0x00008d06        0x6 contiki-exp5438.a(packetbuf.o)
+                0x00008d06                packetbuf_set_datalen
+ .any.text.packetbuf_dataptr
+                0x00008d0c        0xe contiki-exp5438.a(packetbuf.o)
+                0x00008d0c                packetbuf_dataptr
+ .any.text.packetbuf_hdrptr
+                0x00008d1a        0xa contiki-exp5438.a(packetbuf.o)
+                0x00008d1a                packetbuf_hdrptr
+ .any.text.packetbuf_datalen
+                0x00008d24        0x6 contiki-exp5438.a(packetbuf.o)
+                0x00008d24                packetbuf_datalen
+ .any.text.packetbuf_hdrlen
+                0x00008d2a       0x10 contiki-exp5438.a(packetbuf.o)
+                0x00008d2a                packetbuf_hdrlen
+ .any.text.packetbuf_totlen
+                0x00008d3a        0xc contiki-exp5438.a(packetbuf.o)
+                0x00008d3a                packetbuf_totlen
+ .any.text.packetbuf_hdralloc
+                0x00008d46       0x2a contiki-exp5438.a(packetbuf.o)
+                0x00008d46                packetbuf_hdralloc
+ .any.text.packetbuf_attr_clear
+                0x00008d70       0x2c contiki-exp5438.a(packetbuf.o)
+                0x00008d70                packetbuf_attr_clear
+ .any.text.packetbuf_clear
+                0x00008d9c       0x1a contiki-exp5438.a(packetbuf.o)
+                0x00008d9c                packetbuf_clear
+ .any.text.packetbuf_copyfrom
+                0x00008db6       0x2a contiki-exp5438.a(packetbuf.o)
+                0x00008db6                packetbuf_copyfrom
+ .any.text.packetbuf_attr_copyfrom
+                0x00008de0       0x22 contiki-exp5438.a(packetbuf.o)
+                0x00008de0                packetbuf_attr_copyfrom
+ .any.text.packetbuf_holds_broadcast
+                0x00008e02        0xe contiki-exp5438.a(packetbuf.o)
+                0x00008e02                packetbuf_holds_broadcast
+ .any.text.queuebuf_init
+                0x00008e10       0x12 contiki-exp5438.a(queuebuf.o)
+                0x00008e10                queuebuf_init
+ .any.text.queuebuf_to_packetbuf
+                0x00008e22       0x32 contiki-exp5438.a(queuebuf.o)
+                0x00008e22                queuebuf_to_packetbuf
+ .any.text.field_len
+                0x00008e54       0x8c contiki-exp5438.a(frame802154.o)
+ .any.text.frame802154_hdrlen
+                0x00008ee0       0x2e contiki-exp5438.a(frame802154.o)
+                0x00008ee0                frame802154_hdrlen
+ .any.text.frame802154_create
+                0x00008f0e      0x112 contiki-exp5438.a(frame802154.o)
+                0x00008f0e                frame802154_create
+ .any.text.frame802154_parse
+                0x00009020      0x182 contiki-exp5438.a(frame802154.o)
+                0x00009020                frame802154_parse
+ .any.text.send_packet
+                0x000091a2        0x6 contiki-exp5438.a(nullmac.o)
+ .any.text.packet_input
+                0x000091a8        0x6 contiki-exp5438.a(nullmac.o)
+ .any.text.on   0x000091ae        0x6 contiki-exp5438.a(nullmac.o)
+ .any.text.off  0x000091b4        0x6 contiki-exp5438.a(nullmac.o)
+ .any.text.channel_check_interval
+                0x000091ba        0x4 contiki-exp5438.a(nullmac.o)
+ .any.text.init
+                0x000091be        0x2 contiki-exp5438.a(nullmac.o)
+ .any.text.on   0x000091c0        0x6 contiki-exp5438.a(nullrdc.o)
+ .any.text.channel_check_interval
+                0x000091c6        0x4 contiki-exp5438.a(nullrdc.o)
+ .any.text.init
+                0x000091ca        0x6 contiki-exp5438.a(nullrdc.o)
+ .any.text.off  0x000091d0       0x10 contiki-exp5438.a(nullrdc.o)
+ .any.text.packet_input
+                0x000091e0       0x40 contiki-exp5438.a(nullrdc.o)
+ .any.text.send_one_packet
+                0x00009220      0x114 contiki-exp5438.a(nullrdc.o)
+ .any.text.send_list
+                0x00009334       0x28 contiki-exp5438.a(nullrdc.o)
+ .any.text.send_packet
+                0x0000935c        0x6 contiki-exp5438.a(nullrdc.o)
+ .any.text.hdr_length
+                0x00009362        0x8 contiki-exp5438.a(contikimac-fram)
+ .any.text.parse
+                0x0000936a       0x3a contiki-exp5438.a(contikimac-fram)
+ .any.text.create
+                0x000093a4       0x26 contiki-exp5438.a(contikimac-fram)
+ .any.text.create_and_secure
+                0x000093ca       0x62 contiki-exp5438.a(contikimac-fram)
+ .any.text.bootstrap
+                0x0000942c        0x4 contiki-exp5438.a(nullsec.o)
+ .any.text.send
+                0x00009430        0xa contiki-exp5438.a(nullsec.o)
+ .any.text.on_frame_created
+                0x0000943a        0x4 contiki-exp5438.a(nullsec.o)
+ .any.text.input
+                0x0000943e        0x6 contiki-exp5438.a(nullsec.o)
+ .any.text.get_overhead
+                0x00009444        0x4 contiki-exp5438.a(nullsec.o)
+ .any.text.spi_init
+                0x00009448       0x32 contiki-exp5438.a(spix.o)
+                0x00009448                spi_init
+ .any.text.memb_init
+                0x0000947a       0x36 contiki-exp5438.a(memb.o)
+                0x0000947a                memb_init
+ .any.text.memb_inmemb
+                0x000094b0       0x2a contiki-exp5438.a(memb.o)
+                0x000094b0                memb_inmemb
+ .any.text.abc_open
+                0x000094da       0x1e contiki-exp5438.a(abc.o)
+                0x000094da                abc_open
+ .any.text.abc_close
+                0x000094f8        0x6 contiki-exp5438.a(abc.o)
+                0x000094f8                abc_close
+ .any.text.abc_send
+                0x000094fe        0x6 contiki-exp5438.a(abc.o)
+                0x000094fe                abc_send
+ .any.text.abc_input
+                0x00009504        0xe contiki-exp5438.a(abc.o)
+                0x00009504                abc_input
+ .any.text.abc_sent
+                0x00009512       0x10 contiki-exp5438.a(abc.o)
+                0x00009512                abc_sent
+ .any.text.announcement_init
+                0x00009522        0xa contiki-exp5438.a(announcement.o)
+                0x00009522                announcement_init
+ .any.text.announcement_register_observer_callback
+                0x0000952c        0x6 contiki-exp5438.a(announcement.o)
+                0x0000952c                announcement_register_observer_callback
+ .any.text.announcement_list
+                0x00009532        0xa contiki-exp5438.a(announcement.o)
+                0x00009532                announcement_list
+ .any.text.announcement_heard
+                0x0000953c       0x36 contiki-exp5438.a(announcement.o)
+                0x0000953c                announcement_heard
+ .any.text.adv_packet_sent
+                0x00009572        0x2 contiki-exp5438.a(broadcast-annou)
+ .any.text.adv_packet_received
+                0x00009574       0x58 contiki-exp5438.a(broadcast-annou)
+ .any.text.set_timers
+                0x000095cc       0x4a contiki-exp5438.a(broadcast-annou)
+ .any.text.send_timer
+                0x00009616       0x32 contiki-exp5438.a(broadcast-annou)
+ .any.text.send_adv
+                0x00009648       0x60 contiki-exp5438.a(broadcast-annou)
+ .any.text.new_announcement
+                0x000096a8       0x18 contiki-exp5438.a(broadcast-annou)
+ .any.text.broadcast_announcement_init
+                0x000096c0       0x44 contiki-exp5438.a(broadcast-annou)
+                0x000096c0                broadcast_announcement_init
+ .any.text.chameleon_init
+                0x00009704        0x6 contiki-exp5438.a(chameleon.o)
+                0x00009704                chameleon_init
+ .any.text.chameleon_parse
+                0x0000970a       0x10 contiki-exp5438.a(chameleon.o)
+                0x0000970a                chameleon_parse
+ .any.text.chameleon_create
+                0x0000971a       0x1c contiki-exp5438.a(chameleon.o)
+                0x0000971a                chameleon_create
+ .any.text.chameleon_hdrsize
+                0x00009736        0x6 contiki-exp5438.a(chameleon.o)
+                0x00009736                chameleon_hdrsize
+ .any.text.create_frame.isra.0
+                0x0000973c      0x100 contiki-exp5438.a(framer-802154.o)
+ .any.text.create
+                0x0000983c        0x8 contiki-exp5438.a(framer-802154.o)
+ .any.text.hdr_length
+                0x00009844        0x8 contiki-exp5438.a(framer-802154.o)
+ .any.text.parse
+                0x0000984c       0xa4 contiki-exp5438.a(framer-802154.o)
+ .any.text.framer_canonical_create_and_secure
+                0x000098f0       0x20 contiki-exp5438.a(framer.o)
+                0x000098f0                framer_canonical_create_and_secure
+ .any.text.mac_call_sent_callback
+                0x00009910       0x14 contiki-exp5438.a(mac.o)
+                0x00009910                mac_call_sent_callback
+ .any.text.mac_sequence_is_duplicate
+                0x00009924       0x36 contiki-exp5438.a(mac-sequence.o)
+                0x00009924                mac_sequence_is_duplicate
+ .any.text.mac_sequence_register_seqno
+                0x0000995a       0x5e contiki-exp5438.a(mac-sequence.o)
+                0x0000995a                mac_sequence_register_seqno
+ .any.text.random_rand
+                0x000099b8        0x6 contiki-exp5438.a(random.o)
+                0x000099b8                random_rand
+ .any.text.header_size
+                0x000099be       0x16 contiki-exp5438.a(chameleon-bitop)
+ .any.text.get_bits_in_byte
+                0x000099d4       0x36 contiki-exp5438.a(chameleon-bitop)
+                0x000099d4                get_bits_in_byte
+ .any.text.get_bits
+                0x00009a0a       0x8a contiki-exp5438.a(chameleon-bitop)
+                0x00009a0a                get_bits
+ .any.text.unpack_header
+                0x00009a94       0xb4 contiki-exp5438.a(chameleon-bitop)
+ .any.text.set_bits_in_byte
+                0x00009b48       0x2a contiki-exp5438.a(chameleon-bitop)
+                0x00009b48                set_bits_in_byte
+ .any.text.set_bits
+                0x00009b72       0x98 contiki-exp5438.a(chameleon-bitop)
+                0x00009b72                set_bits
+ .any.text.pack_header
+                0x00009c0a       0xa0 contiki-exp5438.a(chameleon-bitop)
+
+.rodata         0x00009cac      0x4ca
+                0x00009cac                . = ALIGN (0x2)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.process_thread_example_broadcast_process
+                0x00009cac       0x2e example-broadcast.co
+ .rodata.broadcast_recv
+                0x00009cda       0x2d example-broadcast.co
+ *fill*         0x00009d07        0x1 00
+ .rodata.autostart_processes
+                0x00009d08        0x4 example-broadcast.co
+                0x00009d08                autostart_processes
+ .rodata        0x00009d0c       0x12 example-broadcast.co
+ .rodata.broadcast_call
+                0x00009d1e        0x8 example-broadcast.co
+ .rodata        0x00009d26       0x90 obj_exp5438/contiki-exp5438-main.o
+ .rodata.uart2_rx_interrupt
+                0x00009db6       0x17 contiki-exp5438.a(uart2x.o)
+ .rodata        0x00009dcd       0x14 contiki-exp5438.a(duty-cycle-scro)
+ *fill*         0x00009de1        0x3 00
+ .rodata.get_value
+                0x00009de4       0x38 contiki-exp5438.a(cc1200.o)
+ .rodata.set_value
+                0x00009e1c       0x20 contiki-exp5438.a(cc1200.o)
+ .rodata.cc1200_init
+                0x00009e3c       0x66 contiki-exp5438.a(cc1200.o)
+ .rodata        0x00009ea2        0xe contiki-exp5438.a(cc1200.o)
+ .rodata.cc1200_driver
+                0x00009eb0       0x38 contiki-exp5438.a(cc1200.o)
+                0x00009eb0                cc1200_driver
+ .rodata.cc1200_arch_gpio0_setup_irq
+                0x00009ee8       0x42 contiki-exp5438.a(cc1200-5438-arc)
+ .rodata.cc1200_arch_gpio2_setup_irq
+                0x00009f2a       0x4f contiki-exp5438.a(cc1200-5438-arc)
+ *fill*         0x00009f79        0x1 00
+ .rodata.cc1200_802154g_863_870_fsk_50kbps
+                0x00009f7a       0x12 contiki-exp5438.a(cc1200-802154g-)
+                0x00009f7a                cc1200_802154g_863_870_fsk_50kbps
+ .rodata.rf_cfg_descriptor
+                0x00009f8c       0x24 contiki-exp5438.a(cc1200-802154g-)
+ .rodata.preferredSettings
+                0x00009fb0       0xd0 contiki-exp5438.a(cc1200-802154g-)
+ .rodata        0x0000a080        0xf contiki-exp5438.a(ctimer.o)
+ .rodata        0x0000a08f        0xc contiki-exp5438.a(etimer.o)
+ .rodata        0x0000a09b        0xe contiki-exp5438.a(serial-line.o)
+ *fill*         0x0000a0a9        0x1 00
+ .rodata.broadcast
+                0x0000a0aa        0x8 contiki-exp5438.a(broadcast.o)
+ .rodata.attributes
+                0x0000a0b2        0x4 contiki-exp5438.a(broadcast.o)
+ .rodata        0x0000a0b6        0x5 contiki-exp5438.a(rime.o)
+ *fill*         0x0000a0bb        0x1 00
+ .rodata.rime_driver
+                0x0000a0bc        0xa contiki-exp5438.a(rime.o)
+                0x0000a0bc                rime_driver
+ .rodata.linkaddr_null
+                0x0000a0c6        0x2 contiki-exp5438.a(linkaddr.o)
+                0x0000a0c6                linkaddr_null
+ .rodata.CSWTCH.5
+                0x0000a0c8        0x2 contiki-exp5438.a(frame802154.o)
+ .rodata        0x0000a0ca        0x8 contiki-exp5438.a(nullmac.o)
+ .rodata.nullmac_driver
+                0x0000a0d2       0x1a contiki-exp5438.a(nullmac.o)
+                0x0000a0d2                nullmac_driver
+ .rodata        0x0000a0ec        0x8 contiki-exp5438.a(nullrdc.o)
+ .rodata.nullrdc_driver
+                0x0000a0f4       0x1e contiki-exp5438.a(nullrdc.o)
+                0x0000a0f4                nullrdc_driver
+ .rodata.contikimac_framer
+                0x0000a112       0x10 contiki-exp5438.a(contikimac-fram)
+                0x0000a112                contikimac_framer
+ .rodata        0x0000a122        0x8 contiki-exp5438.a(nullsec.o)
+ .rodata.nullsec_driver
+                0x0000a12a       0x16 contiki-exp5438.a(nullsec.o)
+                0x0000a12a                nullsec_driver
+ .rodata.attributes
+                0x0000a140        0x2 contiki-exp5438.a(abc.o)
+ .rodata.broadcast_callbacks
+                0x0000a142        0x8 contiki-exp5438.a(broadcast-annou)
+ .rodata.framer_802154
+                0x0000a14a       0x10 contiki-exp5438.a(framer-802154.o)
+                0x0000a14a                framer_802154
+ .rodata.chameleon_bitopt
+                0x0000a15a        0xc contiki-exp5438.a(chameleon-bitop)
+                0x0000a15a                chameleon_bitopt
+ .rodata.bitmask
+                0x0000a166        0x9 contiki-exp5438.a(chameleon-bitop)
+ .rodata.vuprintf
+                0x0000a16f        0x7 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ *(.near.rodata .near.rodata.*)
+                0x0000a176                . = ALIGN (0x2)
+                0x0000a176                _etext = .
+
+.data           0x00001c00       0x5e load address 0x0000a176
+                0x00001c00                . = ALIGN (0x2)
+                0x00001c00                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.example_broadcast_process
+                0x00001c00        0xc example-broadcast.co
+                0x00001c00                example_broadcast_process
+ .data.cur_break
+                0x00001c0c        0x2 contiki-exp5438.a(msp430.o)
+ .data.duty_cycle_scroller_process
+                0x00001c0e        0xc contiki-exp5438.a(duty-cycle-scro)
+                0x00001c0e                duty_cycle_scroller_process
+ .data.cc1200_process
+                0x00001c1a        0xc contiki-exp5438.a(cc1200.o)
+                0x00001c1a                cc1200_process
+ .data.ctimer_process
+                0x00001c26        0xc contiki-exp5438.a(ctimer.o)
+                0x00001c26                ctimer_process
+ .data.etimer_process
+                0x00001c32        0xc contiki-exp5438.a(etimer.o)
+                0x00001c32                etimer_process
+ .data.serial_line_process
+                0x00001c3e        0xc contiki-exp5438.a(serial-line.o)
+                0x00001c3e                serial_line_process
+ .data.buframmem
+                0x00001c4a        0x8 contiki-exp5438.a(queuebuf.o)
+ .data.bufmem   0x00001c52        0x8 contiki-exp5438.a(queuebuf.o)
+ .data.next     0x00001c5a        0x4 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ *(.near.data .near.data.*)
+                0x00001c5e                . = ALIGN (0x2)
+                0x00001c5e                _edata = .
+                0x0000a176                __data_load_start = LOADADDR (.data)
+                0x0000005e                __data_size = SIZEOF (.data)
+
+.bss            0x00001c5e     0x115e load address 0x0000a1d4
+                0x00001c5e                __bss_start = .
+ *(.bss .bss.*)
+ .bss.broadcast
+                0x00001c5e        0xc example-broadcast.co
+ .bss.et.3966   0x00001c6a        0xc example-broadcast.co
+ .bss.irq_energest.4133
+                0x00001c76        0x4 obj_exp5438/contiki-exp5438-main.o
+ .bss.dco_speed
+                0x00001c7a        0x4 contiki-exp5438.a(msp430.o)
+ .bss.leds      0x00001c7e        0x1 contiki-exp5438.a(leds.o)
+ *fill*         0x00001c7f        0x1 00
+ .bss.counter   0x00001c80        0x2 contiki-exp5438.a(watchdog.o)
+ .bss.node_id   0x00001c82        0x2 contiki-exp5438.a(node-id.o)
+                0x00001c82                node_id
+ .bss.transmitting
+                0x00001c84        0x1 contiki-exp5438.a(uart1x.o)
+ *fill*         0x00001c85        0x1 00
+ .bss.uart1_input_handler
+                0x00001c86        0x4 contiki-exp5438.a(uart1x.o)
+ .bss.transmitting
+                0x00001c8a        0x1 contiki-exp5438.a(uart2x.o)
+ *fill*         0x00001c8b        0x1 00
+ .bss.uart2_input_handler
+                0x00001c8c        0x4 contiki-exp5438.a(uart2x.o)
+ .bss.interval  0x00001c90        0x4 contiki-exp5438.a(duty-cycle-scro)
+ .bss.interval_timer.2488
+                0x00001c94        0xc contiki-exp5438.a(duty-cycle-scro)
+ .bss.last_cpu.2490
+                0x00001ca0        0x4 contiki-exp5438.a(duty-cycle-scro)
+ .bss.last_lpm.2491
+                0x00001ca4        0x4 contiki-exp5438.a(duty-cycle-scro)
+ .bss.last_transmit.2492
+                0x00001ca8        0x4 contiki-exp5438.a(duty-cycle-scro)
+ .bss.last_listen.2493
+                0x00001cac        0x4 contiki-exp5438.a(duty-cycle-scro)
+ .bss.rx_pkt_len
+                0x00001cb0        0x2 contiki-exp5438.a(cc1200.o)
+ .bss.spi_locked
+                0x00001cb2        0x1 contiki-exp5438.a(cc1200.o)
+ .bss.rf_flags  0x00001cb3        0x1 contiki-exp5438.a(cc1200.o)
+ .bss.rx_mode_value
+                0x00001cb4        0x2 contiki-exp5438.a(cc1200.o)
+ .bss.tx_mode_value
+                0x00001cb6        0x2 contiki-exp5438.a(cc1200.o)
+ .bss.new_txpower
+                0x00001cb8        0x1 contiki-exp5438.a(cc1200.o)
+ .bss.new_cca_threshold
+                0x00001cb9        0x1 contiki-exp5438.a(cc1200.o)
+ .bss.new_rf_channel
+                0x00001cba        0x1 contiki-exp5438.a(cc1200.o)
+ .bss.rf_channel
+                0x00001cbb        0x1 contiki-exp5438.a(cc1200.o)
+ .bss.txpower   0x00001cbc        0x1 contiki-exp5438.a(cc1200.o)
+ .bss.cca_threshold
+                0x00001cbd        0x1 contiki-exp5438.a(cc1200.o)
+ .bss.cal_timer
+                0x00001cbe        0x4 contiki-exp5438.a(cc1200.o)
+ .bss.rx_pkt    0x00001cc2       0x81 contiki-exp5438.a(cc1200.o)
+ *fill*         0x00001d43        0x1 00
+ .bss.tx_pkt_len
+                0x00001d44        0x2 contiki-exp5438.a(cc1200.o)
+ .bss.tx_pkt    0x00001d46       0x7f contiki-exp5438.a(cc1200.o)
+ *fill*         0x00001dc5        0x1 00
+ .bss.payload_len.3684
+                0x00001dc6        0x2 contiki-exp5438.a(cc1200.o)
+ .bss.bytes_read.3685
+                0x00001dc8        0x2 contiki-exp5438.a(cc1200.o)
+ .bss.buf.3686  0x00001dca       0x81 contiki-exp5438.a(cc1200.o)
+ *fill*         0x00001e4b        0x1 00
+ .bss.count     0x00001e4c        0x4 contiki-exp5438.a(clock.o)
+ .bss.seconds   0x00001e50        0x4 contiki-exp5438.a(clock.o)
+ .bss.last_tar  0x00001e54        0x2 contiki-exp5438.a(clock.o)
+ .bss.initialized
+                0x00001e56        0x1 contiki-exp5438.a(ctimer.o)
+ *fill*         0x00001e57        0x1 00
+ .bss.ctimer_list_list
+                0x00001e58        0x2 contiki-exp5438.a(ctimer.o)
+ .bss.timerlist
+                0x00001e5a        0x2 contiki-exp5438.a(etimer.o)
+ .bss.next_expiration
+                0x00001e5c        0x4 contiki-exp5438.a(etimer.o)
+ .bss.poll_requested
+                0x00001e60        0x1 contiki-exp5438.a(process.o)
+ *fill*         0x00001e61        0x1 00
+ .bss.process_current
+                0x00001e62        0x2 contiki-exp5438.a(process.o)
+                0x00001e62                process_current
+ .bss.process_list
+                0x00001e64        0x2 contiki-exp5438.a(process.o)
+                0x00001e64                process_list
+ .bss.lastevent
+                0x00001e66        0x1 contiki-exp5438.a(process.o)
+ .bss.fevent    0x00001e67        0x1 contiki-exp5438.a(process.o)
+ .bss.nevents   0x00001e68        0x1 contiki-exp5438.a(process.o)
+ *fill*         0x00001e69        0x1 00
+ .bss.events    0x00001e6a       0x30 contiki-exp5438.a(process.o)
+ .bss.ev.2416   0x00001e9a        0x1 contiki-exp5438.a(process.o)
+ *fill*         0x00001e9b        0x1 00
+ .bss.data.2417
+                0x00001e9c        0x2 contiki-exp5438.a(process.o)
+ .bss.receiver.2418
+                0x00001e9e        0x2 contiki-exp5438.a(process.o)
+ .bss.p.2419    0x00001ea0        0x2 contiki-exp5438.a(process.o)
+ .bss.snum.2434
+                0x00001ea2        0x1 contiki-exp5438.a(process.o)
+ *fill*         0x00001ea3        0x1 00
+ .bss.next_rtimer
+                0x00001ea4        0x2 contiki-exp5438.a(rtimer.o)
+ .bss.overflow.2494
+                0x00001ea6        0x1 contiki-exp5438.a(serial-line.o)
+ *fill*         0x00001ea7        0x1 00
+ .bss.rxbuf     0x00001ea8        0x6 contiki-exp5438.a(serial-line.o)
+ .bss.ptr.2501  0x00001eae        0x2 contiki-exp5438.a(serial-line.o)
+ .bss.buf.2500  0x00001eb0       0x80 contiki-exp5438.a(serial-line.o)
+ .bss.rxbuf_data
+                0x00001f30       0x80 contiki-exp5438.a(serial-line.o)
+ .bss.channel_list_list
+                0x00001fb0        0x2 contiki-exp5438.a(channel.o)
+ .bss.sniffers_list
+                0x00001fb2        0x2 contiki-exp5438.a(rime.o)
+ .bss.bufptr    0x00001fb4        0x2 contiki-exp5438.a(packetbuf.o)
+ .bss.buflen    0x00001fb6        0x2 contiki-exp5438.a(packetbuf.o)
+ .bss.hdrptr    0x00001fb8        0x1 contiki-exp5438.a(packetbuf.o)
+ *fill*         0x00001fb9        0x1 00
+ .bss.packetbufptr
+                0x00001fba        0x2 contiki-exp5438.a(packetbuf.o)
+ .bss.packetbuf_aligned
+                0x00001fbc       0xb0 contiki-exp5438.a(packetbuf.o)
+ .bss.buframmem_memb_count
+                0x0000206c       0x10 contiki-exp5438.a(queuebuf.o)
+ .bss.buframmem_memb_mem
+                0x0000207c      0xbe0 contiki-exp5438.a(queuebuf.o)
+ .bss.bufmem_memb_count
+                0x00002c5c       0x10 contiki-exp5438.a(queuebuf.o)
+ .bss.bufmem_memb_mem
+                0x00002c6c       0x20 contiki-exp5438.a(queuebuf.o)
+ .bss.announcements_list
+                0x00002c8c        0x2 contiki-exp5438.a(announcement.o)
+ .bss.observer_callback
+                0x00002c8e        0x4 contiki-exp5438.a(announcement.o)
+ .bss.c         0x00002c92       0x4a contiki-exp5438.a(broadcast-annou)
+ .bss.initialized
+                0x00002cdc        0x1 contiki-exp5438.a(framer-802154.o)
+ .bss.mac_dsn   0x00002cdd        0x1 contiki-exp5438.a(framer-802154.o)
+ .bss.received_seqnos
+                0x00002cde       0x40 contiki-exp5438.a(mac-sequence.o)
+ *(.near.bss .near.bss.*)
+ *(COMMON)
+ COMMON         0x00002d1e        0x8 contiki-exp5438.a(node-id.o)
+                0x00002d1e                node_mac
+ COMMON         0x00002d26       0x56 contiki-exp5438.a(energest.o)
+                0x00002d26                energest_total_time
+                0x00002d56                energest_total_count
+                0x00002d58                energest_current_mode
+                0x00002d64                energest_current_time
+ COMMON         0x00002d7c        0x1 contiki-exp5438.a(process.o)
+                0x00002d7c                process_maxevents
+ COMMON         0x00002d7d        0x1 contiki-exp5438.a(serial-line.o)
+                0x00002d7d                serial_line_event_message
+ COMMON         0x00002d7e        0x2 contiki-exp5438.a(linkaddr.o)
+                0x00002d7e                linkaddr_node_addr
+ COMMON         0x00002d80       0x3c contiki-exp5438.a(packetbuf.o)
+                0x00002d80                packetbuf_addrs
+                0x00002d88                packetbuf_attrs
+                0x00002dbc                . = ALIGN (0x2)
+                0x00002dbc                __bss_end = .
+                0x0000115e                __bss_size = SIZEOF (.bss)
+
+.noinit         0x00002dbc        0x2 load address 0x0000a1d4
+                0x00002dbc                . = ALIGN (0x2)
+                0x00002dbc                __noinit_start = .
+ *(.noinit .noinit.*)
+ .noinit.crt0   0x00002dbc        0x2 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+                0x00002dbc                __wdt_clear_value
+                0x00002dbe                . = ALIGN (0x2)
+                0x00002dbe                __noinit_end = .
+                0x00002dbe                . = ALIGN (0x2)
+                0x00002dbe                _end = .
+
+.infomem        0x00001800        0x0
+                0x00001800                . = ALIGN (0x2)
+ *(.infomem .infomem.*)
+
+.infomemnobits  0x00001800        0x0
+                0x00001800                . = ALIGN (0x2)
+ *(.infomemnobits .infomemnobits.*)
+
+.infoa          0x00001980        0x0
+                0x00001980                . = ALIGN (0x2)
+ *(.infoa .infoa.*)
+
+.infob          0x00001900        0x0
+                0x00001900                . = ALIGN (0x2)
+ *(.infob .infob.*)
+
+.infoc          0x00001880        0x0
+                0x00001880                . = ALIGN (0x2)
+ *(.infoc .infoc.*)
+
+.infod          0x00001800        0x0
+                0x00001800                . = ALIGN (0x2)
+ *(.infod .infod.*)
+
+.vectors        0x0000ff80       0x80
+                0x0000ff80                __vectors_start = .
+ *(.vectors*)
+ .vectors       0x0000ff80       0x80 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+                0x0000ff80                __ivtbl_64
+                0x00010000                _vectors_end = .
+
+.fartext        0x00010000        0x0
+                0x00010000                . = ALIGN (0x2)
+ *(.fartext .fartext.*)
+
+.far.text       0x00010000        0x0
+                0x00010000                . = ALIGN (0x2)
+ *(.far.text .far.text.*)
+
+.far.rodata     0x00010000        0x0
+                0x00010000                . = ALIGN (0x2)
+ *(.far.rodata .far.rodata.*)
+                0x00010000                . = ALIGN (0x2)
+                0x00010000                _efartext = .
+
+.far.data       0x00000000        0x0 load address 0x00010000
+                0x00000000                . = ALIGN (0x2)
+                0x00000000                __far_data_start = .
+ *(.far.data .far.data.*)
+                0x00000000                . = ALIGN (0x2)
+                0x00000000                _efardata = .
+                0x00010000                __far_data_load_start = LOADADDR (.far.data)
+                0x00000000                __far_data_size = SIZEOF (.far.data)
+
+.far.bss        0x00000000        0x0 load address 0x00010000
+                0x00000000                . = ALIGN (0x2)
+                0x00000000                __far_bss_start = .
+ *(.far.bss .far.bss.*)
+                0x00000000                . = ALIGN (0x2)
+                0x00000000                __far_bss_end = .
+                0x00000000                __far_bss_size = SIZEOF (.far.bss)
+                0x00000000                . = ALIGN (0x2)
+                0x00000000                _far_end = .
+
+.profiler
+ *(.profiler)
+
+.stab           0x00000000    0x16f44
+ *(.stab)
+ .stab          0x00000000     0x12fc example-broadcast.co
+ .stab          0x000012fc      0xc6c obj_exp5438/contiki-exp5438-main.o
+                               0x15fc (size before relaxing)
+ .stab          0x00001f68      0x9fc contiki-exp5438.a(msp430.o)
+                                0xf54 (size before relaxing)
+ .stab          0x00002964      0x5c4 contiki-exp5438.a(leds.o)
+                                0x9d8 (size before relaxing)
+ .stab          0x00002f28      0x378 contiki-exp5438.a(watchdog.o)
+                                0x768 (size before relaxing)
+ .stab          0x000032a0      0x3d8 contiki-exp5438.a(rtimer-arch.o)
+                                0x8f4 (size before relaxing)
+ .stab          0x00003678      0x2ac contiki-exp5438.a(node-id.o)
+                                0x69c (size before relaxing)
+ .stab          0x00003924      0x2a0 contiki-exp5438.a(leds-arch.o)
+                                0x690 (size before relaxing)
+ .stab          0x00003bc4      0x510 contiki-exp5438.a(uart1x.o)
+                                0xa2c (size before relaxing)
+ .stab          0x000040d4      0x4ec contiki-exp5438.a(uart2x.o)
+                                0xa74 (size before relaxing)
+ .stab          0x000045c0      0x2f4 contiki-exp5438.a(lcd.o)
+                                0x300 (size before relaxing)
+ .stab          0x000048b4      0x504 contiki-exp5438.a(duty-cycle-scro)
+                                0xa20 (size before relaxing)
+ .stab          0x00004db8     0x2664 contiki-exp5438.a(cc1200.o)
+                               0x2fdc (size before relaxing)
+ .stab          0x0000741c      0xffc contiki-exp5438.a(cc1200-5438-arc)
+                               0x1c08 (size before relaxing)
+ .stab          0x00008418      0x21c contiki-exp5438.a(cc1200-802154g-)
+                                0x7a4 (size before relaxing)
+ .stab          0x00008634      0x2a0 contiki-exp5438.a(uart1-putchar.o)
+                                0x7e0 (size before relaxing)
+ .stab          0x000088d4      0x288 contiki-exp5438.a(uart2-putchar.o)
+                                0x7e0 (size before relaxing)
+ .stab          0x00008b5c      0x8b8 contiki-exp5438.a(clock.o)
+                                0xd5c (size before relaxing)
+ .stab          0x00009414      0x2b8 contiki-exp5438.a(autostart.o)
+                                0x720 (size before relaxing)
+ .stab          0x000096cc      0x7b0 contiki-exp5438.a(ctimer.o)
+                                0xce4 (size before relaxing)
+ .stab          0x00009e7c      0x4b0 contiki-exp5438.a(energest.o)
+                                0x900 (size before relaxing)
+ .stab          0x0000a32c      0xa20 contiki-exp5438.a(etimer.o)
+                                0xeb8 (size before relaxing)
+ .stab          0x0000ad4c      0xb70 contiki-exp5438.a(process.o)
+                               0x1020 (size before relaxing)
+ .stab          0x0000b8bc      0x39c contiki-exp5438.a(rtimer.o)
+                                0x8a0 (size before relaxing)
+ .stab          0x0000bc58      0x36c contiki-exp5438.a(timer.o)
+                                0x774 (size before relaxing)
+ .stab          0x0000bfc4      0x51c contiki-exp5438.a(serial-line.o)
+                                0xa50 (size before relaxing)
+ .stab          0x0000c4e0      0x7bc contiki-exp5438.a(list.o)
+                                0x7c8 (size before relaxing)
+ .stab          0x0000cc9c      0x414 contiki-exp5438.a(ringbuf.o)
+                                0x81c (size before relaxing)
+ .stab          0x0000d0b0      0x6cc contiki-exp5438.a(broadcast.o)
+                               0x1518 (size before relaxing)
+ .stab          0x0000d77c      0x654 contiki-exp5438.a(channel.o)
+                               0x1290 (size before relaxing)
+ .stab          0x0000ddd0      0x8ac contiki-exp5438.a(rime.o)
+                               0x1410 (size before relaxing)
+ .stab          0x0000e67c      0x2ac contiki-exp5438.a(linkaddr.o)
+                                0x6c0 (size before relaxing)
+ .stab          0x0000e928      0xd80 contiki-exp5438.a(packetbuf.o)
+                               0x1be4 (size before relaxing)
+ .stab          0x0000f6a8      0xa38 contiki-exp5438.a(queuebuf.o)
+                               0x1884 (size before relaxing)
+ .stab          0x000100e0      0xb64 contiki-exp5438.a(frame802154.o)
+                               0x10d4 (size before relaxing)
+ .stab          0x00010c44      0x6cc contiki-exp5438.a(nullmac.o)
+                                0xdc8 (size before relaxing)
+ .stab          0x00011310      0x948 contiki-exp5438.a(nullrdc.o)
+                               0x12b4 (size before relaxing)
+ .stab          0x00011c58      0x6f0 contiki-exp5438.a(contikimac-fram)
+                                0xf30 (size before relaxing)
+ .stab          0x00012348      0x648 contiki-exp5438.a(nullsec.o)
+                                0xd98 (size before relaxing)
+ .stab          0x00012990      0x21c contiki-exp5438.a(spix.o)
+                                0x60c (size before relaxing)
+ .stab          0x00012bac      0x5c4 contiki-exp5438.a(memb.o)
+                                0xb10 (size before relaxing)
+ .stab          0x00013170      0x660 contiki-exp5438.a(abc.o)
+                               0x14ac (size before relaxing)
+ .stab          0x000137d0      0x6d8 contiki-exp5438.a(announcement.o)
+                                0xb40 (size before relaxing)
+ .stab          0x00013ea8      0x948 contiki-exp5438.a(broadcast-annou)
+                               0x15d8 (size before relaxing)
+ .stab          0x000147f0      0x588 contiki-exp5438.a(chameleon.o)
+                               0x1248 (size before relaxing)
+ .stab          0x00014d78      0x714 contiki-exp5438.a(framer-802154.o)
+                                0xf6c (size before relaxing)
+ .stab          0x0001548c      0x318 contiki-exp5438.a(framer.o)
+                                0xc6c (size before relaxing)
+ .stab          0x000157a4      0x210 contiki-exp5438.a(mac.o)
+                                0x69c (size before relaxing)
+ .stab          0x000159b4      0x618 contiki-exp5438.a(mac-sequence.o)
+                               0x147c (size before relaxing)
+ .stab          0x00015fcc      0x228 contiki-exp5438.a(random.o)
+                                0x648 (size before relaxing)
+ .stab          0x000161f4      0xd50 contiki-exp5438.a(chameleon-bitop)
+                               0x19e0 (size before relaxing)
+
+.stabstr        0x00000000    0x1361c
+ *(.stabstr)
+ .stabstr       0x00000000    0x1361c example-broadcast.co
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 example-broadcast.co
+                                 0x31 (size before relaxing)
+ .comment       0x00000000       0x31 obj_exp5438/contiki-exp5438-main.o
+ .comment       0x00000000       0x31 contiki-exp5438.a(msp430.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(leds.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(watchdog.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(rtimer-arch.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(node-id.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(leds-arch.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(uart1x.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(uart2x.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(lcd.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(duty-cycle-scro)
+ .comment       0x00000000       0x31 contiki-exp5438.a(cc1200.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(cc1200-5438-arc)
+ .comment       0x00000000       0x31 contiki-exp5438.a(cc1200-802154g-)
+ .comment       0x00000000       0x31 contiki-exp5438.a(uart1-putchar.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(uart2-putchar.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(clock.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(autostart.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(ctimer.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(energest.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(etimer.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(process.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(rtimer.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(timer.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(serial-line.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(list.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(ringbuf.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(broadcast.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(channel.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(rime.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(linkaddr.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(packetbuf.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(queuebuf.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(frame802154.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(nullmac.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(nullrdc.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(contikimac-fram)
+ .comment       0x00000000       0x31 contiki-exp5438.a(nullsec.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(spix.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(memb.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(abc.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(announcement.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(broadcast-annou)
+ .comment       0x00000000       0x31 contiki-exp5438.a(chameleon.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(framer-802154.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(framer.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(mac.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(mac-sequence.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(random.o)
+ .comment       0x00000000       0x31 contiki-exp5438.a(chameleon-bitop)
+ .comment       0x00000000       0x31 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .comment       0x00000000       0x31 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .comment       0x00000000       0x31 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .comment       0x00000000       0x31 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .comment       0x00000000       0x31 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x220
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+ .debug_aranges
+                0x00000020       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod32.o)
+ .debug_aranges
+                0x00000040       0x28 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .debug_aranges
+                0x00000068       0x28 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .debug_aranges
+                0x00000090       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .debug_aranges
+                0x000000b0       0x30 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .debug_aranges
+                0x000000e0       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+ .debug_aranges
+                0x00000100       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_mulsi3.o)
+ .debug_aranges
+                0x00000120       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod16.o)
+ .debug_aranges
+                0x00000140       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod64.o)
+ .debug_aranges
+                0x00000160       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+ .debug_aranges
+                0x00000180       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__init_stack.o)
+ .debug_aranges
+                0x000001a0       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_copy_data.o)
+ .debug_aranges
+                0x000001c0       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_clear_bss.o)
+ .debug_aranges
+                0x000001e0       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_endless_loop__.o)
+ .debug_aranges
+                0x00000200       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_unexpected_.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x1347
+ *(.debug_info)
+ .debug_info    0x00000000       0xbd /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+ .debug_info    0x000000bd       0xba /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod32.o)
+ .debug_info    0x00000177      0x18d /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .debug_info    0x00000304      0x673 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .debug_info    0x00000977       0xe1 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .debug_info    0x00000a58      0x172 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .debug_info    0x00000bca       0xff /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+ .debug_info    0x00000cc9       0xba /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_mulsi3.o)
+ .debug_info    0x00000d83       0xba /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod16.o)
+ .debug_info    0x00000e3d       0xba /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod64.o)
+ .debug_info    0x00000ef7       0xb8 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+ .debug_info    0x00000faf       0xb8 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__init_stack.o)
+ .debug_info    0x00001067       0xb8 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_copy_data.o)
+ .debug_info    0x0000111f       0xb8 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_clear_bss.o)
+ .debug_info    0x000011d7       0xb8 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_endless_loop__.o)
+ .debug_info    0x0000128f       0xb8 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_unexpected_.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x650
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+ .debug_abbrev  0x00000014       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod32.o)
+ .debug_abbrev  0x00000028       0xfa /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .debug_abbrev  0x00000122      0x23e /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .debug_abbrev  0x00000360       0xa3 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .debug_abbrev  0x00000403       0xfb /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .debug_abbrev  0x000004fe       0x9e /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+ .debug_abbrev  0x0000059c       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_mulsi3.o)
+ .debug_abbrev  0x000005b0       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod16.o)
+ .debug_abbrev  0x000005c4       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod64.o)
+ .debug_abbrev  0x000005d8       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+ .debug_abbrev  0x000005ec       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__init_stack.o)
+ .debug_abbrev  0x00000600       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_copy_data.o)
+ .debug_abbrev  0x00000614       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_clear_bss.o)
+ .debug_abbrev  0x00000628       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_endless_loop__.o)
+ .debug_abbrev  0x0000063c       0x14 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_unexpected_.o)
+
+.debug_line     0x00000000      0xab3
+ *(.debug_line)
+ .debug_line    0x00000000       0x6f /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+ .debug_line    0x0000006f       0x86 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod32.o)
+ .debug_line    0x000000f5       0xad /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .debug_line    0x000001a2      0x35c /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .debug_line    0x000004fe       0x67 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .debug_line    0x00000565       0x6e /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .debug_line    0x000005d3       0x91 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+ .debug_line    0x00000664       0x7f /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_mulsi3.o)
+ .debug_line    0x000006e3       0x7b /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod16.o)
+ .debug_line    0x0000075e       0xc4 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod64.o)
+ .debug_line    0x00000822       0x6d /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+ .debug_line    0x0000088f       0x6b /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__init_stack.o)
+ .debug_line    0x000008fa       0x71 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_copy_data.o)
+ .debug_line    0x0000096b       0x71 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_clear_bss.o)
+ .debug_line    0x000009dc       0x6c /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_endless_loop__.o)
+ .debug_line    0x00000a48       0x6b /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_unexpected_.o)
+
+.debug_frame    0x00000000      0x160
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x34 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .debug_frame   0x00000034       0x88 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .debug_frame   0x000000bc       0x2c /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .debug_frame   0x000000e8       0x4c /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .debug_frame   0x00000134       0x2c /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+
+.debug_str      0x00000000      0x39f
+ *(.debug_str)
+ .debug_str     0x00000000       0xff /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+                                0x147 (size before relaxing)
+ .debug_str     0x000000ff      0x234 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+                                0x3ad (size before relaxing)
+ .debug_str     0x00000333       0x1d /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+                                0x10c (size before relaxing)
+ .debug_str     0x00000350       0x2f /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+                                0x123 (size before relaxing)
+ .debug_str     0x0000037f       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+                                0x10f (size before relaxing)
+
+.debug_loc      0x00000000      0xda9
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x78 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .debug_loc     0x00000078      0xc0e /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .debug_loc     0x00000c86       0x3e /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .debug_loc     0x00000cc4       0x78 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .debug_loc     0x00000d3c       0x6d /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000       0xa0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x18 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .debug_ranges  0x00000018       0x48 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .debug_ranges  0x00000060       0x10 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .debug_ranges  0x00000070       0x20 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .debug_ranges  0x00000090       0x10 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+                0x00005c00                PROVIDE (__stack, (ORIGIN (ram) + 0x4000))
+                0x0000a176                __data_start_rom = _etext
+                0x0000a1d4                __data_end_rom = (_etext + SIZEOF (.data))
+OUTPUT(example-broadcast.exp5438 elf32-msp430)
+
+.gnu.attributes
+                0x00000000       0x11
+ .gnu.attributes
+                0x00000000       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/crt0ivtbl64.o
+ .gnu.attributes
+                0x00000011       0x11 example-broadcast.co
+ .gnu.attributes
+                0x00000022       0x11 obj_exp5438/contiki-exp5438-main.o
+ .gnu.attributes
+                0x00000033       0x11 contiki-exp5438.a(msp430.o)
+ .gnu.attributes
+                0x00000044       0x11 contiki-exp5438.a(leds.o)
+ .gnu.attributes
+                0x00000055       0x11 contiki-exp5438.a(watchdog.o)
+ .gnu.attributes
+                0x00000066       0x11 contiki-exp5438.a(rtimer-arch.o)
+ .gnu.attributes
+                0x00000077       0x11 contiki-exp5438.a(node-id.o)
+ .gnu.attributes
+                0x00000088       0x11 contiki-exp5438.a(leds-arch.o)
+ .gnu.attributes
+                0x00000099       0x11 contiki-exp5438.a(uart1x.o)
+ .gnu.attributes
+                0x000000aa       0x11 contiki-exp5438.a(uart2x.o)
+ .gnu.attributes
+                0x000000bb       0x11 contiki-exp5438.a(lcd.o)
+ .gnu.attributes
+                0x000000cc       0x11 contiki-exp5438.a(duty-cycle-scro)
+ .gnu.attributes
+                0x000000dd       0x11 contiki-exp5438.a(cc1200.o)
+ .gnu.attributes
+                0x000000ee       0x11 contiki-exp5438.a(cc1200-5438-arc)
+ .gnu.attributes
+                0x000000ff       0x11 contiki-exp5438.a(cc1200-802154g-)
+ .gnu.attributes
+                0x00000110       0x11 contiki-exp5438.a(uart1-putchar.o)
+ .gnu.attributes
+                0x00000121       0x11 contiki-exp5438.a(uart2-putchar.o)
+ .gnu.attributes
+                0x00000132       0x11 contiki-exp5438.a(clock.o)
+ .gnu.attributes
+                0x00000143       0x11 contiki-exp5438.a(autostart.o)
+ .gnu.attributes
+                0x00000154       0x11 contiki-exp5438.a(ctimer.o)
+ .gnu.attributes
+                0x00000165       0x11 contiki-exp5438.a(energest.o)
+ .gnu.attributes
+                0x00000176       0x11 contiki-exp5438.a(etimer.o)
+ .gnu.attributes
+                0x00000187       0x11 contiki-exp5438.a(process.o)
+ .gnu.attributes
+                0x00000198       0x11 contiki-exp5438.a(rtimer.o)
+ .gnu.attributes
+                0x000001a9       0x11 contiki-exp5438.a(timer.o)
+ .gnu.attributes
+                0x000001ba       0x11 contiki-exp5438.a(serial-line.o)
+ .gnu.attributes
+                0x000001cb       0x11 contiki-exp5438.a(list.o)
+ .gnu.attributes
+                0x000001dc       0x11 contiki-exp5438.a(ringbuf.o)
+ .gnu.attributes
+                0x000001ed       0x11 contiki-exp5438.a(broadcast.o)
+ .gnu.attributes
+                0x000001fe       0x11 contiki-exp5438.a(channel.o)
+ .gnu.attributes
+                0x0000020f       0x11 contiki-exp5438.a(rime.o)
+ .gnu.attributes
+                0x00000220       0x11 contiki-exp5438.a(linkaddr.o)
+ .gnu.attributes
+                0x00000231       0x11 contiki-exp5438.a(packetbuf.o)
+ .gnu.attributes
+                0x00000242       0x11 contiki-exp5438.a(queuebuf.o)
+ .gnu.attributes
+                0x00000253       0x11 contiki-exp5438.a(frame802154.o)
+ .gnu.attributes
+                0x00000264       0x11 contiki-exp5438.a(nullmac.o)
+ .gnu.attributes
+                0x00000275       0x11 contiki-exp5438.a(nullrdc.o)
+ .gnu.attributes
+                0x00000286       0x11 contiki-exp5438.a(contikimac-fram)
+ .gnu.attributes
+                0x00000297       0x11 contiki-exp5438.a(nullsec.o)
+ .gnu.attributes
+                0x000002a8       0x11 contiki-exp5438.a(spix.o)
+ .gnu.attributes
+                0x000002b9       0x11 contiki-exp5438.a(memb.o)
+ .gnu.attributes
+                0x000002ca       0x11 contiki-exp5438.a(abc.o)
+ .gnu.attributes
+                0x000002db       0x11 contiki-exp5438.a(announcement.o)
+ .gnu.attributes
+                0x000002ec       0x11 contiki-exp5438.a(broadcast-annou)
+ .gnu.attributes
+                0x000002fd       0x11 contiki-exp5438.a(chameleon.o)
+ .gnu.attributes
+                0x0000030e       0x11 contiki-exp5438.a(framer-802154.o)
+ .gnu.attributes
+                0x0000031f       0x11 contiki-exp5438.a(framer.o)
+ .gnu.attributes
+                0x00000330       0x11 contiki-exp5438.a(mac.o)
+ .gnu.attributes
+                0x00000341       0x11 contiki-exp5438.a(mac-sequence.o)
+ .gnu.attributes
+                0x00000352       0x11 contiki-exp5438.a(random.o)
+ .gnu.attributes
+                0x00000363       0x11 contiki-exp5438.a(chameleon-bitop)
+ .gnu.attributes
+                0x00000374       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod32.o)
+ .gnu.attributes
+                0x00000385       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(printf.o)
+ .gnu.attributes
+                0x00000396       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(vuprintf.o)
+ .gnu.attributes
+                0x000003a7       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(puts.o)
+ .gnu.attributes
+                0x000003b8       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(rand.o)
+ .gnu.attributes
+                0x000003c9       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/lib/mcpu-430x/mmpy-16/msr20/mc20/libc.a(memcmp.o)
+ .gnu.attributes
+                0x000003da       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_mulsi3.o)
+ .gnu.attributes
+                0x000003eb       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod16.o)
+ .gnu.attributes
+                0x000003fc       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libgcc.a(_udivmod64.o)
+ .gnu.attributes
+                0x0000040d       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_reset_vector__.o)
+ .gnu.attributes
+                0x0000041e       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__watchdog_support.o)
+ .gnu.attributes
+                0x0000042f       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__init_stack.o)
+ .gnu.attributes
+                0x00000440       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__low_level_init.o)
+ .gnu.attributes
+                0x00000451       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_copy_data.o)
+ .gnu.attributes
+                0x00000462       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_clear_bss.o)
+ .gnu.attributes
+                0x00000473       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(__stop_progExec__.o)
+ .gnu.attributes
+                0x00000484       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_endless_loop__.o)
+ .gnu.attributes
+                0x00000495       0x11 /usr/local/msp430/bin/../lib/gcc/msp430/4.7.0/mcpu-430x/mmpy-16/msr20/mc20/libcrt0.a(_unexpected_.o)
