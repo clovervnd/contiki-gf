@@ -111,6 +111,7 @@ uart2_init(unsigned long ubr)
 ISR(USCI_A2, uart2_rx_interrupt)
 {
   uint8_t c;
+  printf("uart2x ISR\n");
   ENERGEST_ON(ENERGEST_TYPE_IRQ);
   /*leds_toggle(LEDS_ALL);*/
   if(UCA2IV == 2) {
@@ -118,9 +119,9 @@ ISR(USCI_A2, uart2_rx_interrupt)
       c = UCA2RXBUF;   /* Clear error flags by forcing a dummy read. */
     } else {
       c = UCA2RXBUF;
+      //      printf("uart input is detected\n");
       if(uart2_input_handler != NULL) {
         if(uart2_input_handler(c)) {
-	  printf("uart input is detected\n");
           LPM4_EXIT;
         }
       }

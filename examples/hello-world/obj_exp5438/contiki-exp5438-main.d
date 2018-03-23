@@ -21,19 +21,17 @@ obj_exp5438/contiki-exp5438-main.o: \
  ../../core/./net/llsec/llsec802154.h ../../core/./net/mac/frame802154.h \
  ../../core/./net/ip/uip.h ../../core/./net/ip/uipopt.h \
  ../../core/./net/ip/tcpip.h ../../core/./net/rime/rimestats.h \
- ../../dev/cc2420/cc2420.h ../../core/./dev/spi.h \
- ../../dev/cc2420/cc2420_const.h ../../core/./lib/aes-128.h \
  ../../cpu/msp430/./dev/flash.h ../../core/./dev/leds.h \
  ../../core/./dev/serial-line.h ../../core/./dev/slip.h \
- ../../cpu/msp430/./dev/uart1.h ../../core/./dev/watchdog.h \
- ../../core/./dev/xmem.h ../../core/./lib/random.h \
- ../../core/./net/rime/rime.h ../../core/./net/rime/announcement.h \
- ../../core/./net/rime/collect.h ../../core/./net/rime/runicast.h \
- ../../core/./net/rime/stunicast.h ../../core/./sys/ctimer.h \
- ../../core/./net/rime/unicast.h ../../core/./net/rime/broadcast.h \
- ../../core/./net/rime/abc.h ../../core/./net/rime/channel.h \
- ../../core/./net/rime/chameleon.h ../../core/./net/queuebuf.h \
- ../../core/./net/rime/neighbor-discovery.h \
+ ../../cpu/msp430/./dev/uart1.h ../../cpu/msp430/./dev/uart2.h \
+ ../../core/./dev/watchdog.h ../../core/./dev/xmem.h \
+ ../../core/./lib/random.h ../../core/./net/rime/rime.h \
+ ../../core/./net/rime/announcement.h ../../core/./net/rime/collect.h \
+ ../../core/./net/rime/runicast.h ../../core/./net/rime/stunicast.h \
+ ../../core/./sys/ctimer.h ../../core/./net/rime/unicast.h \
+ ../../core/./net/rime/broadcast.h ../../core/./net/rime/abc.h \
+ ../../core/./net/rime/channel.h ../../core/./net/rime/chameleon.h \
+ ../../core/./net/queuebuf.h ../../core/./net/rime/neighbor-discovery.h \
  ../../core/./net/rime/collect-neighbor.h \
  ../../core/./net/rime/collect-link-estimate.h ../../core/./lib/list.h \
  ../../core/./net/rime/packetqueue.h ../../core/./lib/memb.h \
@@ -72,19 +70,17 @@ obj_exp5438/contiki-exp5438-main.o: \
  ../../core/./net/llsec/llsec802154.h ../../core/./net/mac/frame802154.h :
  ../../core/./net/ip/uip.h ../../core/./net/ip/uipopt.h :
  ../../core/./net/ip/tcpip.h ../../core/./net/rime/rimestats.h :
- ../../dev/cc2420/cc2420.h ../../core/./dev/spi.h :
- ../../dev/cc2420/cc2420_const.h ../../core/./lib/aes-128.h :
  ../../cpu/msp430/./dev/flash.h ../../core/./dev/leds.h :
  ../../core/./dev/serial-line.h ../../core/./dev/slip.h :
- ../../cpu/msp430/./dev/uart1.h ../../core/./dev/watchdog.h :
- ../../core/./dev/xmem.h ../../core/./lib/random.h :
- ../../core/./net/rime/rime.h ../../core/./net/rime/announcement.h :
- ../../core/./net/rime/collect.h ../../core/./net/rime/runicast.h :
- ../../core/./net/rime/stunicast.h ../../core/./sys/ctimer.h :
- ../../core/./net/rime/unicast.h ../../core/./net/rime/broadcast.h :
- ../../core/./net/rime/abc.h ../../core/./net/rime/channel.h :
- ../../core/./net/rime/chameleon.h ../../core/./net/queuebuf.h :
- ../../core/./net/rime/neighbor-discovery.h :
+ ../../cpu/msp430/./dev/uart1.h ../../cpu/msp430/./dev/uart2.h :
+ ../../core/./dev/watchdog.h ../../core/./dev/xmem.h :
+ ../../core/./lib/random.h ../../core/./net/rime/rime.h :
+ ../../core/./net/rime/announcement.h ../../core/./net/rime/collect.h :
+ ../../core/./net/rime/runicast.h ../../core/./net/rime/stunicast.h :
+ ../../core/./sys/ctimer.h ../../core/./net/rime/unicast.h :
+ ../../core/./net/rime/broadcast.h ../../core/./net/rime/abc.h :
+ ../../core/./net/rime/channel.h ../../core/./net/rime/chameleon.h :
+ ../../core/./net/queuebuf.h ../../core/./net/rime/neighbor-discovery.h :
  ../../core/./net/rime/collect-neighbor.h :
  ../../core/./net/rime/collect-link-estimate.h ../../core/./lib/list.h :
  ../../core/./net/rime/packetqueue.h ../../core/./lib/memb.h :

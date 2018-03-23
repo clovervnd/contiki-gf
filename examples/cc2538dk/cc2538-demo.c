@@ -100,8 +100,7 @@ static void
 broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
 {
   leds_toggle(LEDS_RF_RX);
-  printf("Received %u bytes: '0x%04x'\n", packetbuf_datalen(),
-         *(uint16_t *)packetbuf_dataptr());
+  printf("Received %s\n",(char *)packetbuf_dataptr());
 }
 /*---------------------------------------------------------------------------*/
 static const struct broadcast_callbacks bc_rx = { broadcast_recv };
@@ -119,6 +118,8 @@ PROCESS_THREAD(cc2538_demo_process, ev, data)
 
   PROCESS_BEGIN();
 
+  static uint8_t init_flag = 0;
+  static uint8_t start_flag = 0;
   counter = 0;
   broadcast_open(&bc, BROADCAST_CHANNEL, &bc_rx);
 
@@ -129,22 +130,39 @@ PROCESS_THREAD(cc2538_demo_process, ev, data)
     PROCESS_YIELD();
 
     if(ev == PROCESS_EVENT_TIMER) {
-      leds_on(LEDS_PERIODIC);
-      printf("-----------------------------------------\n"
-             "Counter = 0x%08x\n", counter);
-
-      printf("VDD = %d mV\n",
-             vdd3_sensor.value(CC2538_SENSORS_VALUE_TYPE_CONVERTED));
-
-      printf("Temperature = %d mC\n",
-              cc2538_temp_sensor.value(CC2538_SENSORS_VALUE_TYPE_CONVERTED));
-
-      printf("Ambient light sensor = %d raw\n", als_sensor.value(0));
-
+      if(init_flag == 0) {
+	char data[2];
+	data[0] = 'i';
+	data[1] = '\0';
+	packetbuf_copyfrom(data,2);
+	broadcast_send(&bc);
+	init_flag = 1;
+      }	
+      else if(start_flag == 0) {
+	char data[2];
+	data[0] = 's';
+	data[1] = '\0';
+	packetbuf_copyfrom(data,2);
+	broadcast_send(&bc);
+	start_flag = 1;
+      }
       etimer_set(&et, CLOCK_SECOND);
-      rtimer_set(&rt, RTIMER_NOW() + LEDS_OFF_HYSTERISIS, 1,
-                 rt_callback, NULL);
-      counter++;
+      //      leds_on(LEDS_PERIODIC);
+      /* printf("-----------------------------------------\n" */
+      /*        "Counter = 0x%08x\n", counter); */
+
+      /* printf("VDD = %d mV\n", */
+      /*        vdd3_sensor.value(CC2538_SENSORS_VALUE_TYPE_CONVERTED)); */
+
+      /* printf("Temperature = %d mC\n", */
+      /*         cc2538_temp_sensor.value(CC2538_SENSORS_VALUE_TYPE_CONVERTED)); */
+
+      /* printf("Ambient light sensor = %d raw\n", als_sensor.value(0)); */
+
+      /* etimer_set(&et, CLOCK_SECOND); */
+      /* rtimer_set(&rt, RTIMER_NOW() + LEDS_OFF_HYSTERISIS, 1, */
+      /*            rt_callback, NULL); */
+      /* counter++; */
     } else if(ev == sensors_event) {
       if(data == &button_select_sensor) {
         packetbuf_copyfrom(&counter, sizeof(counter));
@@ -159,7 +177,7 @@ PROCESS_THREAD(cc2538_demo_process, ev, data)
         sys_ctrl_reset();
       }
     } else if(ev == serial_line_event_message) {
-      leds_toggle(LEDS_SERIAL_IN);
+      printf("serial input %s\n",(char *)data);
     }
   }
 

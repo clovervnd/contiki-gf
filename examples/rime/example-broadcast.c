@@ -57,8 +57,25 @@ AUTOSTART_PROCESSES(&example_broadcast_process);
 static void
 broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
 {
+  char* msg = (char *)packetbuf_dataptr();
   printf("broadcast message received from %d.%d: '%s'\n",
          from->u8[0], from->u8[1], (char *)packetbuf_dataptr());
+  if(msg[0] == 'i') {
+    printf("input i from radio\n");
+	MSP430_GPIOEN_PORT(SEL) &= ~BV(MSP430_GPIOEN_PIN);
+	MSP430_GPIOEN_PORT(DIR) |= BV(MSP430_GPIOEN_PIN);
+	MSP430_GPIOEN_PORT(OUT) |= BV(MSP430_GPIOEN_PIN);
+	printf("GPIO pin High\n");
+  }
+  else if(msg[0] == 's') {
+    printf("input s from radio\n");
+	putchar2('s'); // -> using different uart(#2)
+	putchar2('t'); 
+	putchar2('a'); 
+	putchar2('r'); 
+	putchar2('t'); 
+  }
+  
 }
 static const struct broadcast_callbacks broadcast_call = {broadcast_recv};
 static struct broadcast_conn broadcast;
@@ -71,49 +88,58 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
 
   PROCESS_BEGIN();
 
-	/* sensor start signal */
-	MSP430_GPIOEN_PORT(SEL) &= ~BV(MSP430_GPIOEN_PIN);
-	MSP430_GPIOEN_PORT(DIR) |= BV(MSP430_GPIOEN_PIN);
-	MSP430_GPIOEN_PORT(OUT) &= ~BV(MSP430_GPIOEN_PIN);
-	printf("GPIO pin High\n");
-	
 	broadcast_open(&broadcast, 129, &broadcast_call);
 
-	//	printf("2222\n");
-	/* while(1) { */
-
-	/* Delay 2-4 seconds */
-	etimer_set(&et, CLOCK_SECOND);
-	/*
-	 * while(1){
-	 *   printf("shit");
-	 * }
-	 */
+	//	packetbuf_copyfrom("Hello", 6);
+	//	printf("broadcast message sending\n");
+	//	broadcast_send(&broadcast);
+	//	printf("broadcast message sent\n");
+	//	printf("Wait until input 'i'\n");
+	printf("Powered on\n");
+	etimer_set(&et, CLOCK_SECOND*5);
 	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
-	printf("wait for a second\n");
 
-	//	printf("start"); // -> using different uart
+	printf("GPIO pin High\n");
+	MSP430_GPIOEN_PORT(SEL) &= ~BV(MSP430_GPIOEN_PIN);
+	MSP430_GPIOEN_PORT(DIR) |= BV(MSP430_GPIOEN_PIN);
+	MSP430_GPIOEN_PORT(OUT) |= BV(MSP430_GPIOEN_PIN);
+	printf("wait for a second\n");
+	/* Delay 1 second for power on */
+	etimer_set(&et, CLOCK_SECOND);
+	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
+	printf("put start to uart(#2)\n");
 	putchar2('s'); // -> using different uart(#2)
 	putchar2('t'); 
 	putchar2('a'); 
 	putchar2('r'); 
 	putchar2('t'); 
-	//	packetbuf_copyfrom("Hello", 6);
-	//	printf("broadcast message sending\n");
-	//	broadcast_send(&broadcast);
-	//	printf("broadcast message sent\n");
-	/* } */
+	etimer_set(&et, CLOCK_SECOND);
+	
   while(1) {
 
     PROCESS_YIELD();
-
     if(ev == PROCESS_EVENT_TIMER) {
       /* do nothing */
-    } else if(ev == serial_line_event_message) {
-      /* leds_toggle(LEDS_SERIAL_IN); */
-      printf("DATA received\n");
     }
-    etimer_set(&et, CLOCK_SECOND/100);
+    if(ev == serial_line_event_message) {
+      /* leds_toggle(LEDS_SERIAL_IN); */
+      /* printf("DATA received\n"); */
+      /* printf("input uart:%s\n",(char *)data); */
+      /* if(((char *)data)[0]=='i') { */
+      /* 	/\* sensor start signal *\/ */
+      /* 	printf("Wait until input 's'\n"); */
+      /* } */
+      /* else if(((char *)data)[0]=='s') { */
+      /* } */
+     	printf("DATA received %s\n",(char *)data);
+	MSP430_GPIOEN_PORT(SEL) &= ~BV(MSP430_GPIOEN_PIN);
+	MSP430_GPIOEN_PORT(DIR) |= BV(MSP430_GPIOEN_PIN);
+	MSP430_GPIOEN_PORT(OUT) &= ~BV(MSP430_GPIOEN_PIN);
+	printf("GPIO pin Low\n");
+	//	packetbuf_copyfrom(data,strlen(data));
+	//	broadcast_send(&broadcast);
+    }
+    etimer_set(&et, CLOCK_SECOND);
   }
 
   PROCESS_END();

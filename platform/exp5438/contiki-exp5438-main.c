@@ -125,6 +125,8 @@ main(int argc, char **argv)
 
   uart1_init(BAUD2UBR(115200)); /* Must come before first printf */
   uart2_init(BAUD2UBR(115200)); /* Must come before first printf */
+  uart1_set_input(serial_line_input_byte);
+  uart2_set_input(serial_line_input_byte);
 #if NETSTACK_CONF_WITH_IPV4
   slip_arch_init(BAUD2UBR(115200));
 #endif /* NETSTACK_CONF_WITH_IPV4 */

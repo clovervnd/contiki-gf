@@ -2934,3 +2934,81 @@ Tue Feb  6 13:07:37 2018:	* ----------------------------------------------------
 Tue Feb  6 13:07:37 2018:	* Driver      : closed (Internal error)
 Tue Feb  6 13:07:37 2018:	* ----------------------------------------------------------------------------
 Tue Feb  6 13:07:37 2018:	*/
+Fri Mar 23 13:15:02 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Mar 23 13:15:02 2018:	*     / |__                                                                   *
+Fri Mar 23 13:15:02 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Mar 23 13:15:02 2018:	*      | /                                                                    *
+Fri Mar 23 13:15:02 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Mar 23 13:15:02 2018:	*
+Fri Mar 23 13:15:02 2018:	* Evaluating triggers...done
+Fri Mar 23 13:15:02 2018:	* Checking for available FET debuggers: 
+Fri Mar 23 13:15:02 2018:	* Found USB FET @ ttyACM0 <- Already in use
+Fri Mar 23 13:15:02 2018:	* Couldn't find available FET @ ttyACM0. Aborting.
+Fri Mar 23 13:15:02 2018:	* 
+Fri Mar 23 13:15:02 2018:	* ----------------------------------------------------------------------------
+Fri Mar 23 13:15:02 2018:	* Driver      : closed (MSP DebugStack not initialized)
+Fri Mar 23 13:15:02 2018:	* ----------------------------------------------------------------------------
+Fri Mar 23 13:15:02 2018:	*/
+Fri Mar 23 13:19:53 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Mar 23 13:19:53 2018:	*     / |__                                                                   *
+Fri Mar 23 13:19:53 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Mar 23 13:19:53 2018:	*      | /                                                                    *
+Fri Mar 23 13:19:53 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Mar 23 13:19:53 2018:	*
+Fri Mar 23 13:19:53 2018:	* Evaluating triggers...done
+Fri Mar 23 13:19:53 2018:	* Checking for available FET debuggers: 
+Fri Mar 23 13:19:54 2018:	* Found USB FET @ ttyACM0 <- Already in use
+Fri Mar 23 13:19:54 2018:	* Couldn't find available FET @ ttyACM0. Aborting.
+Fri Mar 23 13:19:54 2018:	* 
+Fri Mar 23 13:19:54 2018:	* ----------------------------------------------------------------------------
+Fri Mar 23 13:19:54 2018:	* Driver      : closed (MSP DebugStack not initialized)
+Fri Mar 23 13:19:54 2018:	* ----------------------------------------------------------------------------
+Fri Mar 23 13:19:54 2018:	*/
+Fri Mar 23 13:20:15 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Mar 23 13:20:15 2018:	*     / |__                                                                   *
+Fri Mar 23 13:20:15 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Mar 23 13:20:15 2018:	*      | /                                                                    *
+Fri Mar 23 13:20:15 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Mar 23 13:20:15 2018:	*
+Fri Mar 23 13:20:15 2018:	* Evaluating triggers...done
+Fri Mar 23 13:20:15 2018:	* Checking for available FET debuggers: 
+Fri Mar 23 13:20:15 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Mar 23 13:20:15 2018:	* Initializing interface @ ttyACM0...done
+Fri Mar 23 13:20:15 2018:	* Checking firmware compatibility: 
+Fri Mar 23 13:20:15 2018:	* FET firmware is up to date.
+Fri Mar 23 13:20:15 2018:	* Reading FW version...done
+Fri Mar 23 13:20:15 2018:	* Setting VCC to 3000 mV...done
+Fri Mar 23 13:20:18 2018:	* Accessing device...done
+Fri Mar 23 13:20:18 2018:	* Reading device information...
+Fri Mar 23 13:20:18 2018:	* Warning: Found device does not match -n selection:
+Fri Mar 23 13:20:18 2018:	- Selected: MSP430x5438A
+Fri Mar 23 13:20:18 2018:	- Found:    MSP430F5438A
+Fri Mar 23 13:20:18 2018:	- Continue? (Y/N): Fri Mar 23 13:20:20 2018:	y
+Fri Mar 23 13:20:20 2018:	* Loading file into device...done
+Fri Mar 23 13:20:25 2018:	* Verifying memory (hello-world.hex)...done
+Fri Mar 23 13:20:26 2018:	* 
+Fri Mar 23 13:20:26 2018:	* ----------------------------------------------------------------------------
+Fri Mar 23 13:20:26 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w hello-world.hex -v -z [VCC] -i USB 
+Fri Mar 23 13:20:26 2018:	* ----------------------------------------------------------------------------
+Fri Mar 23 13:20:26 2018:	* Driver      : loaded
+Fri Mar 23 13:20:26 2018:	* Dll Version : 31100001
+Fri Mar 23 13:20:26 2018:	* FwVersion   : 31100001
+Fri Mar 23 13:20:26 2018:	* Interface   : USB
+Fri Mar 23 13:20:26 2018:	* HwVersion   : U 1.40
+Fri Mar 23 13:20:26 2018:	* JTAG Mode   : AUTO
+Fri Mar 23 13:20:26 2018:	* Device      : MSP430F5438A
+Fri Mar 23 13:20:26 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Mar 23 13:20:26 2018:	* Erase Mode  : ERASE_MAIN
+Fri Mar 23 13:20:26 2018:	* Prog.File   : hello-world.hex
+Fri Mar 23 13:20:26 2018:	* Verified    : TRUE
+Fri Mar 23 13:20:26 2018:	* BSL Unlock  : FALSE
+Fri Mar 23 13:20:26 2018:	* InfoA Access: FALSE
+Fri Mar 23 13:20:26 2018:	* VCC ON      : 3000 mV
+Fri Mar 23 13:20:26 2018:	* ----------------------------------------------------------------------------
+Fri Mar 23 13:20:26 2018:	* Starting target code execution...done
+Fri Mar 23 13:20:27 2018:	* Disconnecting from device...done
+Fri Mar 23 13:20:27 2018:	* 
+Fri Mar 23 13:20:27 2018:	* ----------------------------------------------------------------------------
+Fri Mar 23 13:20:27 2018:	* Driver      : closed (No error)
+Fri Mar 23 13:20:27 2018:	* ----------------------------------------------------------------------------
+Fri Mar 23 13:20:27 2018:	*/

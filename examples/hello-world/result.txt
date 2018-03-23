@@ -3,22 +3,22 @@ mkdir obj_exp5438
   CC        ../../platform/exp5438/./msp430.c
   CC        ../../core/dev/leds.c
   CC        ../../platform/exp5438/./watchdog.c
-  CC        ../../platform/exp5438/./spix.c
-  CC        ../../dev/cc2420/cc2420.c
-  CC        ../../platform/exp5438/./cc2420-arch.c
   CC        ../../platform/exp5438/./rtimer-arch.c
   CC        ../../platform/exp5438/./node-id.c
   CC        ../../platform/exp5438/./leds-arch.c
   CC        ../../platform/exp5438/./uart1x.c
+  CC        ../../platform/exp5438/./uart2x.c
   CC        ../../platform/exp5438/./lcd.c
   CC        ../../platform/exp5438/./hal_lcd.c
   CC        ../../platform/exp5438/./hal_lcd_fonts.c
   CC        ../../platform/exp5438/./duty-cycle-scroller.c
   CC        ../../core/cfs/cfs-ram.c
+  CC        ../../platform/exp5438/./spix.c
   CC        ../../dev/cc1200/cc1200.c
   CC        ../../platform/exp5438/./cc1200-5438-arch.c
   CC        ../../dev/cc1200/cc1200-802154g-863-870-fsk-50kbps.c
   CC        ../../platform/exp5438/./uart1-putchar.c
+  CC        ../../platform/exp5438/./uart2-putchar.c
   CC        ../../core/lib/me.c
   CC        ../../core/lib/me_tabs.c
   CC        ../../core/dev/slip.c

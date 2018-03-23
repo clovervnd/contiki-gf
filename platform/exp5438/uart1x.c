@@ -110,8 +110,6 @@ uart1_init(unsigned long ubr)
 ISR(USCI_A1, uart1_rx_interrupt)
 {
   uint8_t c;
-
-	uart1_writeb('c');
   ENERGEST_ON(ENERGEST_TYPE_IRQ);
   /*leds_toggle(LEDS_ALL);*/
   if(UCA1IV == 2) {
