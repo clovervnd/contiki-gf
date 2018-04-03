@@ -186,7 +186,7 @@ ISR(PORT1, cc1200_port1_interrupt)
 	
 	ENERGEST_ON(ENERGEST_TYPE_IRQ);
 
-	if (CC1200_GPIO2_PORT(IFG) & BV(CC1200_GPIO2_PIN)){
+	if (CC1200_GPIO0_PORT(IFG) & BV(CC1200_GPIO0_PIN)) {
 			if (cc1200_rx_interrupt()){
 				LPM4_EXIT;
 			}

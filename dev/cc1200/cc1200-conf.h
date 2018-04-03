@@ -118,7 +118,8 @@
 #ifdef CC1200_CONF_RF_CFG
 #define CC1200_RF_CFG                   CC1200_CONF_RF_CFG
 #else
-#define CC1200_RF_CFG                   cc1200_802154g_863_870_fsk_50kbps
+#define CC1200_RF_CFG                   cc1200_802154g_868_fsk_sniff_38kbps
+// #define CC1200_RF_CFG                   cc1200_802154g_863_870_fsk_50kbps
 #endif
 /*---------------------------------------------------------------------------*/
 /*

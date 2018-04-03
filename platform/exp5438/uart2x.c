@@ -111,7 +111,6 @@ uart2_init(unsigned long ubr)
 ISR(USCI_A2, uart2_rx_interrupt)
 {
   uint8_t c;
-  printf("uart2x ISR\n");
   ENERGEST_ON(ENERGEST_TYPE_IRQ);
   /*leds_toggle(LEDS_ALL);*/
   if(UCA2IV == 2) {

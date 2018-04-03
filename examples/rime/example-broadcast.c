@@ -99,20 +99,6 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
 	etimer_set(&et, CLOCK_SECOND*5);
 	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
 
-	printf("GPIO pin High\n");
-	MSP430_GPIOEN_PORT(SEL) &= ~BV(MSP430_GPIOEN_PIN);
-	MSP430_GPIOEN_PORT(DIR) |= BV(MSP430_GPIOEN_PIN);
-	MSP430_GPIOEN_PORT(OUT) |= BV(MSP430_GPIOEN_PIN);
-	printf("wait for a second\n");
-	/* Delay 1 second for power on */
-	etimer_set(&et, CLOCK_SECOND);
-	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
-	printf("put start to uart(#2)\n");
-	putchar2('s'); // -> using different uart(#2)
-	putchar2('t'); 
-	putchar2('a'); 
-	putchar2('r'); 
-	putchar2('t'); 
 	etimer_set(&et, CLOCK_SECOND);
 	
   while(1) {

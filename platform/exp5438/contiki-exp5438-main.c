@@ -157,7 +157,6 @@ main(int argc, char **argv)
   flash_done();
 #endif /* BURN_NODEID */
 #endif /* NODE_ID */
-
   if(node_id == 0) {
     node_id = *((unsigned short *)0x1800);
   }
@@ -183,8 +182,7 @@ main(int argc, char **argv)
 
   set_rime_addr();
 
-	cc1200_init();
-	/* cc1200_init(); */
+  cc1200_init();
 
   {
     uint8_t longaddr[8];

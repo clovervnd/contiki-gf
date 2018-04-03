@@ -61,16 +61,16 @@
 #include <string.h>
 
 #ifndef WITH_ACK_OPTIMIZATION
-#define WITH_ACK_OPTIMIZATION        1
+#define WITH_ACK_OPTIMIZATION        0
 #endif
 #ifndef WITH_ENCOUNTER_OPTIMIZATION
-#define WITH_ENCOUNTER_OPTIMIZATION  1
+#define WITH_ENCOUNTER_OPTIMIZATION  0
 #endif
 #ifndef WITH_STREAMING
-#define WITH_STREAMING               1
+#define WITH_STREAMING               0
 #endif
 #ifndef WITH_STROBE_BROADCAST
-#define WITH_STROBE_BROADCAST        0
+#define WITH_STROBE_BROADCAST        1
 #endif
 
 struct announcement_data {
@@ -108,7 +108,8 @@ struct cxmac_hdr {
 #ifdef CXMAC_CONF_ON_TIME
 #define DEFAULT_ON_TIME (CXMAC_CONF_ON_TIME)
 #else
-#define DEFAULT_ON_TIME (RTIMER_ARCH_SECOND / 160)
+//#define DEFAULT_ON_TIME (RTIMER_ARCH_SECOND / 160)
+#define DEFAULT_ON_TIME (RTIMER_ARCH_SECOND / 40)
 #endif
 
 #ifdef CXMAC_CONF_OFF_TIME
@@ -137,12 +138,12 @@ struct cxmac_hdr {
    cycle. */
 #define ANNOUNCEMENT_TIME (random_rand() % (ANNOUNCEMENT_PERIOD))
 
-#define DEFAULT_STROBE_WAIT_TIME (7 * DEFAULT_ON_TIME / 8)
+#define DEFAULT_STROBE_WAIT_TIME (DEFAULT_ON_TIME)
 
 struct cxmac_config cxmac_config = {
   DEFAULT_ON_TIME,
   DEFAULT_OFF_TIME,
-  4 * DEFAULT_ON_TIME + DEFAULT_OFF_TIME,
+  8 * DEFAULT_ON_TIME + DEFAULT_OFF_TIME,
   DEFAULT_STROBE_WAIT_TIME
 };
 
@@ -164,7 +165,7 @@ static volatile unsigned char radio_is_on = 0;
 #define LEDS_ON(x) leds_on(x)
 #define LEDS_OFF(x) leds_off(x)
 #define LEDS_TOGGLE(x) leds_toggle(x)
-#define DEBUG 1
+#define DEBUG 0
 #if DEBUG
 #include <stdio.h>
 #define PRINTF(...) printf(__VA_ARGS__)
