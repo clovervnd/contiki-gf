@@ -1,5 +1,5 @@
 #!/bin/bash
-#NODE=$1
+APP=$1
 
-msp430-objcopy sniff_test.exp5438 -O ihex sniff_test.ihex
-sudo make sniff_test.upload
+msp430-objcopy $1.exp5438 -O ihex $1.ihex
+sudo make $1.upload

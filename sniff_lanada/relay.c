@@ -52,15 +52,16 @@
 
 /* static uint8_t sensing_flag; */
 /* static uint8_t off_flag; */
-
+static uint8_t relay_target;
+static char BUFFER[100];
 /* --------------------------------------------------------------------------*/
-PROCESS(example_broadcast_process, "base station");
+PROCESS(example_broadcast_process, "relay node");
 AUTOSTART_PROCESSES(&example_broadcast_process);
 /*---------------------------------------------------------------------------*/
 static void
 unicast_recv(struct unicast_conn *c, const linkaddr_t *from)
 {
-  /* char* recv_data = (char *)packetbuf_dataptr(); */
+   char* recv_data = (char *)packetbuf_dataptr();
   /* if(recv_data[0] == "s" && recv_data[1] == "e" && recv_data[2] == "n" && */
   /*    recv_data[3] == "s" && recv_data[4] == "i" && recv_data[5] == "n" && */
   /*    recv_data[6] == "g") { */
@@ -73,7 +74,64 @@ unicast_recv(struct unicast_conn *c, const linkaddr_t *from)
 
   printf("DATA received from %d.%d: %s\n",
          from->u8[0], from->u8[1], (char *)packetbuf_dataptr());
+  /* From base station */
+  if(linkaddr_node_addr.u8[0] == 29) {
+	  if(from->u8[0] == 30) {
+		  relay_target = 28;
+	  }
+	  else if(from->u8[0] == 28) {
+		  relay_target = 30;
+	  }
+  }
+  else if(linkaddr_node_addr.u8[0] == 28) {
+	  if(from->u8[0] == 29) {
+		  relay_target = 27;
+	  }
+	  else if(from->u8[0] == 27) {
+		  if(recv_data[0] == 's' && recv_data[1] == 'e' && recv_data[2] == 'n' && recv_data[3] == 's') {
+			  relay_target = 0;
+		  }
+		  else {
+			  relay_target = 29;
+		  }
+	  }
+  }
+  else if(linkaddr_node_addr.u8[0] == 27) {
+	  if(from->u8[0] == 28) {
+		  relay_target = 1;
+	  }
+	  else if(from->u8[0] >=1 && from->u8[0] <=8) {
+		  relay_target = 28;
+	  }
+  }
+  else if(linkaddr_node_addr.u8[0] == 26) {
+	  if(from->u8[0] == 30) {
+		  relay_target = 25;
+	  }
+	  else if(from->u8[0] == 25) {
+		  if(recv_data[0] == 's' && recv_data[1] == 'e' && recv_data[2] == 'n' && recv_data[3] == 's') {
+			  relay_target = 0;
+		  }
+		  else {
+			  relay_target = 30;
+		  }
+	  }
+  }
+  else if(linkaddr_node_addr.u8[0] == 25) {
+	  if(from->u8[0] == 26) {
+		  relay_target = 9;
+	  }
+	  else if(from->u8[0] >=9 && from->u8[0] <=10) {
+		  relay_target = 26;
+	  }
+  }
+
+  printf("relay_target: %d\n",relay_target);
+  memset(BUFFER,0,100);
+  memcpy(BUFFER,(char *)packetbuf_dataptr(),packetbuf_datalen());
+
 }
+
 
 static const struct unicast_callbacks unicast_call = {unicast_recv};
 static struct unicast_conn unicast;
@@ -96,6 +154,20 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     /* etimer_set(&et, CLOCK_SECOND * 4 + random_rand() % (CLOCK_SECOND * 4)); */
     PROCESS_YIELD();
     if(ev == PROCESS_EVENT_TIMER) {
+    	if(relay_target != 0) {
+    		printf("I got target relay %d\n",relay_target);
+    		packetbuf_clear();
+    		packetbuf_copyfrom(BUFFER, 100);
+    		if(relay_target == 1 || relay_target == 9) {
+    			broadcast_send(&(unicast.c));
+    		}
+    		else {
+        		addr.u8[0] = relay_target;
+        		addr.u8[1] = 0;
+        		unicast_send(&unicast,&addr);
+    		}
+    		relay_target = 0;
+    	}
       /* addr.u8[0] = 0; */
       /* addr.u8[1] = 1; */
       /* if(!linkaddr_cmp(&addr, &linkaddr_node_addr)) { */
@@ -104,41 +176,27 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
       /* 	printf("broadcast message sent\n"); */
       /* } */
     }
-    if(ev == serial_line_event_message) {
+/*    if(ev == serial_line_event_message) {
     	char * input = (char *)data;
     	if(input[0]=='s' && input[1]=='e' && input[2]=='n' &&
     			input[3]=='s' && input[4]=='i' && input[5]=='n' &&
 				input[6]=='g') {
     		packetbuf_clear();
     		packetbuf_copyfrom((char *)data,8);
-    		addr.u8[0] = 29;
+    		addr.u8[0] = 0;
     		addr.u8[1] = 0;
-    		unicast_send(&unicast,&addr);
-
-    		packetbuf_clear();
-    		packetbuf_copyfrom((char *)data,8);
-    		addr.u8[0] = 26;
-    		addr.u8[1] = 0;
-    		//	broadcast_send(&broadcast);
-    		unicast_send(&unicast,&addr);
+    		unicast_send(&unicast);
     	}
     	else if(input[0]=='o' && input[1]=='f' && input[2]=='f') {
     		packetbuf_clear();
     		packetbuf_copyfrom((char *)data,4);
-    		addr.u8[0] = 29;
+    		addr.u8[0] = 0;
     		addr.u8[1] = 0;
-    		unicast_send(&unicast,&addr);
-
-    		packetbuf_clear();
-    		packetbuf_copyfrom((char *)data,4);
-    		addr.u8[0] = 26;
-    		addr.u8[1] = 0;
-    		//	broadcast_send(&broadcast);
-    		unicast_send(&unicast,&addr);
+    		unicast_send(&unicast);
     	}
     	printf("UART input %s\n",(char *)data);
-      /* Send command to sensors */
-    }
+    	 Send command to sensors
+    }*/
     etimer_set(&et, CLOCK_SECOND/1000);
     /* PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et)); */
   }

@@ -5,7 +5,7 @@
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
- * 1. Redistributions of source code must retain the above copyright
+ * 1. Redistributions of source code must retain1 the above copyright
  *    notice, this list of conditions and the following disclaimer.
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
@@ -58,7 +58,7 @@ PROCESS(example_broadcast_process, "Event-driven sensor");
 AUTOSTART_PROCESSES(&example_broadcast_process);
 /*---------------------------------------------------------------------------*/
 static void
-broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
+unicast_recv(struct unicast_conn *c, const linkaddr_t *from)
 {
   char* recv_data = (char *)packetbuf_dataptr();
   if(recv_data[0] == 's' && recv_data[1] == 'e' && recv_data[2] == 'n' &&
@@ -75,18 +75,23 @@ broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
          from->u8[0], from->u8[1], (char *)packetbuf_dataptr());
 }
 
-static const struct broadcast_callbacks broadcast_call = {broadcast_recv};
-static struct broadcast_conn broadcast;
+static const struct unicast_callbacks unicast_call = {unicast_recv};
+static struct unicast_conn unicast;
 /*---------------------------------------------------------------------------*/
 PROCESS_THREAD(example_broadcast_process, ev, data)
 {
   static struct etimer et;
+  static char BUFFER[100];
+  static char* temp;
+  static uint8_t receiving_uart=0;
+  static uint8_t index=0;
+  static int count=0;
 
-  PROCESS_EXITHANDLER(broadcast_close(&broadcast);)
+  PROCESS_EXITHANDLER(unicast_close(&unicast);)
 
   PROCESS_BEGIN();
 
-  broadcast_open(&broadcast, 129, &broadcast_call);
+  unicast_open(&unicast, 146, &unicast_call);
 
   etimer_set(&et, CLOCK_SECOND);
 
@@ -96,25 +101,61 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     /* etimer_set(&et, CLOCK_SECOND * 4 + random_rand() % (CLOCK_SECOND * 4)); */
     PROCESS_YIELD();
     if(ev == PROCESS_EVENT_TIMER) {
-      /* addr.u8[0] = 0; */
-      /* addr.u8[1] = 1; */
-      /* if(!linkaddr_cmp(&addr, &linkaddr_node_addr)) { */
-      /* 	packetbuf_copyfrom("Hello", 6); */
-      /* 	broadcast_send(&broadcast); */
-      /* 	printf("broadcast message sent\n"); */
-      /* } */
+      if(receiving_uart == 2) {
+	receiving_uart = 0;
+	packetbuf_clear();
+	packetbuf_copyfrom(BUFFER, 100);
+	etimer_set(&et, CLOCK_SECOND + random_rand() % (CLOCK_SECOND * 10)); // Random backoff
+	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
+	addr.u8[0] = 25;
+	addr.u8[1] = 0;
+	/* packetbuf_set_addr(PACKETBUF_ADDR_RECEIVER,&addr); */
+	unicast_send(&unicast, &addr);
+
+	packetbuf_clear();
+	packetbuf_copyfrom(BUFFER, 100);
+	etimer_set(&et, CLOCK_SECOND + random_rand() % (CLOCK_SECOND * 10)); // Random backoff
+	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
+	addr.u8[0] = 27;
+	addr.u8[1] = 0;
+	/* packetbuf_set_addr(PACKETBUF_ADDR_RECEIVER,&addr); */
+	unicast_send(&unicast, &addr);
+
+
+	off_flag = 0;
+	MSP430_GPIOEN_PORT(SEL) &= ~BV(MSP430_GPIOEN_PIN);
+	MSP430_GPIOEN_PORT(DIR) |= BV(MSP430_GPIOEN_PIN);
+	MSP430_GPIOEN_PORT(OUT) &= ~BV(MSP430_GPIOEN_PIN);
+	printf("GPIO pin Low\n");
+
+      }
     }
     if(ev == serial_line_event_message) {
       printf("UART input %s\n",(char *)data);
+      temp=(char *)data;
+      if(temp[0]=='S' && temp[1]=='k' && temp[2]=='e' && temp[3]=='w') {
+	memset(BUFFER,0,100);
+	index = 0;
+      	receiving_uart = 1;
+      	memcpy(BUFFER,(char *)data,strlen(data));
+      	index += strlen(data);
+      	//	BUFFER[0]='X';
+      }
+      else if((temp[0]=='D' && temp[1]=='a' && temp[2]=='m' && temp[3]=='a') ||
+	      (temp[0]=='n' && temp[1]=='o' && temp[2]=='n')) {
+      	memcpy(BUFFER+index,(char *)data,strlen(data));
+      	index += strlen(data);
+      	receiving_uart = 2;
+      }
+      else {
+      	memcpy(BUFFER+index,(char *)data,strlen(data));
+      	index += strlen(data);
+      	//	receiving_uart++;
+      	//	BUFFER[1]='Y';
+      }
       /* Send it to the base station */
-      packetbuf_copyfrom((char *)data,50);
-      etimer_set(&et, CLOCK_SECOND + random_rand() % (CLOCK_SECOND * 10)); // Random backoff
-      PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
 
-      addr.u8[0] = 1;
-      addr.u8[1] = 0;
-      /* packetbuf_set_addr(PACKETBUF_ADDR_RECEIVER,&addr); */
-      broadcast_send(&broadcast);
+
       /* unicast_send(&uc, &addr);  */
     }
     if(sensing_flag == 1) { // Do sensing
