@@ -28,7 +28,7 @@
  * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
  * OF THE POSSIBILITY OF SUCH DAMAGE.
- *
+*
  * This file is part of the Contiki operating system.
  */
 
@@ -104,7 +104,7 @@
  *
  * TODO: Option to be removed upon approval of the driver
  */
-#define USE_SFSTXON                     1
+#define USE_SFSTXON                     0
 /*---------------------------------------------------------------------------*/
 /* Phy header length */
 #if CC1200_802154G
@@ -683,7 +683,6 @@ pollhandler(void)
 int
 cc1200_init(void)
 {
-
   INFO("RF: Init (%s)\n", CC1200_RF_CFG.cfg_descriptor);
 
   if(!(rf_flags & RF_INITIALIZED)) {
@@ -846,12 +845,14 @@ transmit(unsigned short transmit_len)
      * let's wait until we are in RX and turn on the GPIO IRQs
      * again as they were turned off in idle()
      */
-
+#if !CC1200_LANADA_SNIFFER
     BUSYWAIT_UNTIL_STATE(STATE_RX,
                          RTIMER_SECOND / 100);
 		// ERROR("Busywait: transmit 1\n");
 		/* JOONKI */
-
+#else
+    clock_delay(10);
+#endif
     ENABLE_GPIO_INTERRUPTS();
 
   } else {
@@ -910,7 +911,7 @@ read(void *buf, unsigned short buf_len)
 
   int len = 0;
 
-  #if CC1200_SNIFFER
+  #if CC1200_SNIFFER || 1
     uint8_t i;
   #endif
 
@@ -941,7 +942,7 @@ read(void *buf, unsigned short buf_len)
                          crc_lqi & ~(1 << 7));
 
 
-      #if CC1200_SNIFFER
+      #if CC1200_SNIFFER || 1
         write_byte(magic[0]);
         write_byte(magic[1]);
         write_byte(magic[2]);
@@ -1545,7 +1546,7 @@ cc1200_configure(void)
 
 #if (CC1200_RF_TESTMODE == 1) || (CC1200_RF_TESTMODE == 2)
 
-  strobe(CC1200_SFTX);
+  strobe(SFTX);
   single_write(CC1200_TXFIRST, 0);
   single_write(CC1200_TXLAST, 0xFF);
   update_txpower(CC1200_CONST_TX_POWER_MAX);
@@ -1862,8 +1863,12 @@ rx_rx(void)
 
   strobe(CC1200_SFRX);
   strobe(CC1200_SRX);
+#if !CC1200_LANADA_SNIFFER
   BUSYWAIT_UNTIL_STATE(STATE_RX, RTIMER_SECOND / 100);
 	ERROR("Busywait: rx_rx 6\n");
+#else
+  clock_delay(10);
+#endif
 }
 /*---------------------------------------------------------------------------*/
 /* Fill TX FIFO, start TX and wait for TX to complete (blocking!). */
@@ -1972,6 +1977,7 @@ idle_tx_rx(const uint8_t *payload, uint16_t payload_len)
  ENERGEST_ON(ENERGEST_TYPE_TRANSMIT);
 #endif
 
+#if !CC1200_LANADA_SNIFFER
   if((cc1200_arch_gpio0_read_pin() == 0) &&
      (single_read(CC1200_NUM_TXBYTES) != 0)) {
 
@@ -1992,6 +1998,7 @@ idle_tx_rx(const uint8_t *payload, uint16_t payload_len)
     return RADIO_TX_ERR;
 
   }
+#endif
 
 #if (CC1200_MAX_PAYLOAD_LEN > (CC1200_FIFO_SIZE - PHR_LEN))
   if(bytes_left_to_write != 0) {
@@ -2253,7 +2260,7 @@ calibrateRCOsc(void) {
 
 /*---------------------------------------------------------------------------*/
 /* Validate address and send ACK if requested. */
-#if CC1200_SNIFFER
+#if CC1200_SNIFFER || CC1200_LANADA_SNIFFER
 static int
 addr_check_auto_ack(uint8_t *frame, uint16_t frame_len)
 {

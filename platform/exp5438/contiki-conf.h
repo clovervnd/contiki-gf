@@ -9,15 +9,21 @@
 #include "platform-conf.h"
 #endif /* PLATFORM_CONF_H */
 
+/* include the project config */
+/* PROJECT_CONF_H might be defined in the project Makefile */
+#ifdef PROJECT_CONF_H
+#include PROJECT_CONF_H
+#endif /* PROJECT_CONF_H */
+
 #ifndef NETSTACK_CONF_MAC
 // #define NETSTACK_CONF_MAC     nullmac_driver
 #define NETSTACK_CONF_MAC     csma_driver
 #endif /* NETSTACK_CONF_MAC */
 
 #ifndef NETSTACK_CONF_RDC
-// #define NETSTACK_CONF_RDC     nullrdc_driver
+#define NETSTACK_CONF_RDC     nullrdc_driver
 // #define NETSTACK_CONF_RDC     contikimac_driver
-#define NETSTACK_CONF_RDC     cxmac_driver
+// #define NETSTACK_CONF_RDC     cxmac_driver
 #endif /* NETSTACK_CONF_RDC */
 
 #ifndef NETSTACK_CONF_RDC_CHANNEL_CHECK_RATE
@@ -211,11 +217,6 @@
 
 
 
-/* include the project config */
-/* PROJECT_CONF_H might be defined in the project Makefile */
-#ifdef PROJECT_CONF_H
-#include PROJECT_CONF_H
-#endif /* PROJECT_CONF_H */
 
 
 #endif /* CONTIKI_CONF_H */

@@ -53,6 +53,7 @@
 /* static uint8_t sensing_flag; */
 /* static uint8_t off_flag; */
 static uint8_t relay_target;
+static uint8_t recv_target;
 static char BUFFER[100];
 /* --------------------------------------------------------------------------*/
 PROCESS(example_broadcast_process, "relay node");
@@ -126,7 +127,7 @@ unicast_recv(struct unicast_conn *c, const linkaddr_t *from)
 	  }
   }
 
-  printf("relay_target: %d\n",relay_target);
+  printf("relay_target: %d len: %d\n",relay_target,packetbuf_datalen());
   memset(BUFFER,0,100);
   memcpy(BUFFER,(char *)packetbuf_dataptr(),packetbuf_datalen());
 
@@ -138,7 +139,7 @@ static struct unicast_conn unicast;
 /*---------------------------------------------------------------------------*/
 PROCESS_THREAD(example_broadcast_process, ev, data)
 {
-  static struct etimer et;
+  static struct etimer et, wait;
 
   PROCESS_EXITHANDLER(unicast_close(&unicast);)
 
@@ -155,18 +156,23 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     PROCESS_YIELD();
     if(ev == PROCESS_EVENT_TIMER) {
     	if(relay_target != 0) {
+    		recv_target = relay_target;
     		printf("I got target relay %d\n",relay_target);
     		packetbuf_clear();
     		packetbuf_copyfrom(BUFFER, 100);
-    		if(relay_target == 1 || relay_target == 9) {
-    			broadcast_send(&(unicast.c));
+    		etimer_set(&wait, CLOCK_SECOND * 10 + random_rand() % (CLOCK_SECOND *5));
+    		PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&wait));
+    		if(recv_target == 1 || recv_target == 9) {
+    			broadcast_send(&unicast.c);
     		}
     		else {
-        		addr.u8[0] = relay_target;
+        		addr.u8[0] = recv_target;
         		addr.u8[1] = 0;
+//    			broadcast_send(&unicast.c);
         		unicast_send(&unicast,&addr);
     		}
     		relay_target = 0;
+    		recv_target = 0;
     	}
       /* addr.u8[0] = 0; */
       /* addr.u8[1] = 1; */

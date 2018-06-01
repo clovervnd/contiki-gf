@@ -105,7 +105,7 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
 	receiving_uart = 0;
 	packetbuf_clear();
 	packetbuf_copyfrom(BUFFER, 100);
-	etimer_set(&et, CLOCK_SECOND + random_rand() % (CLOCK_SECOND * 10)); // Random backoff
+	etimer_set(&et, CLOCK_SECOND * 5 + random_rand() % (CLOCK_SECOND * 10)); // Random backoff
 	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
 	addr.u8[0] = 25;
 	addr.u8[1] = 0;
@@ -114,7 +114,7 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
 
 	packetbuf_clear();
 	packetbuf_copyfrom(BUFFER, 100);
-	etimer_set(&et, CLOCK_SECOND + random_rand() % (CLOCK_SECOND * 10)); // Random backoff
+	etimer_set(&et, CLOCK_SECOND * 5 + random_rand() % (CLOCK_SECOND * 10)); // Random backoff
 	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
 	addr.u8[0] = 27;
 	addr.u8[1] = 0;

@@ -28,7 +28,7 @@
  *
  * This file is part of the Contiki operating system.
  *
- */
+v */
 
 /**
  * \file
@@ -97,6 +97,7 @@ struct announcement_msg {
 /* #define TYPE_DATA         0x11 */
 #define TYPE_ANNOUNCEMENT 0x12
 #define TYPE_STROBE_ACK   0x13
+#define TYPE_DATA_ACK	  0x20
 
 struct cxmac_hdr {
   uint8_t dispatch;
@@ -143,7 +144,7 @@ struct cxmac_hdr {
 struct cxmac_config cxmac_config = {
   DEFAULT_ON_TIME,
   DEFAULT_OFF_TIME,
-  8 * DEFAULT_ON_TIME + DEFAULT_OFF_TIME,
+  2 * DEFAULT_OFF_TIME,
   DEFAULT_STROBE_WAIT_TIME
 };
 
@@ -419,6 +420,7 @@ send_packet(void)
   int strobe_len, len;
   int is_broadcast = 0;
   int is_dispatch, is_strobe_ack;
+  uint8_t got_data_ack = 0;
   /*int is_reliable;*/
   struct encounter *e;
   struct queuebuf *packet;
@@ -644,15 +646,49 @@ send_packet(void)
   queuebuf_free(packet);
 
   /* Send the data packet. */
+  got_strobe_ack = 1; // B-MAC operation
   if((is_broadcast || got_strobe_ack || is_streaming) && collisions == 0) {
     NETSTACK_RADIO.send(packetbuf_hdrptr(), packetbuf_totlen());
   }
 
-#if WITH_ENCOUNTER_OPTIMIZATION
-  if(got_strobe_ack && !is_streaming) {
-    register_encounter(packetbuf_addr(PACKETBUF_ADDR_RECEIVER), encounter_time);
-  }
-#endif /* WITH_ENCOUNTER_OPTIMIZATION */
+	if(!is_broadcast)
+	{
+		packetbuf_compact();
+		packet = queuebuf_new_from_packetbuf();
+		on();
+		t = RTIMER_NOW();
+		while(got_data_ack == 0 &&
+				RTIMER_CLOCK_LT(RTIMER_NOW(), t + cxmac_config.strobe_wait_time * 2))
+		{
+			 // printf("wait for data ack %d\n",got_data_ack);
+			packetbuf_clear();
+			len = NETSTACK_RADIO.read(packetbuf_dataptr(), PACKETBUF_SIZE);
+			if(len > 0) {
+				// printf("YEEEEEEEEEEAAAAAAAAAAAAAAHHHHHHHHHHHHHHH????\n");
+				packetbuf_set_datalen(len);
+				if(NETSTACK_FRAMER.parse() >= 0) {
+					hdr = packetbuf_dataptr();
+					char* temp = packetbuf_dataptr();
+					// printf("after parsing type %x\n",hdr->type);
+					if(hdr->type == TYPE_DATA_ACK) {
+							if(linkaddr_cmp(packetbuf_addr(PACKETBUF_ADDR_RECEIVER),
+									&linkaddr_node_addr))
+							{
+								got_data_ack = 1;
+							} else {
+								PRINTDEBUG("cxmac: data ack for someone else\n");
+							}
+					}
+				} else {
+					PRINTF("cxmac: send failed to parse %u\n", len);
+				}
+			}
+		}
+		queuebuf_to_packetbuf(packet);
+		queuebuf_free(packet);
+		off();
+	}
+
   watchdog_start();
 
   PRINTF("cxmac: send (strobes=%u,len=%u,%s), done\n", strobes,
@@ -677,7 +713,7 @@ send_packet(void)
 
   LEDS_OFF(LEDS_BLUE);
   if(collisions == 0) {
-    if(!is_broadcast && !got_strobe_ack) {
+    if(!is_broadcast && (!got_strobe_ack || !got_data_ack)) {
       return MAC_TX_NOACK;
     } else {
       return MAC_TX_OK;
@@ -720,6 +756,9 @@ input_packet(void)
 {
   struct cxmac_hdr *hdr;
 
+  struct queuebuf *packet;
+
+
   if(NETSTACK_FRAMER.parse() >= 0) {
     hdr = packetbuf_dataptr();
 
@@ -750,9 +789,39 @@ input_packet(void)
 	compower_clear(&current_packet);
 #endif /* CXMAC_CONF_COMPOWER */
 
+	if(!linkaddr_cmp(packetbuf_addr(PACKETBUF_ADDR_RECEIVER),&linkaddr_null)) // Only when it is not broadcast data
+	{
+		uint8_t ack[MAX_STROBE_SIZE];
+		uint8_t ack_len, len;
+		linkaddr_t temp;
+		// Copying original packetbuf
+		packet = queuebuf_new_from_packetbuf();
+		packetbuf_set_addr(PACKETBUF_ADDR_RECEIVER,
+				   packetbuf_addr(PACKETBUF_ADDR_SENDER));
+		/*linkaddr_copy(&temp,packetbuf_addr(PACKETBUF_ADDR_SENDER));
+		packetbuf_clear();
+
+		packetbuf_set_addr(PACKETBUF_ADDR_RECEIVER,&temp);
+		*/
+		packetbuf_set_addr(PACKETBUF_ADDR_SENDER, &linkaddr_node_addr);
+		len = NETSTACK_FRAMER.create();
+		if(len < 0)
+		{
+			PRINTF("cxmac: failed to send data ack\n");
+			return;
+		}
+		memcpy(ack,packetbuf_hdrptr(),len);
+		ack[len] = DISPATCH;
+		ack[len + 1] = TYPE_DATA_ACK;
+		ack_len = len + sizeof(struct cxmac_hdr);
+		NETSTACK_RADIO.send(ack, ack_len);
+	}
+	queuebuf_to_packetbuf(packet);
+	queuebuf_free(packet);
+
 	waiting_for_packet = 0;
 
-        PRINTDEBUG("cxmac: data(%u)\n", packetbuf_datalen());
+	PRINTDEBUG("cxmac: data(%u)\n", packetbuf_datalen());
 	NETSTACK_MAC.input();
         return;
       } else {
@@ -763,21 +832,26 @@ input_packet(void)
       someone_is_sending = 2;
 
       if(linkaddr_cmp(packetbuf_addr(PACKETBUF_ADDR_RECEIVER),
-                      &linkaddr_node_addr)) {
+    		  &linkaddr_node_addr)
+    		  || linkaddr_cmp(packetbuf_addr(PACKETBUF_ADDR_RECEIVER),
+    				  &linkaddr_null)) {
 	/* This is a strobe packet for us. */
 
 	/* If the sender address is someone else, we should
 	   acknowledge the strobe and wait for the packet. By using
 	   the same address as both sender and receiver, we flag the
 	   message is a strobe ack. */
+    		waiting_for_packet = 1;
+    		on();
+/*
 	hdr->type = TYPE_STROBE_ACK;
 	packetbuf_set_addr(PACKETBUF_ADDR_RECEIVER,
 			   packetbuf_addr(PACKETBUF_ADDR_SENDER));
 	packetbuf_set_addr(PACKETBUF_ADDR_SENDER, &linkaddr_node_addr);
 	packetbuf_compact();
 	if(NETSTACK_FRAMER.create() >= 0) {
-	  /* We turn on the radio in anticipation of the incoming
-	     packet. */
+	   We turn on the radio in anticipation of the incoming
+	     packet.
 	  someone_is_sending = 1;
 	  waiting_for_packet = 1;
 	  on();
@@ -785,16 +859,16 @@ input_packet(void)
 	  PRINTDEBUG("cxmac: send strobe ack %u\n", packetbuf_totlen());
 	} else {
 	  PRINTF("cxmac: failed to send strobe ack\n");
-	}
-      } else if(linkaddr_cmp(packetbuf_addr(PACKETBUF_ADDR_RECEIVER),
+	}*/
+      }/* else if(linkaddr_cmp(packetbuf_addr(PACKETBUF_ADDR_RECEIVER),
                              &linkaddr_null)) {
-	/* If the receiver address is null, the strobe is sent to
+	 If the receiver address is null, the strobe is sent to
 	   prepare for an incoming broadcast packet. If this is the
 	   case, we turn on the radio and wait for the incoming
-	   broadcast packet. */
-	waiting_for_packet = 1;
-	on();
-      } else {
+	   broadcast packet.
+
+      }*/
+      else {
         PRINTDEBUG("cxmac: strobe not for us\n");
       }
 

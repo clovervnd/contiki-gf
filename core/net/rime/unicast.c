@@ -70,7 +70,7 @@ recv_from_broadcast(struct broadcast_conn *broadcast, const linkaddr_t *from)
 	 linkaddr_node_addr.u8[0], linkaddr_node_addr.u8[1],
 	 packetbuf_addr(PACKETBUF_ADDR_RECEIVER)->u8[0],
 	 packetbuf_addr(PACKETBUF_ADDR_RECEIVER)->u8[1]);
-  if(linkaddr_cmp(packetbuf_addr(PACKETBUF_ADDR_RECEIVER), &linkaddr_node_addr)) {
+  if(linkaddr_cmp(packetbuf_addr(PACKETBUF_ADDR_RECEIVER), &linkaddr_node_addr) || 1) {
     if(c->u->recv) {
       c->u->recv(c, from);
     }
