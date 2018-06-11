@@ -50,6 +50,8 @@
 #define MSP430_GPIOEN_PORT(type)		P9##type
 #define MSP430_GPIOEN_PIN		6
 
+#define SINGLEHOP_MODE	0
+
 /* static uint8_t sensing_flag; */
 /* static uint8_t off_flag; */
 static char input[50];
@@ -108,15 +110,28 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     if(ev == serial_line_event_message) {
     	strcpy(input,(char *)data);
 //    	memcpy(input,data,strlen(data));
+
     	if(input[0]=='s' && input[1]=='e' && input[2]=='n' &&
     			input[3]=='s' && input[4]=='i' && input[5]=='n' &&
 				input[6]=='g') {
     		packetbuf_clear();
     		packetbuf_copyfrom((char *)input,8);
-    		addr.u8[0] = 29;
+#if SINGLEHOP_MODE
+    		addr.u8[0] = 7;
     		addr.u8[1] = 0;
     		unicast_send(&unicast,&addr);
     		etimer_set(&wait, CLOCK_SECOND * 5 + random_rand() % (CLOCK_SECOND *5));
+    		PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&wait));
+    		packetbuf_clear();
+    		packetbuf_copyfrom((char *)input,8);
+    		addr.u8[0] = 6;
+    		addr.u8[1] = 0;
+    		unicast_send(&unicast,&addr);
+#else
+    		addr.u8[0] = 29;
+    		addr.u8[1] = 0;
+    		unicast_send(&unicast,&addr);
+    		etimer_set(&wait, CLOCK_SECOND + random_rand() % (CLOCK_SECOND *5));
     		PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&wait));
 //		broadcast_send(&unicast.c);
     		 packetbuf_clear();
@@ -124,14 +139,27 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     		 addr.u8[0] = 26;
     		 addr.u8[1] = 0;
     		 unicast_send(&unicast,&addr);
+#endif
     	}
     	else if(input[0]=='o' && input[1]=='f' && input[2]=='f') {
     		packetbuf_clear();
     		packetbuf_copyfrom((char *)input,4);
-    		addr.u8[0] = 29;
+#if SINGLEHOP_MODE
+    		addr.u8[0] = 7;
     		addr.u8[1] = 0;
     		unicast_send(&unicast,&addr);
     		etimer_set(&wait, CLOCK_SECOND * 5 + random_rand() % (CLOCK_SECOND *5));
+    		PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&wait));
+    		packetbuf_clear();
+    		packetbuf_copyfrom((char *)input,8);
+    		addr.u8[0] = 6;
+    		addr.u8[1] = 0;
+    		unicast_send(&unicast,&addr);
+#else
+    		addr.u8[0] = 29;
+    		addr.u8[1] = 0;
+    		unicast_send(&unicast,&addr);
+    		etimer_set(&wait, CLOCK_SECOND + random_rand() % (CLOCK_SECOND *5));
     		PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&wait));
     		packetbuf_clear();
     		packetbuf_copyfrom((char *)input,4);
@@ -139,6 +167,7 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     		addr.u8[1] = 0;
     		//	broadcast_send(&broadcast);
     		unicast_send(&unicast,&addr);
+#endif
     	}
     	printf("UART input %s\n",input);
       /* Send command to sensors */

@@ -50,6 +50,8 @@
 #define MSP430_GPIOEN_PORT(type)		P9##type
 #define MSP430_GPIOEN_PIN		6
 
+#define SINGLEHOP_MODE	0
+
 static uint8_t sensing_flag;
 static uint8_t off_flag;
 
@@ -82,10 +84,13 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
 {
   static struct etimer et;
   static char BUFFER[100];
+  static char myid[15];
   static char* temp;
   static uint8_t receiving_uart=0;
   static uint8_t index=0;
   static int count=0;
+  static uint8_t my_id=0;
+
 
   PROCESS_EXITHANDLER(unicast_close(&unicast);)
 
@@ -94,6 +99,7 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
   unicast_open(&unicast, 146, &unicast_call);
 
   etimer_set(&et, CLOCK_SECOND);
+  my_id = linkaddr_node_addr.u8[0];
 
   while(1) {
     linkaddr_t addr;
@@ -103,24 +109,29 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     if(ev == PROCESS_EVENT_TIMER) {
       if(receiving_uart == 2) {
 	receiving_uart = 0;
+	etimer_set(&et, CLOCK_SECOND * 10 * my_id + random_rand() % CLOCK_SECOND); // Random backoff
+	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
 	packetbuf_clear();
 	packetbuf_copyfrom(BUFFER, 100);
-	etimer_set(&et, CLOCK_SECOND * 5 + random_rand() % (CLOCK_SECOND * 10)); // Random backoff
-	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
+#if	SINGLEHOP_MODE
+	addr.u8[0] = 30;
+	addr.u8[1] = 0;
+	unicast_send(&unicast, &addr);
+#else
 	addr.u8[0] = 25;
 	addr.u8[1] = 0;
 	/* packetbuf_set_addr(PACKETBUF_ADDR_RECEIVER,&addr); */
 	unicast_send(&unicast, &addr);
 
+	etimer_set(&et, CLOCK_SECOND + random_rand() % CLOCK_SECOND); // Random backoff
+	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
 	packetbuf_clear();
 	packetbuf_copyfrom(BUFFER, 100);
-	etimer_set(&et, CLOCK_SECOND * 5 + random_rand() % (CLOCK_SECOND * 10)); // Random backoff
-	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
 	addr.u8[0] = 27;
 	addr.u8[1] = 0;
 	/* packetbuf_set_addr(PACKETBUF_ADDR_RECEIVER,&addr); */
 	unicast_send(&unicast, &addr);
-
+#endif
 
 	off_flag = 0;
 	MSP430_GPIOEN_PORT(SEL) &= ~BV(MSP430_GPIOEN_PIN);
@@ -137,12 +148,15 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
 	memset(BUFFER,0,100);
 	index = 0;
       	receiving_uart = 1;
-      	memcpy(BUFFER,(char *)data,strlen(data));
+      	sprintf(myid,"My ID:%2d ",my_id);
+      	memcpy(BUFFER,myid,strlen(myid));
+      	index += strlen(myid);
+      	memcpy(BUFFER+index,(char *)data,strlen(data));
       	index += strlen(data);
       	//	BUFFER[0]='X';
       }
       else if((temp[0]=='D' && temp[1]=='a' && temp[2]=='m' && temp[3]=='a') ||
-	      (temp[0]=='n' && temp[1]=='o' && temp[2]=='n')) {
+	      (temp[0]=='N' && temp[1]=='o' && temp[2]=='n')) {
       	memcpy(BUFFER+index,(char *)data,strlen(data));
       	index += strlen(data);
       	receiving_uart = 2;

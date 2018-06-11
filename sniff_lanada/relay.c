@@ -99,9 +99,9 @@ unicast_recv(struct unicast_conn *c, const linkaddr_t *from)
   }
   else if(linkaddr_node_addr.u8[0] == 27) {
 	  if(from->u8[0] == 28) {
-		  relay_target = 1;
+		  relay_target = 6;
 	  }
-	  else if(from->u8[0] >=1 && from->u8[0] <=8) {
+	  else if(from->u8[0] >=6 && from->u8[0] <=13) {
 		  relay_target = 28;
 	  }
   }
@@ -120,9 +120,9 @@ unicast_recv(struct unicast_conn *c, const linkaddr_t *from)
   }
   else if(linkaddr_node_addr.u8[0] == 25) {
 	  if(from->u8[0] == 26) {
-		  relay_target = 9;
+		  relay_target = 14;
 	  }
-	  else if(from->u8[0] >=9 && from->u8[0] <=10) {
+	  else if(from->u8[0] >=14 && from->u8[0] <=15) {
 		  relay_target = 26;
 	  }
   }
@@ -158,11 +158,11 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     	if(relay_target != 0) {
     		recv_target = relay_target;
     		printf("I got target relay %d\n",relay_target);
+    		/* etimer_set(&wait, CLOCK_SECOND * 10 + random_rand() % (CLOCK_SECOND *5)); */
+    		/* PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&wait)); */
     		packetbuf_clear();
     		packetbuf_copyfrom(BUFFER, 100);
-    		etimer_set(&wait, CLOCK_SECOND * 10 + random_rand() % (CLOCK_SECOND *5));
-    		PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&wait));
-    		if(recv_target == 1 || recv_target == 9) {
+    		if(recv_target == 6 || recv_target == 14) {
     			broadcast_send(&unicast.c);
     		}
     		else {
@@ -182,29 +182,7 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
       /* 	printf("broadcast message sent\n"); */
       /* } */
     }
-/*    if(ev == serial_line_event_message) {
-    	char * input = (char *)data;
-    	if(input[0]=='s' && input[1]=='e' && input[2]=='n' &&
-    			input[3]=='s' && input[4]=='i' && input[5]=='n' &&
-				input[6]=='g') {
-    		packetbuf_clear();
-    		packetbuf_copyfrom((char *)data,8);
-    		addr.u8[0] = 0;
-    		addr.u8[1] = 0;
-    		unicast_send(&unicast);
-    	}
-    	else if(input[0]=='o' && input[1]=='f' && input[2]=='f') {
-    		packetbuf_clear();
-    		packetbuf_copyfrom((char *)data,4);
-    		addr.u8[0] = 0;
-    		addr.u8[1] = 0;
-    		unicast_send(&unicast);
-    	}
-    	printf("UART input %s\n",(char *)data);
-    	 Send command to sensors
-    }*/
     etimer_set(&et, CLOCK_SECOND/1000);
-    /* PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et)); */
   }
 
   PROCESS_END();
