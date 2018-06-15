@@ -17868,3 +17868,1076 @@ Mon Jun 11 14:37:21 2018:	* ----------------------------------------------------
 Mon Jun 11 14:37:21 2018:	* Driver      : closed (No error)
 Mon Jun 11 14:37:21 2018:	* ----------------------------------------------------------------------------
 Mon Jun 11 14:37:21 2018:	*/
+Fri Jun 15 13:47:48 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:47:48 2018:	*     / |__                                                                   *
+Fri Jun 15 13:47:48 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:47:48 2018:	*      | /                                                                    *
+Fri Jun 15 13:47:48 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:47:48 2018:	*
+Fri Jun 15 13:47:48 2018:	* Evaluating triggers...done
+Fri Jun 15 13:47:48 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:47:48 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:47:48 2018:	* Initializing interface @ ttyACM0...
+Fri Jun 15 13:47:51 2018:	# Exit: 19
+Fri Jun 15 13:47:51 2018:	# ERROR: Interface Communication error
+Fri Jun 15 13:47:51 2018:	* 
+Fri Jun 15 13:47:51 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:47:51 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:47:51 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:47:51 2018:	*/
+Fri Jun 15 13:48:17 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:48:17 2018:	*     / |__                                                                   *
+Fri Jun 15 13:48:17 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:48:17 2018:	*      | /                                                                    *
+Fri Jun 15 13:48:17 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:48:17 2018:	*
+Fri Jun 15 13:48:17 2018:	* Evaluating triggers...done
+Fri Jun 15 13:48:17 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:48:17 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:48:17 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:48:18 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:48:18 2018:	* FET firmware is up to date.
+Fri Jun 15 13:48:18 2018:	* Reading FW version...done
+Fri Jun 15 13:48:18 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:48:20 2018:	* Accessing device...done
+Fri Jun 15 13:48:21 2018:	* Reading device information...
+Fri Jun 15 13:48:21 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:48:21 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:48:21 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:48:21 2018:	- Continue? (Y/N): Fri Jun 15 13:48:22 2018:	y
+Fri Jun 15 13:48:22 2018:	* Loading file into device...done
+Fri Jun 15 13:48:25 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 13:48:26 2018:	* 
+Fri Jun 15 13:48:26 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:48:26 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:48:26 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:48:26 2018:	* Driver      : loaded
+Fri Jun 15 13:48:26 2018:	* Dll Version : 31100001
+Fri Jun 15 13:48:26 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:48:26 2018:	* Interface   : USB
+Fri Jun 15 13:48:26 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:48:26 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:48:26 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:48:26 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:48:26 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:48:26 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 13:48:26 2018:	* Verified    : TRUE
+Fri Jun 15 13:48:26 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:48:26 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:48:26 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:48:26 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:48:26 2018:	* Starting target code execution...done
+Fri Jun 15 13:48:27 2018:	* Disconnecting from device...done
+Fri Jun 15 13:48:27 2018:	* 
+Fri Jun 15 13:48:27 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:48:27 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:48:27 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:48:27 2018:	*/
+Fri Jun 15 13:48:57 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:48:57 2018:	*     / |__                                                                   *
+Fri Jun 15 13:48:57 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:48:57 2018:	*      | /                                                                    *
+Fri Jun 15 13:48:57 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:48:57 2018:	*
+Fri Jun 15 13:48:57 2018:	* Evaluating triggers...done
+Fri Jun 15 13:48:57 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:48:57 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:48:57 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:48:58 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:48:58 2018:	* FET firmware is up to date.
+Fri Jun 15 13:48:58 2018:	* Reading FW version...done
+Fri Jun 15 13:48:58 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:49:00 2018:	* Accessing device...done
+Fri Jun 15 13:49:01 2018:	* Reading device information...
+Fri Jun 15 13:49:01 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:49:01 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:49:01 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:49:01 2018:	- Continue? (Y/N): Fri Jun 15 13:49:01 2018:	y
+Fri Jun 15 13:49:01 2018:	* Loading file into device...done
+Fri Jun 15 13:49:04 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 13:49:05 2018:	* 
+Fri Jun 15 13:49:05 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:49:05 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:49:05 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:49:05 2018:	* Driver      : loaded
+Fri Jun 15 13:49:05 2018:	* Dll Version : 31100001
+Fri Jun 15 13:49:05 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:49:05 2018:	* Interface   : USB
+Fri Jun 15 13:49:05 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:49:05 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:49:05 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:49:05 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:49:05 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:49:05 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 13:49:05 2018:	* Verified    : TRUE
+Fri Jun 15 13:49:05 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:49:05 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:49:05 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:49:05 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:49:05 2018:	* Starting target code execution...done
+Fri Jun 15 13:49:06 2018:	* Disconnecting from device...done
+Fri Jun 15 13:49:06 2018:	* 
+Fri Jun 15 13:49:06 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:49:06 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:49:06 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:49:06 2018:	*/
+Fri Jun 15 13:49:32 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:49:32 2018:	*     / |__                                                                   *
+Fri Jun 15 13:49:32 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:49:32 2018:	*      | /                                                                    *
+Fri Jun 15 13:49:32 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:49:32 2018:	*
+Fri Jun 15 13:49:32 2018:	* Evaluating triggers...done
+Fri Jun 15 13:49:32 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:49:33 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:49:33 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:49:33 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:49:33 2018:	* FET firmware is up to date.
+Fri Jun 15 13:49:33 2018:	* Reading FW version...done
+Fri Jun 15 13:49:33 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:49:35 2018:	* Accessing device...done
+Fri Jun 15 13:49:36 2018:	* Reading device information...
+Fri Jun 15 13:49:36 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:49:36 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:49:36 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:49:36 2018:	- Continue? (Y/N): Fri Jun 15 13:49:37 2018:	y
+Fri Jun 15 13:49:37 2018:	* Loading file into device...done
+Fri Jun 15 13:49:39 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 13:49:40 2018:	* 
+Fri Jun 15 13:49:40 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:49:40 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:49:40 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:49:40 2018:	* Driver      : loaded
+Fri Jun 15 13:49:40 2018:	* Dll Version : 31100001
+Fri Jun 15 13:49:40 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:49:40 2018:	* Interface   : USB
+Fri Jun 15 13:49:40 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:49:40 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:49:40 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:49:40 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:49:40 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:49:40 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 13:49:40 2018:	* Verified    : TRUE
+Fri Jun 15 13:49:40 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:49:40 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:49:40 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:49:40 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:49:40 2018:	* Starting target code execution...done
+Fri Jun 15 13:49:41 2018:	* Disconnecting from device...done
+Fri Jun 15 13:49:41 2018:	* 
+Fri Jun 15 13:49:41 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:49:41 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:49:41 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:49:41 2018:	*/
+Fri Jun 15 13:50:09 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:50:09 2018:	*     / |__                                                                   *
+Fri Jun 15 13:50:09 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:50:09 2018:	*      | /                                                                    *
+Fri Jun 15 13:50:09 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:50:09 2018:	*
+Fri Jun 15 13:50:09 2018:	* Evaluating triggers...done
+Fri Jun 15 13:50:09 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:50:09 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:50:09 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:50:09 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:50:09 2018:	* FET firmware is up to date.
+Fri Jun 15 13:50:09 2018:	* Reading FW version...done
+Fri Jun 15 13:50:09 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:50:12 2018:	* Accessing device...done
+Fri Jun 15 13:50:12 2018:	* Reading device information...
+Fri Jun 15 13:50:12 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:50:12 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:50:12 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:50:12 2018:	- Continue? (Y/N): Fri Jun 15 13:50:13 2018:	y
+Fri Jun 15 13:50:13 2018:	* Loading file into device...done
+Fri Jun 15 13:50:16 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 13:50:17 2018:	* 
+Fri Jun 15 13:50:17 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:50:17 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:50:17 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:50:17 2018:	* Driver      : loaded
+Fri Jun 15 13:50:17 2018:	* Dll Version : 31100001
+Fri Jun 15 13:50:17 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:50:17 2018:	* Interface   : USB
+Fri Jun 15 13:50:17 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:50:17 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:50:17 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:50:17 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:50:17 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:50:17 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 13:50:17 2018:	* Verified    : TRUE
+Fri Jun 15 13:50:17 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:50:17 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:50:17 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:50:17 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:50:17 2018:	* Starting target code execution...done
+Fri Jun 15 13:50:18 2018:	* Disconnecting from device...done
+Fri Jun 15 13:50:18 2018:	* 
+Fri Jun 15 13:50:18 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:50:18 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:50:18 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:50:18 2018:	*/
+Fri Jun 15 13:50:47 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:50:47 2018:	*     / |__                                                                   *
+Fri Jun 15 13:50:47 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:50:47 2018:	*      | /                                                                    *
+Fri Jun 15 13:50:47 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:50:47 2018:	*
+Fri Jun 15 13:50:47 2018:	* Evaluating triggers...done
+Fri Jun 15 13:50:47 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:50:47 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:50:47 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:50:47 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:50:47 2018:	* FET firmware is up to date.
+Fri Jun 15 13:50:47 2018:	* Reading FW version...done
+Fri Jun 15 13:50:47 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:50:50 2018:	* Accessing device...done
+Fri Jun 15 13:50:51 2018:	* Reading device information...
+Fri Jun 15 13:50:51 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:50:51 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:50:51 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:50:51 2018:	- Continue? (Y/N): Fri Jun 15 13:51:02 2018:	y
+Fri Jun 15 13:51:02 2018:	* Loading file into device...done
+Fri Jun 15 13:51:04 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 13:51:06 2018:	* 
+Fri Jun 15 13:51:06 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:51:06 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:51:06 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:51:06 2018:	* Driver      : loaded
+Fri Jun 15 13:51:06 2018:	* Dll Version : 31100001
+Fri Jun 15 13:51:06 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:51:06 2018:	* Interface   : USB
+Fri Jun 15 13:51:06 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:51:06 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:51:06 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:51:06 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:51:06 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:51:06 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 13:51:06 2018:	* Verified    : TRUE
+Fri Jun 15 13:51:06 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:51:06 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:51:06 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:51:06 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:51:06 2018:	* Starting target code execution...done
+Fri Jun 15 13:51:06 2018:	* Disconnecting from device...done
+Fri Jun 15 13:51:06 2018:	* 
+Fri Jun 15 13:51:06 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:51:06 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:51:06 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:51:06 2018:	*/
+Fri Jun 15 13:51:36 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:51:36 2018:	*     / |__                                                                   *
+Fri Jun 15 13:51:36 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:51:36 2018:	*      | /                                                                    *
+Fri Jun 15 13:51:36 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:51:36 2018:	*
+Fri Jun 15 13:51:36 2018:	* Evaluating triggers...done
+Fri Jun 15 13:51:36 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:51:36 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:51:36 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:51:37 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:51:37 2018:	* FET firmware is up to date.
+Fri Jun 15 13:51:37 2018:	* Reading FW version...done
+Fri Jun 15 13:51:37 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:51:39 2018:	* Accessing device...done
+Fri Jun 15 13:51:40 2018:	* Reading device information...
+Fri Jun 15 13:51:40 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:51:40 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:51:40 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:51:40 2018:	- Continue? (Y/N): Fri Jun 15 13:51:41 2018:	y
+Fri Jun 15 13:51:41 2018:	* Loading file into device...done
+Fri Jun 15 13:51:43 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 13:51:45 2018:	* 
+Fri Jun 15 13:51:45 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:51:45 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:51:45 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:51:45 2018:	* Driver      : loaded
+Fri Jun 15 13:51:45 2018:	* Dll Version : 31100001
+Fri Jun 15 13:51:45 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:51:45 2018:	* Interface   : USB
+Fri Jun 15 13:51:45 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:51:45 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:51:45 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:51:45 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:51:45 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:51:45 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 13:51:45 2018:	* Verified    : TRUE
+Fri Jun 15 13:51:45 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:51:45 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:51:45 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:51:45 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:51:45 2018:	* Starting target code execution...done
+Fri Jun 15 13:51:45 2018:	* Disconnecting from device...done
+Fri Jun 15 13:51:45 2018:	* 
+Fri Jun 15 13:51:45 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:51:45 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:51:45 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:51:45 2018:	*/
+Fri Jun 15 13:52:12 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:52:12 2018:	*     / |__                                                                   *
+Fri Jun 15 13:52:12 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:52:12 2018:	*      | /                                                                    *
+Fri Jun 15 13:52:12 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:52:12 2018:	*
+Fri Jun 15 13:52:12 2018:	* Evaluating triggers...done
+Fri Jun 15 13:52:12 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:52:12 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:52:12 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:52:12 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:52:12 2018:	* FET firmware is up to date.
+Fri Jun 15 13:52:12 2018:	* Reading FW version...done
+Fri Jun 15 13:52:12 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:52:15 2018:	* Accessing device...done
+Fri Jun 15 13:52:15 2018:	* Reading device information...
+Fri Jun 15 13:52:15 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:52:15 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:52:15 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:52:15 2018:	- Continue? (Y/N): Fri Jun 15 13:52:17 2018:	y
+Fri Jun 15 13:52:17 2018:	* Loading file into device...done
+Fri Jun 15 13:52:19 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 13:52:21 2018:	* 
+Fri Jun 15 13:52:21 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:52:21 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:52:21 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:52:21 2018:	* Driver      : loaded
+Fri Jun 15 13:52:21 2018:	* Dll Version : 31100001
+Fri Jun 15 13:52:21 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:52:21 2018:	* Interface   : USB
+Fri Jun 15 13:52:21 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:52:21 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:52:21 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:52:21 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:52:21 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:52:21 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 13:52:21 2018:	* Verified    : TRUE
+Fri Jun 15 13:52:21 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:52:21 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:52:21 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:52:21 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:52:21 2018:	* Starting target code execution...done
+Fri Jun 15 13:52:21 2018:	* Disconnecting from device...done
+Fri Jun 15 13:52:21 2018:	* 
+Fri Jun 15 13:52:21 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:52:21 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:52:21 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:52:21 2018:	*/
+Fri Jun 15 13:52:46 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:52:46 2018:	*     / |__                                                                   *
+Fri Jun 15 13:52:46 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:52:46 2018:	*      | /                                                                    *
+Fri Jun 15 13:52:46 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:52:46 2018:	*
+Fri Jun 15 13:52:46 2018:	* Evaluating triggers...done
+Fri Jun 15 13:52:46 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:52:46 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:52:46 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:52:46 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:52:46 2018:	* FET firmware is up to date.
+Fri Jun 15 13:52:46 2018:	* Reading FW version...done
+Fri Jun 15 13:52:46 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:52:49 2018:	* Accessing device...done
+Fri Jun 15 13:52:50 2018:	* Reading device information...
+Fri Jun 15 13:52:50 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:52:50 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:52:50 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:52:50 2018:	- Continue? (Y/N): Fri Jun 15 13:52:50 2018:	y
+Fri Jun 15 13:52:50 2018:	* Loading file into device...done
+Fri Jun 15 13:52:53 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 13:52:54 2018:	* 
+Fri Jun 15 13:52:54 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:52:54 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:52:54 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:52:54 2018:	* Driver      : loaded
+Fri Jun 15 13:52:54 2018:	* Dll Version : 31100001
+Fri Jun 15 13:52:54 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:52:54 2018:	* Interface   : USB
+Fri Jun 15 13:52:54 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:52:54 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:52:54 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:52:54 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:52:54 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:52:54 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 13:52:54 2018:	* Verified    : TRUE
+Fri Jun 15 13:52:54 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:52:54 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:52:54 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:52:54 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:52:54 2018:	* Starting target code execution...done
+Fri Jun 15 13:52:55 2018:	* Disconnecting from device...done
+Fri Jun 15 13:52:55 2018:	* 
+Fri Jun 15 13:52:55 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:52:55 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:52:55 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:52:55 2018:	*/
+Fri Jun 15 13:53:29 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:53:29 2018:	*     / |__                                                                   *
+Fri Jun 15 13:53:29 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:53:29 2018:	*      | /                                                                    *
+Fri Jun 15 13:53:29 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:53:29 2018:	*
+Fri Jun 15 13:53:29 2018:	* Evaluating triggers...done
+Fri Jun 15 13:53:29 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:53:29 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:53:29 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:53:30 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:53:30 2018:	* FET firmware is up to date.
+Fri Jun 15 13:53:30 2018:	* Reading FW version...done
+Fri Jun 15 13:53:30 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:53:32 2018:	* Accessing device...done
+Fri Jun 15 13:53:33 2018:	* Reading device information...
+Fri Jun 15 13:53:33 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:53:33 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:53:33 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:53:33 2018:	- Continue? (Y/N): Fri Jun 15 13:53:33 2018:	y
+Fri Jun 15 13:53:33 2018:	* Loading file into device...done
+Fri Jun 15 13:53:36 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 13:53:37 2018:	* 
+Fri Jun 15 13:53:37 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:53:37 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:53:37 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:53:37 2018:	* Driver      : loaded
+Fri Jun 15 13:53:37 2018:	* Dll Version : 31100001
+Fri Jun 15 13:53:37 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:53:37 2018:	* Interface   : USB
+Fri Jun 15 13:53:37 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:53:37 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:53:37 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:53:37 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:53:37 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:53:37 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 13:53:37 2018:	* Verified    : TRUE
+Fri Jun 15 13:53:37 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:53:37 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:53:37 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:53:37 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:53:37 2018:	* Starting target code execution...done
+Fri Jun 15 13:53:38 2018:	* Disconnecting from device...done
+Fri Jun 15 13:53:38 2018:	* 
+Fri Jun 15 13:53:38 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:53:38 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:53:38 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:53:38 2018:	*/
+Fri Jun 15 13:54:02 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:54:02 2018:	*     / |__                                                                   *
+Fri Jun 15 13:54:02 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:54:02 2018:	*      | /                                                                    *
+Fri Jun 15 13:54:02 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:54:02 2018:	*
+Fri Jun 15 13:54:02 2018:	* Evaluating triggers...done
+Fri Jun 15 13:54:02 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:54:03 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:54:03 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:54:03 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:54:03 2018:	* FET firmware is up to date.
+Fri Jun 15 13:54:03 2018:	* Reading FW version...done
+Fri Jun 15 13:54:03 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:54:05 2018:	* Accessing device...done
+Fri Jun 15 13:54:06 2018:	* Reading device information...
+Fri Jun 15 13:54:06 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:54:06 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:54:06 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:54:06 2018:	- Continue? (Y/N): Fri Jun 15 13:54:07 2018:	y
+Fri Jun 15 13:54:07 2018:	* Loading file into device...done
+Fri Jun 15 13:54:09 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 13:54:11 2018:	* 
+Fri Jun 15 13:54:11 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:54:11 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:54:11 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:54:11 2018:	* Driver      : loaded
+Fri Jun 15 13:54:11 2018:	* Dll Version : 31100001
+Fri Jun 15 13:54:11 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:54:11 2018:	* Interface   : USB
+Fri Jun 15 13:54:11 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:54:11 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:54:11 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:54:11 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:54:11 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:54:11 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 13:54:11 2018:	* Verified    : TRUE
+Fri Jun 15 13:54:11 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:54:11 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:54:11 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:54:11 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:54:11 2018:	* Starting target code execution...done
+Fri Jun 15 13:54:11 2018:	* Disconnecting from device...done
+Fri Jun 15 13:54:11 2018:	* 
+Fri Jun 15 13:54:11 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:54:11 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:54:11 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:54:11 2018:	*/
+Fri Jun 15 13:55:08 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:55:08 2018:	*     / |__                                                                   *
+Fri Jun 15 13:55:08 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:55:08 2018:	*      | /                                                                    *
+Fri Jun 15 13:55:08 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:55:08 2018:	*
+Fri Jun 15 13:55:08 2018:	* Evaluating triggers...done
+Fri Jun 15 13:55:08 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:55:08 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:55:08 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:55:08 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:55:08 2018:	* FET firmware is up to date.
+Fri Jun 15 13:55:08 2018:	* Reading FW version...done
+Fri Jun 15 13:55:08 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:55:11 2018:	* Accessing device...done
+Fri Jun 15 13:55:11 2018:	* Reading device information...
+Fri Jun 15 13:55:11 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:55:11 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:55:11 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:55:11 2018:	- Continue? (Y/N): Fri Jun 15 13:55:12 2018:	y
+Fri Jun 15 13:55:12 2018:	* Loading file into device...done
+Fri Jun 15 13:55:14 2018:	* Verifying memory (base.hex)...done
+Fri Jun 15 13:55:16 2018:	* 
+Fri Jun 15 13:55:16 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:55:16 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w base.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:55:16 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:55:16 2018:	* Driver      : loaded
+Fri Jun 15 13:55:16 2018:	* Dll Version : 31100001
+Fri Jun 15 13:55:16 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:55:16 2018:	* Interface   : USB
+Fri Jun 15 13:55:16 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:55:16 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:55:16 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:55:16 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:55:16 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:55:16 2018:	* Prog.File   : base.hex
+Fri Jun 15 13:55:16 2018:	* Verified    : TRUE
+Fri Jun 15 13:55:16 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:55:16 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:55:16 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:55:16 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:55:16 2018:	* Starting target code execution...done
+Fri Jun 15 13:55:16 2018:	* Disconnecting from device...done
+Fri Jun 15 13:55:16 2018:	* 
+Fri Jun 15 13:55:16 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:55:16 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:55:16 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:55:16 2018:	*/
+Fri Jun 15 13:56:20 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:56:20 2018:	*     / |__                                                                   *
+Fri Jun 15 13:56:20 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:56:20 2018:	*      | /                                                                    *
+Fri Jun 15 13:56:20 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:56:20 2018:	*
+Fri Jun 15 13:56:20 2018:	* Evaluating triggers...done
+Fri Jun 15 13:56:20 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:56:20 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:56:20 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:56:20 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:56:20 2018:	* FET firmware is up to date.
+Fri Jun 15 13:56:20 2018:	* Reading FW version...done
+Fri Jun 15 13:56:20 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:56:23 2018:	* Accessing device...done
+Fri Jun 15 13:56:23 2018:	* Reading device information...
+Fri Jun 15 13:56:23 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:56:23 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:56:23 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:56:23 2018:	- Continue? (Y/N): Fri Jun 15 13:56:24 2018:	y
+Fri Jun 15 13:56:24 2018:	* Loading file into device...done
+Fri Jun 15 13:56:27 2018:	* Verifying memory (relay.hex)...done
+Fri Jun 15 13:56:28 2018:	* 
+Fri Jun 15 13:56:28 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:56:28 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w relay.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:56:28 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:56:28 2018:	* Driver      : loaded
+Fri Jun 15 13:56:28 2018:	* Dll Version : 31100001
+Fri Jun 15 13:56:28 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:56:28 2018:	* Interface   : USB
+Fri Jun 15 13:56:28 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:56:28 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:56:28 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:56:28 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:56:28 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:56:28 2018:	* Prog.File   : relay.hex
+Fri Jun 15 13:56:28 2018:	* Verified    : TRUE
+Fri Jun 15 13:56:28 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:56:28 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:56:28 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:56:28 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:56:28 2018:	* Starting target code execution...done
+Fri Jun 15 13:56:29 2018:	* Disconnecting from device...done
+Fri Jun 15 13:56:29 2018:	* 
+Fri Jun 15 13:56:29 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:56:29 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:56:29 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:56:29 2018:	*/
+Fri Jun 15 13:56:47 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:56:47 2018:	*     / |__                                                                   *
+Fri Jun 15 13:56:47 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:56:47 2018:	*      | /                                                                    *
+Fri Jun 15 13:56:47 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:56:47 2018:	*
+Fri Jun 15 13:56:47 2018:	* Evaluating triggers...done
+Fri Jun 15 13:56:47 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:56:47 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:56:47 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:56:48 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:56:48 2018:	* FET firmware is up to date.
+Fri Jun 15 13:56:48 2018:	* Reading FW version...done
+Fri Jun 15 13:56:48 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:56:50 2018:	* Accessing device...done
+Fri Jun 15 13:56:51 2018:	* Reading device information...
+Fri Jun 15 13:56:51 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:56:51 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:56:51 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:56:51 2018:	- Continue? (Y/N): Fri Jun 15 13:57:00 2018:	y
+Fri Jun 15 13:57:00 2018:	* Loading file into device...done
+Fri Jun 15 13:57:03 2018:	* Verifying memory (relay.hex)...done
+Fri Jun 15 13:57:04 2018:	* 
+Fri Jun 15 13:57:04 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:57:04 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w relay.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:57:04 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:57:04 2018:	* Driver      : loaded
+Fri Jun 15 13:57:04 2018:	* Dll Version : 31100001
+Fri Jun 15 13:57:04 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:57:04 2018:	* Interface   : USB
+Fri Jun 15 13:57:04 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:57:04 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:57:04 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:57:04 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:57:04 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:57:04 2018:	* Prog.File   : relay.hex
+Fri Jun 15 13:57:04 2018:	* Verified    : TRUE
+Fri Jun 15 13:57:04 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:57:04 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:57:04 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:57:04 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:57:04 2018:	* Starting target code execution...done
+Fri Jun 15 13:57:05 2018:	* Disconnecting from device...done
+Fri Jun 15 13:57:05 2018:	* 
+Fri Jun 15 13:57:05 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:57:05 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:57:05 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:57:05 2018:	*/
+Fri Jun 15 13:57:40 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:57:40 2018:	*     / |__                                                                   *
+Fri Jun 15 13:57:40 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:57:40 2018:	*      | /                                                                    *
+Fri Jun 15 13:57:40 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:57:40 2018:	*
+Fri Jun 15 13:57:40 2018:	* Evaluating triggers...done
+Fri Jun 15 13:57:40 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:57:40 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:57:40 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:57:41 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:57:41 2018:	* FET firmware is up to date.
+Fri Jun 15 13:57:41 2018:	* Reading FW version...done
+Fri Jun 15 13:57:41 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:57:43 2018:	* Accessing device...done
+Fri Jun 15 13:57:44 2018:	* Reading device information...
+Fri Jun 15 13:57:44 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:57:44 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:57:44 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:57:44 2018:	- Continue? (Y/N): Fri Jun 15 13:57:55 2018:	y
+Fri Jun 15 13:57:55 2018:	* Loading file into device...done
+Fri Jun 15 13:57:58 2018:	* Verifying memory (relay.hex)...done
+Fri Jun 15 13:57:59 2018:	* 
+Fri Jun 15 13:57:59 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:57:59 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w relay.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:57:59 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:57:59 2018:	* Driver      : loaded
+Fri Jun 15 13:57:59 2018:	* Dll Version : 31100001
+Fri Jun 15 13:57:59 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:57:59 2018:	* Interface   : USB
+Fri Jun 15 13:57:59 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:57:59 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:57:59 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:57:59 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:57:59 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:57:59 2018:	* Prog.File   : relay.hex
+Fri Jun 15 13:57:59 2018:	* Verified    : TRUE
+Fri Jun 15 13:57:59 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:57:59 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:57:59 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:57:59 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:57:59 2018:	* Starting target code execution...done
+Fri Jun 15 13:58:00 2018:	* Disconnecting from device...done
+Fri Jun 15 13:58:00 2018:	* 
+Fri Jun 15 13:58:00 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:58:00 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:58:00 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:58:00 2018:	*/
+Fri Jun 15 13:58:37 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 13:58:37 2018:	*     / |__                                                                   *
+Fri Jun 15 13:58:37 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 13:58:37 2018:	*      | /                                                                    *
+Fri Jun 15 13:58:37 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 13:58:37 2018:	*
+Fri Jun 15 13:58:37 2018:	* Evaluating triggers...done
+Fri Jun 15 13:58:37 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 13:58:38 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 13:58:38 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 13:58:38 2018:	* Checking firmware compatibility: 
+Fri Jun 15 13:58:38 2018:	* FET firmware is up to date.
+Fri Jun 15 13:58:38 2018:	* Reading FW version...done
+Fri Jun 15 13:58:38 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 13:58:40 2018:	* Accessing device...done
+Fri Jun 15 13:58:41 2018:	* Reading device information...
+Fri Jun 15 13:58:41 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 13:58:41 2018:	- Selected: MSP430x5438A
+Fri Jun 15 13:58:41 2018:	- Found:    MSP430F5438A
+Fri Jun 15 13:58:41 2018:	- Continue? (Y/N): Fri Jun 15 13:58:41 2018:	y
+Fri Jun 15 13:58:41 2018:	* Loading file into device...done
+Fri Jun 15 13:58:44 2018:	* Verifying memory (relay.hex)...done
+Fri Jun 15 13:58:45 2018:	* 
+Fri Jun 15 13:58:45 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:58:45 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w relay.hex -v -z [VCC] -i USB 
+Fri Jun 15 13:58:45 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:58:45 2018:	* Driver      : loaded
+Fri Jun 15 13:58:45 2018:	* Dll Version : 31100001
+Fri Jun 15 13:58:45 2018:	* FwVersion   : 31100001
+Fri Jun 15 13:58:45 2018:	* Interface   : USB
+Fri Jun 15 13:58:45 2018:	* HwVersion   : U 1.40
+Fri Jun 15 13:58:45 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 13:58:45 2018:	* Device      : MSP430F5438A
+Fri Jun 15 13:58:45 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 13:58:45 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 13:58:45 2018:	* Prog.File   : relay.hex
+Fri Jun 15 13:58:45 2018:	* Verified    : TRUE
+Fri Jun 15 13:58:45 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 13:58:45 2018:	* InfoA Access: FALSE
+Fri Jun 15 13:58:45 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 13:58:45 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:58:45 2018:	* Starting target code execution...done
+Fri Jun 15 13:58:46 2018:	* Disconnecting from device...done
+Fri Jun 15 13:58:46 2018:	* 
+Fri Jun 15 13:58:46 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:58:46 2018:	* Driver      : closed (No error)
+Fri Jun 15 13:58:46 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 13:58:46 2018:	*/
+Fri Jun 15 14:00:15 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 14:00:15 2018:	*     / |__                                                                   *
+Fri Jun 15 14:00:15 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 14:00:15 2018:	*      | /                                                                    *
+Fri Jun 15 14:00:15 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 14:00:15 2018:	*
+Fri Jun 15 14:00:15 2018:	* Evaluating triggers...done
+Fri Jun 15 14:00:15 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 14:00:15 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 14:00:15 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 14:00:16 2018:	* Checking firmware compatibility: 
+Fri Jun 15 14:00:16 2018:	* FET firmware is up to date.
+Fri Jun 15 14:00:16 2018:	* Reading FW version...done
+Fri Jun 15 14:00:16 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 14:00:18 2018:	* Accessing device...done
+Fri Jun 15 14:00:19 2018:	* Reading device information...
+Fri Jun 15 14:00:19 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 14:00:19 2018:	- Selected: MSP430x5438A
+Fri Jun 15 14:00:19 2018:	- Found:    MSP430F5438A
+Fri Jun 15 14:00:19 2018:	- Continue? (Y/N): Fri Jun 15 14:00:38 2018:	y
+Fri Jun 15 14:00:38 2018:	* Loading file into device...done
+Fri Jun 15 14:00:41 2018:	* Verifying memory (relay.hex)...done
+Fri Jun 15 14:00:42 2018:	* 
+Fri Jun 15 14:00:42 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:00:42 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w relay.hex -v -z [VCC] -i USB 
+Fri Jun 15 14:00:42 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:00:42 2018:	* Driver      : loaded
+Fri Jun 15 14:00:42 2018:	* Dll Version : 31100001
+Fri Jun 15 14:00:42 2018:	* FwVersion   : 31100001
+Fri Jun 15 14:00:42 2018:	* Interface   : USB
+Fri Jun 15 14:00:42 2018:	* HwVersion   : U 1.40
+Fri Jun 15 14:00:42 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 14:00:42 2018:	* Device      : MSP430F5438A
+Fri Jun 15 14:00:42 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 14:00:42 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 14:00:42 2018:	* Prog.File   : relay.hex
+Fri Jun 15 14:00:42 2018:	* Verified    : TRUE
+Fri Jun 15 14:00:42 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 14:00:42 2018:	* InfoA Access: FALSE
+Fri Jun 15 14:00:42 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 14:00:42 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:00:42 2018:	* Starting target code execution...done
+Fri Jun 15 14:00:43 2018:	* Disconnecting from device...done
+Fri Jun 15 14:00:43 2018:	* 
+Fri Jun 15 14:00:43 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:00:43 2018:	* Driver      : closed (No error)
+Fri Jun 15 14:00:43 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:00:43 2018:	*/
+Fri Jun 15 14:01:27 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 14:01:27 2018:	*     / |__                                                                   *
+Fri Jun 15 14:01:27 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 14:01:27 2018:	*      | /                                                                    *
+Fri Jun 15 14:01:27 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 14:01:27 2018:	*
+Fri Jun 15 14:01:27 2018:	* Evaluating triggers...done
+Fri Jun 15 14:01:27 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 14:01:27 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 14:01:27 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 14:01:28 2018:	* Checking firmware compatibility: 
+Fri Jun 15 14:01:28 2018:	* FET firmware is up to date.
+Fri Jun 15 14:01:28 2018:	* Reading FW version...done
+Fri Jun 15 14:01:28 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 14:01:30 2018:	* Accessing device...done
+Fri Jun 15 14:01:31 2018:	* Reading device information...
+Fri Jun 15 14:01:31 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 14:01:31 2018:	- Selected: MSP430x5438A
+Fri Jun 15 14:01:31 2018:	- Found:    MSP430F5438A
+Fri Jun 15 14:01:31 2018:	- Continue? (Y/N): Fri Jun 15 14:01:31 2018:	y
+Fri Jun 15 14:01:31 2018:	* Loading file into device...done
+Fri Jun 15 14:01:34 2018:	* Verifying memory (relay.hex)...done
+Fri Jun 15 14:01:35 2018:	* 
+Fri Jun 15 14:01:35 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:01:35 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w relay.hex -v -z [VCC] -i USB 
+Fri Jun 15 14:01:35 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:01:35 2018:	* Driver      : loaded
+Fri Jun 15 14:01:35 2018:	* Dll Version : 31100001
+Fri Jun 15 14:01:35 2018:	* FwVersion   : 31100001
+Fri Jun 15 14:01:35 2018:	* Interface   : USB
+Fri Jun 15 14:01:35 2018:	* HwVersion   : U 1.40
+Fri Jun 15 14:01:35 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 14:01:35 2018:	* Device      : MSP430F5438A
+Fri Jun 15 14:01:35 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 14:01:35 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 14:01:35 2018:	* Prog.File   : relay.hex
+Fri Jun 15 14:01:35 2018:	* Verified    : TRUE
+Fri Jun 15 14:01:35 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 14:01:35 2018:	* InfoA Access: FALSE
+Fri Jun 15 14:01:35 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 14:01:35 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:01:35 2018:	* Starting target code execution...done
+Fri Jun 15 14:01:36 2018:	* Disconnecting from device...done
+Fri Jun 15 14:01:36 2018:	* 
+Fri Jun 15 14:01:36 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:01:36 2018:	* Driver      : closed (No error)
+Fri Jun 15 14:01:36 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:01:36 2018:	*/
+Fri Jun 15 14:26:33 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 14:26:33 2018:	*     / |__                                                                   *
+Fri Jun 15 14:26:33 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 14:26:33 2018:	*      | /                                                                    *
+Fri Jun 15 14:26:33 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 14:26:33 2018:	*
+Fri Jun 15 14:26:33 2018:	* Evaluating triggers...done
+Fri Jun 15 14:26:33 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 14:26:33 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 14:26:33 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 14:26:34 2018:	* Checking firmware compatibility: 
+Fri Jun 15 14:26:34 2018:	* FET firmware is up to date.
+Fri Jun 15 14:26:34 2018:	* Reading FW version...done
+Fri Jun 15 14:26:34 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 14:26:36 2018:	* Accessing device...done
+Fri Jun 15 14:26:37 2018:	* Reading device information...
+Fri Jun 15 14:26:37 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 14:26:37 2018:	- Selected: MSP430x5438A
+Fri Jun 15 14:26:37 2018:	- Found:    MSP430F5438A
+Fri Jun 15 14:26:37 2018:	- Continue? (Y/N): Fri Jun 15 14:26:37 2018:	y
+Fri Jun 15 14:26:37 2018:	* Loading file into device...done
+Fri Jun 15 14:26:40 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 14:26:41 2018:	* 
+Fri Jun 15 14:26:41 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:26:41 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 14:26:41 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:26:41 2018:	* Driver      : loaded
+Fri Jun 15 14:26:41 2018:	* Dll Version : 31100001
+Fri Jun 15 14:26:41 2018:	* FwVersion   : 31100001
+Fri Jun 15 14:26:41 2018:	* Interface   : USB
+Fri Jun 15 14:26:41 2018:	* HwVersion   : U 1.40
+Fri Jun 15 14:26:41 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 14:26:41 2018:	* Device      : MSP430F5438A
+Fri Jun 15 14:26:41 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 14:26:41 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 14:26:41 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 14:26:41 2018:	* Verified    : TRUE
+Fri Jun 15 14:26:41 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 14:26:41 2018:	* InfoA Access: FALSE
+Fri Jun 15 14:26:41 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 14:26:41 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:26:41 2018:	* Starting target code execution...done
+Fri Jun 15 14:26:42 2018:	* Disconnecting from device...done
+Fri Jun 15 14:26:42 2018:	* 
+Fri Jun 15 14:26:42 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:26:42 2018:	* Driver      : closed (No error)
+Fri Jun 15 14:26:42 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:26:42 2018:	*/
+Fri Jun 15 14:27:11 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 14:27:11 2018:	*     / |__                                                                   *
+Fri Jun 15 14:27:11 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 14:27:11 2018:	*      | /                                                                    *
+Fri Jun 15 14:27:11 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 14:27:11 2018:	*
+Fri Jun 15 14:27:11 2018:	* Evaluating triggers...done
+Fri Jun 15 14:27:11 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 14:27:11 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 14:27:11 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 14:27:12 2018:	* Checking firmware compatibility: 
+Fri Jun 15 14:27:12 2018:	* FET firmware is up to date.
+Fri Jun 15 14:27:12 2018:	* Reading FW version...done
+Fri Jun 15 14:27:12 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 14:27:14 2018:	* Accessing device...done
+Fri Jun 15 14:27:15 2018:	* Reading device information...
+Fri Jun 15 14:27:15 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 14:27:15 2018:	- Selected: MSP430x5438A
+Fri Jun 15 14:27:15 2018:	- Found:    MSP430F5438A
+Fri Jun 15 14:27:15 2018:	- Continue? (Y/N): Fri Jun 15 14:27:27 2018:	y
+Fri Jun 15 14:27:27 2018:	* Loading file into device...done
+Fri Jun 15 14:27:30 2018:	* Verifying memory (sensor.hex)...done
+Fri Jun 15 14:27:31 2018:	* 
+Fri Jun 15 14:27:31 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:27:31 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w sensor.hex -v -z [VCC] -i USB 
+Fri Jun 15 14:27:31 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:27:31 2018:	* Driver      : loaded
+Fri Jun 15 14:27:31 2018:	* Dll Version : 31100001
+Fri Jun 15 14:27:31 2018:	* FwVersion   : 31100001
+Fri Jun 15 14:27:31 2018:	* Interface   : USB
+Fri Jun 15 14:27:31 2018:	* HwVersion   : U 1.40
+Fri Jun 15 14:27:31 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 14:27:31 2018:	* Device      : MSP430F5438A
+Fri Jun 15 14:27:31 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 14:27:31 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 14:27:31 2018:	* Prog.File   : sensor.hex
+Fri Jun 15 14:27:31 2018:	* Verified    : TRUE
+Fri Jun 15 14:27:31 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 14:27:31 2018:	* InfoA Access: FALSE
+Fri Jun 15 14:27:31 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 14:27:31 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:27:31 2018:	* Starting target code execution...done
+Fri Jun 15 14:27:32 2018:	* Disconnecting from device...done
+Fri Jun 15 14:27:32 2018:	* 
+Fri Jun 15 14:27:32 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:27:32 2018:	* Driver      : closed (No error)
+Fri Jun 15 14:27:32 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:27:32 2018:	*/
+Fri Jun 15 14:28:56 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 14:28:56 2018:	*     / |__                                                                   *
+Fri Jun 15 14:28:56 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 14:28:56 2018:	*      | /                                                                    *
+Fri Jun 15 14:28:56 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 14:28:56 2018:	*
+Fri Jun 15 14:28:56 2018:	* Evaluating triggers...done
+Fri Jun 15 14:28:56 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 14:28:56 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 14:28:56 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 14:28:57 2018:	* Checking firmware compatibility: 
+Fri Jun 15 14:28:57 2018:	* FET firmware is up to date.
+Fri Jun 15 14:28:57 2018:	* Reading FW version...done
+Fri Jun 15 14:28:57 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 14:28:59 2018:	* Accessing device...done
+Fri Jun 15 14:29:00 2018:	* Reading device information...
+Fri Jun 15 14:29:00 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 14:29:00 2018:	- Selected: MSP430x5438A
+Fri Jun 15 14:29:00 2018:	- Found:    MSP430F5438A
+Fri Jun 15 14:29:00 2018:	- Continue? (Y/N): Fri Jun 15 14:29:02 2018:	y
+Fri Jun 15 14:29:02 2018:	* Loading file into device...done
+Fri Jun 15 14:29:05 2018:	* Verifying memory (relay.hex)...done
+Fri Jun 15 14:29:06 2018:	* 
+Fri Jun 15 14:29:06 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:29:06 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w relay.hex -v -z [VCC] -i USB 
+Fri Jun 15 14:29:06 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:29:06 2018:	* Driver      : loaded
+Fri Jun 15 14:29:06 2018:	* Dll Version : 31100001
+Fri Jun 15 14:29:06 2018:	* FwVersion   : 31100001
+Fri Jun 15 14:29:06 2018:	* Interface   : USB
+Fri Jun 15 14:29:06 2018:	* HwVersion   : U 1.40
+Fri Jun 15 14:29:06 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 14:29:06 2018:	* Device      : MSP430F5438A
+Fri Jun 15 14:29:06 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 14:29:06 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 14:29:06 2018:	* Prog.File   : relay.hex
+Fri Jun 15 14:29:06 2018:	* Verified    : TRUE
+Fri Jun 15 14:29:06 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 14:29:06 2018:	* InfoA Access: FALSE
+Fri Jun 15 14:29:06 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 14:29:06 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:29:06 2018:	* Starting target code execution...done
+Fri Jun 15 14:29:07 2018:	* Disconnecting from device...done
+Fri Jun 15 14:29:07 2018:	* 
+Fri Jun 15 14:29:07 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:29:07 2018:	* Driver      : closed (No error)
+Fri Jun 15 14:29:07 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:29:07 2018:	*/
+Fri Jun 15 14:29:42 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 14:29:42 2018:	*     / |__                                                                   *
+Fri Jun 15 14:29:42 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 14:29:42 2018:	*      | /                                                                    *
+Fri Jun 15 14:29:42 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 14:29:42 2018:	*
+Fri Jun 15 14:29:42 2018:	* Evaluating triggers...done
+Fri Jun 15 14:29:42 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 14:29:42 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 14:29:42 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 14:29:42 2018:	* Checking firmware compatibility: 
+Fri Jun 15 14:29:42 2018:	* FET firmware is up to date.
+Fri Jun 15 14:29:42 2018:	* Reading FW version...done
+Fri Jun 15 14:29:42 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 14:29:45 2018:	* Accessing device...done
+Fri Jun 15 14:29:45 2018:	* Reading device information...
+Fri Jun 15 14:29:45 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 14:29:45 2018:	- Selected: MSP430x5438A
+Fri Jun 15 14:29:45 2018:	- Found:    MSP430F5438A
+Fri Jun 15 14:29:45 2018:	- Continue? (Y/N): Fri Jun 15 14:29:46 2018:	y
+Fri Jun 15 14:29:46 2018:	* Loading file into device...done
+Fri Jun 15 14:29:49 2018:	* Verifying memory (relay.hex)...done
+Fri Jun 15 14:29:50 2018:	* 
+Fri Jun 15 14:29:50 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:29:50 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w relay.hex -v -z [VCC] -i USB 
+Fri Jun 15 14:29:50 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:29:50 2018:	* Driver      : loaded
+Fri Jun 15 14:29:50 2018:	* Dll Version : 31100001
+Fri Jun 15 14:29:50 2018:	* FwVersion   : 31100001
+Fri Jun 15 14:29:50 2018:	* Interface   : USB
+Fri Jun 15 14:29:50 2018:	* HwVersion   : U 1.40
+Fri Jun 15 14:29:50 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 14:29:50 2018:	* Device      : MSP430F5438A
+Fri Jun 15 14:29:50 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 14:29:50 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 14:29:50 2018:	* Prog.File   : relay.hex
+Fri Jun 15 14:29:50 2018:	* Verified    : TRUE
+Fri Jun 15 14:29:50 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 14:29:50 2018:	* InfoA Access: FALSE
+Fri Jun 15 14:29:50 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 14:29:50 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:29:50 2018:	* Starting target code execution...done
+Fri Jun 15 14:29:50 2018:	* Disconnecting from device...done
+Fri Jun 15 14:29:50 2018:	* 
+Fri Jun 15 14:29:50 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:29:50 2018:	* Driver      : closed (No error)
+Fri Jun 15 14:29:50 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:29:50 2018:	*/
+Fri Jun 15 14:30:12 2018:	* -----/|-------------------------------------------------------------------- *
+Fri Jun 15 14:30:12 2018:	*     / |__                                                                   *
+Fri Jun 15 14:30:12 2018:	*    /_   /   MSP Flasher v1.3.16                                             *
+Fri Jun 15 14:30:12 2018:	*      | /                                                                    *
+Fri Jun 15 14:30:12 2018:	* -----|/-------------------------------------------------------------------- *
+Fri Jun 15 14:30:12 2018:	*
+Fri Jun 15 14:30:12 2018:	* Evaluating triggers...done
+Fri Jun 15 14:30:12 2018:	* Checking for available FET debuggers: 
+Fri Jun 15 14:30:12 2018:	* Found USB FET @ ttyACM0 <- Selected
+Fri Jun 15 14:30:12 2018:	* Initializing interface @ ttyACM0...done
+Fri Jun 15 14:30:12 2018:	* Checking firmware compatibility: 
+Fri Jun 15 14:30:12 2018:	* FET firmware is up to date.
+Fri Jun 15 14:30:12 2018:	* Reading FW version...done
+Fri Jun 15 14:30:12 2018:	* Setting VCC to 3000 mV...done
+Fri Jun 15 14:30:15 2018:	* Accessing device...done
+Fri Jun 15 14:30:15 2018:	* Reading device information...
+Fri Jun 15 14:30:15 2018:	* Warning: Found device does not match -n selection:
+Fri Jun 15 14:30:15 2018:	- Selected: MSP430x5438A
+Fri Jun 15 14:30:15 2018:	- Found:    MSP430F5438A
+Fri Jun 15 14:30:15 2018:	- Continue? (Y/N): Fri Jun 15 14:30:30 2018:	y
+Fri Jun 15 14:30:30 2018:	* Loading file into device...done
+Fri Jun 15 14:30:32 2018:	* Verifying memory (relay.hex)...done
+Fri Jun 15 14:30:33 2018:	* 
+Fri Jun 15 14:30:33 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:30:33 2018:	* Arguments   : -n MSP430X5438A -e ERASE_MAIN -w relay.hex -v -z [VCC] -i USB 
+Fri Jun 15 14:30:33 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:30:33 2018:	* Driver      : loaded
+Fri Jun 15 14:30:33 2018:	* Dll Version : 31100001
+Fri Jun 15 14:30:33 2018:	* FwVersion   : 31100001
+Fri Jun 15 14:30:33 2018:	* Interface   : USB
+Fri Jun 15 14:30:33 2018:	* HwVersion   : U 1.40
+Fri Jun 15 14:30:33 2018:	* JTAG Mode   : AUTO
+Fri Jun 15 14:30:33 2018:	* Device      : MSP430F5438A
+Fri Jun 15 14:30:33 2018:	* EEM         : Level 7, ClockCntrl 2
+Fri Jun 15 14:30:33 2018:	* Erase Mode  : ERASE_MAIN
+Fri Jun 15 14:30:33 2018:	* Prog.File   : relay.hex
+Fri Jun 15 14:30:33 2018:	* Verified    : TRUE
+Fri Jun 15 14:30:33 2018:	* BSL Unlock  : FALSE
+Fri Jun 15 14:30:33 2018:	* InfoA Access: FALSE
+Fri Jun 15 14:30:33 2018:	* VCC ON      : 3000 mV
+Fri Jun 15 14:30:33 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:30:33 2018:	* Starting target code execution...done
+Fri Jun 15 14:30:34 2018:	* Disconnecting from device...done
+Fri Jun 15 14:30:34 2018:	* 
+Fri Jun 15 14:30:34 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:30:34 2018:	* Driver      : closed (No error)
+Fri Jun 15 14:30:34 2018:	* ----------------------------------------------------------------------------
+Fri Jun 15 14:30:34 2018:	*/

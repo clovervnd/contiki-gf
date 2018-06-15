@@ -118,7 +118,7 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
 	addr.u8[1] = 0;
 	unicast_send(&unicast, &addr);
 #else
-	addr.u8[0] = 25;
+	addr.u8[0] = 24;
 	addr.u8[1] = 0;
 	/* packetbuf_set_addr(PACKETBUF_ADDR_RECEIVER,&addr); */
 	unicast_send(&unicast, &addr);

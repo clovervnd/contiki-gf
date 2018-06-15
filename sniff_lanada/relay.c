@@ -110,20 +110,28 @@ unicast_recv(struct unicast_conn *c, const linkaddr_t *from)
 		  relay_target = 25;
 	  }
 	  else if(from->u8[0] == 25) {
-		  if(recv_data[0] == 's' && recv_data[1] == 'e' && recv_data[2] == 'n' && recv_data[3] == 's') {
-			  relay_target = 0;
-		  }
-		  else {
-			  relay_target = 30;
-		  }
+	          relay_target = 30;
 	  }
   }
   else if(linkaddr_node_addr.u8[0] == 25) {
 	  if(from->u8[0] == 26) {
+		  relay_target = 24;
+	  }
+	  else if(from->u8[0] == 24) {
+		  if(recv_data[0] == 's' && recv_data[1] == 'e' && recv_data[2] == 'n' && recv_data[3] == 's') {
+			  relay_target = 0;
+		  }
+		  else {
+		    relay_target = 26;
+		  }
+	  }
+  }
+  else if(linkaddr_node_addr.u8[0] == 24) {
+	  if(from->u8[0] == 25) {
 		  relay_target = 14;
 	  }
 	  else if(from->u8[0] >=14 && from->u8[0] <=15) {
-		  relay_target = 26;
+		  relay_target = 25;
 	  }
   }
 
