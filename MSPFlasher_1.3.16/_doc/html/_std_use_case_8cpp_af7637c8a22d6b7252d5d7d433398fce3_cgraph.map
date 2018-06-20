@@ -1,0 +1,13 @@
+<map id="StdUseCase_GetDevice" name="StdUseCase_GetDevice">
+<area shape="rect" id="node2" href="$_std_use_case_8h.html#a46d8d3f398f950c6d4c29fccee1e7070" title="This function logs messages and prints them to the console. " alt="" coords="1399,266,1492,293"/>
+<area shape="rect" id="node3" href="$_std_use_case_8cpp.html#ac11bf111b9a4fa3f60bab37fe0f472d9" title="Exit the Flasher routine, close the logfile. " alt="" coords="934,443,1059,470"/>
+<area shape="rect" id="node6" href="$_std_use_case_8cpp.html#a56d81c683a62d638ac872411b4175c48" title="Erase the target device&#39;s memory including active memory protection. " alt="" coords="215,217,393,243"/>
+<area shape="rect" id="node4" href="$_std_use_case_8cpp.html#a62cd59b5bab747a6574843a42e18e0d8" title="Trigger VCC on and/or apply hard reset via RST/NMI (if specified in sOpt) and disconnect from the dev..." alt="" coords="1169,469,1303,495"/>
+<area shape="rect" id="node5" href="$_std_use_case_8cpp.html#a3c7974343a33a0806e8fb53104550cc9" title="Start the program execution. " alt="" coords="1383,494,1508,521"/>
+<area shape="rect" id="node7" href="$_std_use_case_8cpp.html#acf8efd527ab1d58c719a331b813a984b" title="This function initializes the debug interface. " alt="" coords="441,254,609,281"/>
+<area shape="rect" id="node10" href="$_std_use_case_8cpp.html#a2a68108478db7b89241ca1eb5d0014f4" title="This function reads out the debugger hardware version. " alt="" coords="657,165,856,191"/>
+<area shape="rect" id="node11" href="$_std_use_case_8cpp.html#af9544f15f69155e4e57015d03da9dd30" title="This function reads out the debugger firmware version. " alt="" coords="1137,63,1335,90"/>
+<area shape="rect" id="node12" href="$_std_use_case_8cpp.html#a00e89ae44a8b655b0d608064523a9e3d" title="This function sets the target voltage. " alt="" coords="679,418,834,445"/>
+<area shape="rect" id="node8" href="$_std_use_case_8cpp.html#ab06ad4cf27f2d38614fee9e9c670d6f4" title="This function scans for all connected USB FETs and stores the respective COM port and the status of t..." alt="" coords="677,317,836,343"/>
+<area shape="rect" id="node9" href="$_std_use_case_8cpp.html#a48d0d535523623681b0c69b703f27a8e" title="This function is of type MSP430_FET_NOTIFY_FUNC and generates system messages to inform the user of t..." alt="" coords="904,215,1089,242"/>
+</map>
