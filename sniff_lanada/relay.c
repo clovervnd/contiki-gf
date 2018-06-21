@@ -98,7 +98,7 @@ unicast_recv(struct unicast_conn *c, const linkaddr_t *from)
 	  }
   }
   else if(linkaddr_node_addr.u8[0] == 27) {
-	  if(from->u8[0] == 28) {
+          if(from->u8[0] == 28) {
 		  relay_target = 6;
 	  }
 	  else if(from->u8[0] >=6 && from->u8[0] <=13) {
@@ -171,6 +171,23 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     		packetbuf_clear();
     		packetbuf_copyfrom(BUFFER, 100);
     		if(recv_target == 6 || recv_target == 14) {
+		        clock_delay(2000);
+    			broadcast_send(&unicast.c);
+			packetbuf_clear();
+			packetbuf_copyfrom(BUFFER, 100);
+			clock_delay(100);
+    			broadcast_send(&unicast.c);
+			packetbuf_clear();
+			packetbuf_copyfrom(BUFFER, 100);
+			clock_delay(100);
+    			broadcast_send(&unicast.c);
+			packetbuf_clear();
+			packetbuf_copyfrom(BUFFER, 100);
+			clock_delay(100);
+    			broadcast_send(&unicast.c);
+			packetbuf_clear();
+			packetbuf_copyfrom(BUFFER, 100);
+			clock_delay(100);
     			broadcast_send(&unicast.c);
     		}
     		else {

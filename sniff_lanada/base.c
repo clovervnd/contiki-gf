@@ -131,14 +131,14 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     		addr.u8[0] = 29;
     		addr.u8[1] = 0;
     		unicast_send(&unicast,&addr);
-    		etimer_set(&wait, CLOCK_SECOND + random_rand() % (CLOCK_SECOND *5));
+    		etimer_set(&wait, CLOCK_SECOND + random_rand() % CLOCK_SECOND);
     		PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&wait));
-//		broadcast_send(&unicast.c);
-    		 packetbuf_clear();
-    		 packetbuf_copyfrom((char *)input,8);
-    		 addr.u8[0] = 26;
-    		 addr.u8[1] = 0;
-    		 unicast_send(&unicast,&addr);
+		//		broadcast_send(&unicast.c);
+		packetbuf_clear();
+		packetbuf_copyfrom((char *)input,8);
+		addr.u8[0] = 26;
+		addr.u8[1] = 0;
+		unicast_send(&unicast,&addr);
 #endif
     	}
     	else if(input[0]=='o' && input[1]=='f' && input[2]=='f') {
@@ -159,7 +159,7 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     		addr.u8[0] = 29;
     		addr.u8[1] = 0;
     		unicast_send(&unicast,&addr);
-    		etimer_set(&wait, CLOCK_SECOND + random_rand() % (CLOCK_SECOND *5));
+    		etimer_set(&wait, CLOCK_SECOND + random_rand() % CLOCK_SECOND);
     		PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&wait));
     		packetbuf_clear();
     		packetbuf_copyfrom((char *)input,4);

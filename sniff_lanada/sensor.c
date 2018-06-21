@@ -66,7 +66,9 @@ unicast_recv(struct unicast_conn *c, const linkaddr_t *from)
   if(recv_data[0] == 's' && recv_data[1] == 'e' && recv_data[2] == 'n' &&
      recv_data[3] == 's' && recv_data[4] == 'i' && recv_data[5] == 'n' &&
      recv_data[6] == 'g') {
-    sensing_flag = 1;
+    if(sensing_flag != 2) {
+      sensing_flag = 1;
+    }
   }
   else if(recv_data[0] == 'o' && recv_data[1] == 'f' && recv_data[2] == 'f')
     {
@@ -160,6 +162,7 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
       	memcpy(BUFFER+index,(char *)data,strlen(data));
       	index += strlen(data);
       	receiving_uart = 2;
+	sensing_flag = 0;
       }
       else {
       	memcpy(BUFFER+index,(char *)data,strlen(data));
@@ -173,7 +176,7 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
       /* unicast_send(&uc, &addr);  */
     }
     if(sensing_flag == 1) { // Do sensing
-      sensing_flag = 0;
+        sensing_flag = 2;
       	printf("GPIO pin High\n");
 	MSP430_GPIOEN_PORT(SEL) &= ~BV(MSP430_GPIOEN_PIN);
 	MSP430_GPIOEN_PORT(DIR) |= BV(MSP430_GPIOEN_PIN);
