@@ -56,24 +56,26 @@ AUTOSTART_PROCESSES(&example_broadcast_process);
 static void
 broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
 {
-  printf("broadcast message received from %d.%d: '%s'\n",
+  printf("Received from %d.%d: %s\n",
          from->u8[0], from->u8[1], (char *)packetbuf_dataptr());
 }
 static const struct broadcast_callbacks broadcast_call = {broadcast_recv};
 static struct broadcast_conn broadcast;
+static uint8_t cnt;
+static char BUFFER[100];
 /*---------------------------------------------------------------------------*/
 PROCESS_THREAD(example_broadcast_process, ev, data)
 {
   static struct etimer et;
-
+  
   PROCESS_EXITHANDLER(broadcast_close(&broadcast);)
 
   PROCESS_BEGIN();
 
   broadcast_open(&broadcast, 129, &broadcast_call);
 
-  etimer_set(&et, CLOCK_SECOND*5);
-
+  etimer_set(&et, CLOCK_SECOND);
+  cnt = 0;
   while(1) {
     linkaddr_t addr;
     /* Delay 2-4 seconds */
@@ -83,14 +85,15 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
       addr.u8[0] = 1;
       addr.u8[1] = 0;
       if(!linkaddr_cmp(&addr, &linkaddr_node_addr)) {
+	sprintf(BUFFER, "TEST cnt:%d\n",++cnt);
 	packetbuf_clear();
-      	packetbuf_copyfrom("Hello", 6);
+      	packetbuf_copyfrom(BUFFER, 100);
       	broadcast_send(&broadcast);
-      	printf("broadcast message sent id:%d.%d\n",linkaddr_node_addr.u8[0],
+      	printf("Sent id:%d.%d\n",linkaddr_node_addr.u8[0],
 	       linkaddr_node_addr.u8[1]);
       }
     }
-    etimer_set(&et, CLOCK_SECOND*5);
+    etimer_set(&et, CLOCK_SECOND/10);
     /* PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et)); */
   }
 
