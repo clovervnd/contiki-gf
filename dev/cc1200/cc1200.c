@@ -929,7 +929,8 @@ read(void *buf, unsigned short buf_len)
 
     } else {
 
-      INFO("RF: Read (%d bytes, %d dBm)\n", len, rssi);
+      /* INFO("RF: Read (%d bytes, %d dBm)\n", len, rssi); */
+      printf("RF: Read (%d bytes, %d dBm)\n", len, rssi);
 
       memcpy((void *)buf, (const void *)rx_pkt, len);
 

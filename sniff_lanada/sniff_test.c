@@ -49,6 +49,7 @@
 #include <stdio.h>
 #define MSP430_GPIOEN_PORT(type)		P9##type
 #define MSP430_GPIOEN_PIN		6
+static char BUFF[20];
 /*---------------------------------------------------------------------------*/
 PROCESS(example_broadcast_process, "Broadcast example");
 AUTOSTART_PROCESSES(&example_broadcast_process);
@@ -56,7 +57,7 @@ AUTOSTART_PROCESSES(&example_broadcast_process);
 static void
 broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
 {
-  printf("broadcast message received from %d.%d: '%s'\n",
+  printf("message received from %d.%d: '%s'\n",
          from->u8[0], from->u8[1], (char *)packetbuf_dataptr());
 }
 static const struct broadcast_callbacks broadcast_call = {broadcast_recv};
@@ -65,14 +66,14 @@ static struct broadcast_conn broadcast;
 PROCESS_THREAD(example_broadcast_process, ev, data)
 {
   static struct etimer et;
-
+  static uint8_t count=0;
   PROCESS_EXITHANDLER(broadcast_close(&broadcast);)
 
   PROCESS_BEGIN();
 
   broadcast_open(&broadcast, 129, &broadcast_call);
 
-  etimer_set(&et, CLOCK_SECOND*5);
+  etimer_set(&et, CLOCK_SECOND);
 
   while(1) {
     linkaddr_t addr;
@@ -82,15 +83,16 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     if(ev == PROCESS_EVENT_TIMER) {
       addr.u8[0] = 1;
       addr.u8[1] = 0;
-      if(!linkaddr_cmp(&addr, &linkaddr_node_addr)) {
+      if(!linkaddr_cmp(&addr, &linkaddr_node_addr) && count<100) {
 	packetbuf_clear();
-      	packetbuf_copyfrom("Hello", 6);
+	sprintf(BUFF,"count: %d\n",++count);
+	packetbuf_copyfrom(BUFF,20);
       	broadcast_send(&broadcast);
-      	printf("broadcast message sent id:%d.%d\n",linkaddr_node_addr.u8[0],
-	       linkaddr_node_addr.u8[1]);
+      	printf("message sent id:%d.%d count:%d \n",linkaddr_node_addr.u8[0],
+	       linkaddr_node_addr.u8[1],count);
       }
     }
-    etimer_set(&et, CLOCK_SECOND*5);
+    etimer_set(&et, CLOCK_SECOND/10);
     /* PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et)); */
   }
 
