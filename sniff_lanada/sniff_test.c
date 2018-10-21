@@ -49,7 +49,6 @@
 #include <stdio.h>
 #define MSP430_GPIOEN_PORT(type)		P9##type
 #define MSP430_GPIOEN_PIN		6
-static char BUFF[20];
 /*---------------------------------------------------------------------------*/
 PROCESS(example_broadcast_process, "Broadcast example");
 AUTOSTART_PROCESSES(&example_broadcast_process);
@@ -86,13 +85,13 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     if(ev == PROCESS_EVENT_TIMER) {
       addr.u8[0] = 1;
       addr.u8[1] = 0;
-      if(!linkaddr_cmp(&addr, &linkaddr_node_addr)) {
-	sprintf(BUFFER, "TEST cnt:%d\n",++cnt);
+      if(!linkaddr_cmp(&addr, &linkaddr_node_addr) && cnt<100) {
+	sprintf(BUFFER, "Count:%d\n",++cnt);
 	packetbuf_clear();
       	packetbuf_copyfrom(BUFFER, 100);
       	broadcast_send(&broadcast);
-      	printf("Sent id:%d.%d\n",linkaddr_node_addr.u8[0],
-	       linkaddr_node_addr.u8[1]);
+      	printf("Message sent from id:%d.%d, count:%d\n",linkaddr_node_addr.u8[0],
+	       linkaddr_node_addr.u8[1],cnt);
       }
     }
     etimer_set(&et, CLOCK_SECOND/10);
