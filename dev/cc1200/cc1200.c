@@ -666,9 +666,9 @@ pollhandler(void)
     }
 
   }
-#if CC1200_LANADA_SNIFFER
-    strobe(CC1200_SWOR);
-#endif
+/* #if CC1200_LANADA_SNIFFER */
+/*     strobe(CC1200_SWOR); */
+/* #endif */
 
 }
 /*---------------------------------------------------------------------------*/
@@ -735,6 +735,10 @@ cc1200_init(void)
      * We have to call off() before on() because on() relies on the
      * configuration of the GPIO0 pin
      */
+#if CC1200_LANADA_SNIFFER
+    calibrateRCOsc();
+#endif
+    
  
 #if DEBUG_LEVEL==5
 		while(1){	
@@ -1764,9 +1768,7 @@ calibrate(void)
   cal_timer = clock_seconds();
 #endif
 
-#if CC1200_LANADA_SNIFFER
-  calibrateRCOsc();
-#endif
+
 
 }
 #endif

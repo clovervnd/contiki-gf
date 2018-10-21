@@ -50,7 +50,7 @@
 #define MSP430_GPIOEN_PORT(type)		P9##type
 #define MSP430_GPIOEN_PIN		6
 
-#define SINGLEHOP_MODE	0
+#define SINGLEHOP_MODE	TEST_SINGLE_HOP
 
 /* static uint8_t sensing_flag; */
 /* static uint8_t off_flag; */

@@ -12,8 +12,9 @@
 #endif
 
 #ifndef NETSTACK_CONF_RDC_CHANNEL_CHECK_RATE
-#define NETSTACK_CONF_RDC_CHANNEL_CHECK_RATE 2
+#define NETSTACK_CONF_RDC_CHANNEL_CHECK_RATE 8
 #endif /* NETSTACK_CONF_RDC_CHANNEL_CHECK_RATE */
 
+#define TEST_SINGLE_HOP 1 // To enable single hop mode, set 1, otherwise 0
 
 #endif /* __PROJECT_CCONF_H__ */

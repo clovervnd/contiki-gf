@@ -57,11 +57,7 @@ AUTOSTART_PROCESSES(&example_broadcast_process);
 static void
 broadcast_recv(struct broadcast_conn *c, const linkaddr_t *from)
 {
-<<<<<<< HEAD
-  printf("message received from %d.%d: '%s'\n",
-=======
   printf("Received from %d.%d: %s\n",
->>>>>>> 32b2a260651ddbb42d88ed7c2807bbda0444dd85
          from->u8[0], from->u8[1], (char *)packetbuf_dataptr());
 }
 static const struct broadcast_callbacks broadcast_call = {broadcast_recv};
@@ -72,11 +68,7 @@ static char BUFFER[100];
 PROCESS_THREAD(example_broadcast_process, ev, data)
 {
   static struct etimer et;
-<<<<<<< HEAD
-  static uint8_t count=0;
-=======
   
->>>>>>> 32b2a260651ddbb42d88ed7c2807bbda0444dd85
   PROCESS_EXITHANDLER(broadcast_close(&broadcast);)
 
   PROCESS_BEGIN();
@@ -84,11 +76,8 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
   broadcast_open(&broadcast, 129, &broadcast_call);
 
   etimer_set(&et, CLOCK_SECOND);
-<<<<<<< HEAD
 
-=======
   cnt = 0;
->>>>>>> 32b2a260651ddbb42d88ed7c2807bbda0444dd85
   while(1) {
     linkaddr_t addr;
     /* Delay 2-4 seconds */
@@ -97,15 +86,6 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
     if(ev == PROCESS_EVENT_TIMER) {
       addr.u8[0] = 1;
       addr.u8[1] = 0;
-<<<<<<< HEAD
-      if(!linkaddr_cmp(&addr, &linkaddr_node_addr) && count<100) {
-	packetbuf_clear();
-	sprintf(BUFF,"count: %d\n",++count);
-	packetbuf_copyfrom(BUFF,20);
-      	broadcast_send(&broadcast);
-      	printf("message sent id:%d.%d count:%d \n",linkaddr_node_addr.u8[0],
-	       linkaddr_node_addr.u8[1],count);
-=======
       if(!linkaddr_cmp(&addr, &linkaddr_node_addr)) {
 	sprintf(BUFFER, "TEST cnt:%d\n",++cnt);
 	packetbuf_clear();
@@ -113,7 +93,6 @@ PROCESS_THREAD(example_broadcast_process, ev, data)
       	broadcast_send(&broadcast);
       	printf("Sent id:%d.%d\n",linkaddr_node_addr.u8[0],
 	       linkaddr_node_addr.u8[1]);
->>>>>>> 32b2a260651ddbb42d88ed7c2807bbda0444dd85
       }
     }
     etimer_set(&et, CLOCK_SECOND/10);
