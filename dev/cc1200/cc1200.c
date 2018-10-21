@@ -666,9 +666,9 @@ pollhandler(void)
     }
 
   }
-/* #if CC1200_LANADA_SNIFFER */
-/*     strobe(CC1200_SWOR); */
-/* #endif */
+#if CC1200_LANADA_SNIFFER
+    strobe(CC1200_SWOR);
+#endif
 
 }
 /*---------------------------------------------------------------------------*/
